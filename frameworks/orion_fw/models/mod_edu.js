@@ -32,9 +32,7 @@ OrionFw.ModEdu = SC.Record.extend(
 
   // this list of properties will be used when talking to the server 
   // backend. If you don't define this only 'guid' will be used. 
-  properties: ['id','education_id','module_id'],
-  
-  modulesforeducation: 
+  properties: ['id','education_id','module_id']
 
 });
 

@@ -1,5 +1,5 @@
 // ==========================================================================
-// Student
+// Teacher
 // ==========================================================================
 
 require('core');
@@ -13,7 +13,7 @@ require('orion_fw');
   @author    AuthorName  
   @version 0.1
 */  
-OrionFw.Student = SC.Record.extend(
+OrionFw.Teacher = SC.Record.extend(
 /** @scope Student.prototype */ {
   
   // TODO: Add your own code here.
@@ -32,12 +32,12 @@ OrionFw.Student = SC.Record.extend(
   */
   resourceURL: function(){
   	//[OrionFw.standardResource + 'geteducations'], 	
-  	return OrionFw.standardResource + 'student';
+  	return OrionFw.standardResource + 'teacher';
   },
 
   // this list of properties will be used when talking to the server 
   // backend. If you don't define this only 'guid' will be used. 
-  properties: ['id','studentnumber','firstname','inbetween','lastname','email','entryyear','currentyear','active','preferredlanguage'], 
+  properties: ['id','username','firstname','inbetween','lastname','email','active','maxworkload'], 
 
   reverseName: function() { 
   	var firstname = this.get('firstname');
