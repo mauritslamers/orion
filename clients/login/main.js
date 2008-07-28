@@ -1,5 +1,5 @@
 // ==========================================================================
-// Coursecoordinator
+// Login
 // ==========================================================================
 
 // This is the function that will start your app running.  The default
@@ -15,10 +15,10 @@ function main() {
   // The default code here will load the fixtures you have defined.
   // Comment out the preload line and add something to refresh from the server
   // when you are ready to pull data from your server.
-  CourseCoordinator.server.preload(CourseCoordinator.FIXTURES) ;
+  Login.server.preload(Login.FIXTURES) ;
 
   // TODO: refresh() any collections you have created to get their records.
-  // ex: Coursecoordinator.contacts.refresh() ;
+  // ex: Login.contacts.refresh() ;
 
   // Step 2: Instantiate Your Views
   // The default code just activates all the views you have on the page. If
@@ -30,6 +30,6 @@ function main() {
   // This will make your app come alive!
 
   // TODO: Set the content property on your primary controller
-  // ex: Coursecoordinator.contactsController.set('content',Coursecoordinator.contacts);
+  // ex: Login.contactsController.set('content',Login.contacts);
 
 } ;

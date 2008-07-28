@@ -73,8 +73,12 @@ end
 
 config :orion_fw do |c|
   c[:required] = [:sproutcore]
-  c[:title] = 'Tutor'
 end
+
+config :login do |c|
+  c[:index_root] = '/'
+end
+
 
 # Setup extra services to proxy. This is used only in dev mode so you can
 # talk to backend services.
