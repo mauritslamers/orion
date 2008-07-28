@@ -1,5 +1,5 @@
 // ==========================================================================
-// Student
+// ModEdu
 // ==========================================================================
 
 require('core');
@@ -14,7 +14,7 @@ require('orion_fw');
   @version 0.1
 */  
 OrionFw.ModEdu = SC.Record.extend(
-/** @scope Education.prototype */ {
+/** @scope ModEdu.prototype */ {
   
   // TODO: Add your own code here.
   
