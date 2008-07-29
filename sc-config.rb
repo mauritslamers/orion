@@ -75,9 +75,9 @@ config :orion_fw do |c|
   c[:required] = [:sproutcore]
 end
 
-config :login do |c|
-  c[:index_root] = '/'
-end
+#config :login do |c|
+#  c[:index_root] = '/'
+#end
 
 
 # Setup extra services to proxy. This is used only in dev mode so you can

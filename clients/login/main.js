@@ -15,10 +15,24 @@ function main() {
   // The default code here will load the fixtures you have defined.
   // Comment out the preload line and add something to refresh from the server
   // when you are ready to pull data from your server.
-  Login.server.preload(Login.FIXTURES) ;
+  //Login.server.preload(Login.FIXTURES) ;
 
+  Login.authservers = OrionFw.AuthenticationServer.collection();
+  Login.authenticationServerCollectionController.set('content',Login.authservers);
+  Login.authenticationServerCollectionController.set('orderBy','guid');
+  Login.server.listFor(Login.authservers);
+  Login.authservers.refresh();
+  
   // TODO: refresh() any collections you have created to get their records.
   // ex: Login.contacts.refresh() ;
+	
+  // get or store the cookie
+  var cookievalue = OrionFw.getLoginCookie();
+  if(cookievalue != ""){
+  	var selectedtype = SC.Store.findRecords({ 'guid' : cookievalue }, OrionFw.AuthenticationServer);
+  	Login.authenticationServerCollectionController.set('selection',	selectedtype);
+  }
+
 
   // Step 2: Instantiate Your Views
   // The default code just activates all the views you have on the page. If

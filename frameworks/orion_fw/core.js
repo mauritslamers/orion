@@ -16,9 +16,33 @@ OrionFw = SC.Object.create({
   // framework:
   // CONSTANT_NAME:  'some-value'
 
-  server: SC.Server.create({ prefix: ['OrionFw'], urlFormat: "%@&%@" }),
+  server: SC.Server.create({ prefix: ['OrionFw'], urlFormat: "%@/%@", postFormat: SC.JSON_FORMAT}),
   //server: SC.Server.create({ prefix: ['OrionFw'] }),
  
   standardResource: "/~maurits/sproutcore_orion/"
-  //standardResource: "/phplink/muzorion.php?"
+  
 }) ;
+
+OrionFw.getLoginCookie = function(){
+	if(document.cookie.length>0){
+		var cookieName = "OrionLoginCookie";
+		var nameStart = document.cookie.indexOf(cookieName + "=");
+		if(nameStart != -1){
+			nameStart = nameStart + cookieName.length+1;
+			var nameEnd = document.cookie.indexOf(";",nameStart);
+			if(nameEnd == -1) nameEnd=document.cookie.length;
+			return unescape(document.cookie.substring(nameStart,nameEnd));	
+		}
+			
+	}
+	return "";
+}
+
+OrionFw.setLoginCookie = function(logintype){
+	var expdate = new Date();
+	expdate.setDate(expdate.getDate() + 60);
+	var expiry = ";expires=" + expdate.toGMTString();
+	var typedata = "OrionLoginCookie=" + logintype;
+	var endcookie = [typedata,expiry].join("");
+	document.cookie = endcookie;
+}
