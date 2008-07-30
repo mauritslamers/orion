@@ -16,10 +16,10 @@ OrionFw = SC.Object.create({
   // framework:
   // CONSTANT_NAME:  'some-value'
 
-  server: SC.Server.create({ prefix: ['OrionFw'], urlFormat: "%@/%@", postFormat: SC.JSON_FORMAT}),
+  server: SC.Server.create({ prefix: ['OrionFw'], urlFormat: "/%@/%@", postFormat: SC.JSON_FORMAT}),
   //server: SC.Server.create({ prefix: ['OrionFw'] }),
  
-  standardResource: "/~maurits/sproutcore_orion/"
+  standardResource: "~maurits/sproutcore_orion/"
   
 }) ;
 

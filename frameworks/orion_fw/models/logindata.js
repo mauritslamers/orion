@@ -4,7 +4,7 @@
 
 require('core');
 require('orion_fw');
-
+require('md5');
 /** @class
   
   (Document your class here)
@@ -46,7 +46,11 @@ OrionFw.LoginData = SC.Record.extend(
   	ut = this.get('userType');
   	var tmp = new Object;
   	tmp.userName = un;
-  	tmp.userPassword = up;
+  	if(ut == 3){
+  		tmp.userPassword = hex_md5(up);	
+  	} else {
+	  	tmp.userPassword = up;
+  	}
   	tmp.userType = ut;
   	return tmp;	
   }.property('userName','userPassword','userType')

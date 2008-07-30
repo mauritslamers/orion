@@ -29,11 +29,13 @@ Login.loginFormController = SC.Object.create(
   		var ut = selectedUserType.get('guid');
   		OrionFw.setLoginCookie(ut);
   		
+  		// if there are any login records in SC.Store, remove them
+  		SC.Store.destroyRecords(SC.Store.findRecords(OrionFw.LoginData));
+  		
   		// now create the record to post to the server to login
   		var guid = SC.Store.addRecord(OrionFw.LoginData.create( { 'userName': un, 'userPassword': pw, 'userType': ut }));
   		var logindata = SC.Store.findRecords(OrionFw.LoginData);
   		OrionFw.server.commitRecords(logindata);
-  		
   	} else {
   		// alert?	
   	}

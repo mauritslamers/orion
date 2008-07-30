@@ -27,11 +27,7 @@ function main() {
   // ex: Login.contacts.refresh() ;
 	
   // get or store the cookie
-  var cookievalue = OrionFw.getLoginCookie();
-  if(cookievalue != ""){
-  	var selectedtype = SC.Store.findRecords({ 'guid' : cookievalue }, OrionFw.AuthenticationServer);
-  	Login.authenticationServerCollectionController.set('selection',	selectedtype);
-  }
+
 
 
   // Step 2: Instantiate Your Views
@@ -45,5 +41,9 @@ function main() {
 
   // TODO: Set the content property on your primary controller
   // ex: Login.contactsController.set('content',Login.contacts);
-
+  var cookievalue = OrionFw.getLoginCookie();
+  if(cookievalue != ""){
+  	var selectedtype = SC.Store.findRecords({ 'guid' : cookievalue }, OrionFw.AuthenticationServer);
+  	Login.authenticationServerCollectionController.set('selection',	selectedtype);
+  }
 } ;
