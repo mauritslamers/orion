@@ -27,13 +27,9 @@
 		<% scroll_view :cc_cm_subjects_in_course_list_sv do %>
 			<%= collection_view :cc_cm_subjects_in_course_list_cv, 
 				:example_view => 'SC.ListItemView',
-				:is_editable => false,
-				:content_value_key => 'name',
-				:can_order_content => true,
-				:content_value_editable => false,
-				:can_reorder_content => true,
+				:content_value_key => 'moduleNameAndOSIRISid',
 				:bind => {
-					:content => 'CourseCoordinator.CM_subjectsInCourseListController.arrangedObjects',
+					:content => 'CourseCoordinator.CM_subjectsInCourseListController.subjectsInCourse',
 					:selection => 'CourseCoordinator.CM_subjectsInCourseListController.selection'
 				}
 			%>

@@ -17,7 +17,21 @@ CourseCoordinator.CM_subjectsInCourseListController = SC.CollectionController.cr
 /** @scope Coursecoordinator.cmSubjectsInCourseListController */ {
 
   // TODO: Add your own code here.
+	allowsEmptySelection: false,  	allowsMultipleSelection: false,
 
+    _selectedCourseBinding : 'CourseCoordinator.CM_courseListController.selection',
 
+	subjectsInCourse: '',
+	
+	_selectedCourseObserver: function(){
+		var tmpselectedCourse = this.get('_selectedCourse');
+		if((tmpselectedCourse != null) && (typeof(tmpselectedCourse) == "object")){
+			var tmpguid = this.get('_selectedCourse').get('guid');
+			//CourseCoordinator.tmpmodules = OrionFw.Module.collection();
+			var tmpmodules = SC.Store.findRecords( { 'educationId': tmpguid }, OrionFw.ModEdu).get('moduleId');
+			this.set('subjectsInCourse', tmpmodules);
+			//this.set('content',	SC.Store.findRecords( { 'educationId': tmpguid }, OrionFw.ModEdu).get('moduleId'));
+		}
+	}.observes('_selectedCourse')
 
 }) ;

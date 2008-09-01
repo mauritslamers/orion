@@ -17,5 +17,8 @@ CourseCoordinator.CM_courseListController = SC.CollectionController.create(
 /** @scope Coursecoordinator.CM_courseListController */ {
 
   // TODO: Add your own code here.
+	allowsEmptySelection: true,  	allowsMultipleSelection: false
+
+
 
 }) ;
