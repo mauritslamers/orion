@@ -34,7 +34,7 @@ OrionFw.Module = SC.Record.extend(
 
   // this list of properties will be used when talking to the server 
   // backend. If you don't define this only 'guid' will be used. 
-  properties: ['id','name','name_en','collegeyear','consecutivelessonseries','serialnumber','OSIRISid'], 
+  properties: ['id','name','nameEn','collegeyear','consecutivelessonseries','serialnumber','OSIRISId'], 
 
   
   _moduleName: null, // cached name
@@ -62,7 +62,11 @@ OrionFw.Module = SC.Record.extend(
   	} else {
   		return this._moduleNameAndOSIRISid;
   	}
-  }.property('name', 'serialnumber','collegeyear','OSIRISid') 
+  }.property('name', 'serialnumber','collegeyear','OSIRISid'),
+  
+  modEdu: SC.Record.hasMany('OrionFw.ModEdu','moduleId')
+  
+  //educations: this.get('modEdu').get('records').get('educationId')
 });
 
 

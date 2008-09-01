@@ -22,6 +22,8 @@ OrionFw.Education = SC.Record.extend(
   //dataStore: SC.Server.create({ prefix: [""], urlFormat: "?%@&%@" }),
   dataStore: OrionFw.server, // maybe Contacts.server?
   dataSource: OrionFw.server,
+  
+  //modules: SC.Record.hasMany('OrionFw.Module'),
   /*
   define the URL for this Record type. 
      - updates will be POSTed to '/ajaxcom/contact/update' 
@@ -38,8 +40,15 @@ OrionFw.Education = SC.Record.extend(
 
   educationName: function() { 
     return [this.get('name'), this.get('code')].compact().join('-'); 
-  }.property('name', 'code') 
+  }.property('name', 'code'),
+  
+  modEdu: SC.Record.hasMany('OrionFw.ModEdu','educationId')
 
+  //modules: function(){
+  	//var tmpId = this.get('guid');
+  //	var tmpCollection = this.get('modEdu');
+  //	return tmpCollection.get('records').get('moduleId');
+  //}
 });
 
 

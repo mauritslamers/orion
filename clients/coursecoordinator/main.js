@@ -16,6 +16,7 @@ function main() {
   // Comment out the preload line and add something to refresh from the server
   // when you are ready to pull data from your server.
   CourseCoordinator.server.preload(CourseCoordinator.FIXTURES) ;
+  OrionFw.server.preload(OrionFw.FIXTURES);
 
   // TODO: refresh() any collections you have created to get their records.
   // ex: Coursecoordinator.contacts.refresh() ;
@@ -31,5 +32,7 @@ function main() {
 
   // TODO: Set the content property on your primary controller
   // ex: Coursecoordinator.contactsController.set('content',Coursecoordinator.contacts);
-
+  	CourseCoordinator.courses = OrionFw.Education.collection();
+  	CourseCoordinator.courses.refresh();
+	CourseCoordinator.CM_courseListController.set('content',CourseCoordinator.courses);
 } ;

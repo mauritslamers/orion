@@ -1,0 +1,75 @@
+.cc_cm_course_list {
+	float: left;	
+	margin-right: 3%;
+	height: 40%;
+	width: 270px;
+}
+
+.cc_cm_course_list_sv {
+	height: 300px;
+	//width: 20%;
+}
+
+/*
+.cc_cm_course_list_cv {
+	height: 300px;
+	//width: 20%;
+}
+*/
+
+.cc_cm_course_list_cv .sc-collection-item {
+	position:relative;
+	font: 12px;
+	//height: 300px;
+	//width: 20%;
+}
+
+.cc_cm_subjects_in_course {
+	float: left;	
+	margin-right: 3%;
+	height: 40%;
+	width: 270px;	
+}
+
+.cc_cm_subjects_in_course_list_sv {
+	height: 300px;
+	//width: 20%;
+}
+
+/*
+.cc_cm_subjects_in_course_list_cv {
+	height: 300px;
+	//width: 20%;
+}
+*/
+
+.cc_cm_subjects_in_course_list_cv .sc-collection-item {
+	position:relative;
+	font: 12px;
+	//height: 300px;
+	//width: 20%;
+}
+
+.cc_cm_subject_also_in_course {
+	float: left;
+	height: 40%;
+	width: 270px;	
+}
+
+.cc_cm_subject_also_in_course_list_sv {
+	height: 200px;
+	//width: 20%;	
+}
+
+/*
+.cc_cm_subject_also_in_course_list_cv {
+	height: 200px;
+	//width: 20%;	
+}
+*/
+.cc_cm_subject_also_in_course_list_cv .sc-collection-item {
+	position:relative;
+	font: 12px;
+	//height: 300px;
+	//width: 20%;
+}

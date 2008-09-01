@@ -1,18 +1,12 @@
 <% content_for('body') do %>
-<div class="sc-welcome">
-  <img class="logo" src="<%= static_url('images/sproutcore-logo') %>" />
-  <div class="message">
-    <h1>Welcome!</h1>
-    <h3>You are now running SproutCore.</h3>
-    <div class="sticky-note">
-      <p>Things to do:</p>
-      <ul>
-        <li>Add a model:<br/>sc-gen model contacts/my_model</li>
-        <li>Add a controller:<br/>sc-gen controller contacts/my_controller</li>
-        <li>Edit english.lproj/body.rhtml</li>
-        <li>Build for deployment:<br />sc-build</li>
-      </ul>
-    </div>
-  </div>
-</div>
+	<%= tab_view :cc_maintab, :lazy_tabs => true, 
+		:segments => [
+			[ :cc_curriculum_maintenance, loc(%(cc_maintabcaption_curriculum_maintenance)) ],
+			[ :cc_course_program, loc(%(cc_maintabcaption_course_program)) ],
+			[ :cc_path_maintenance, loc(%(cc_maintabcaption_path_maintenance)) ],
+			[ :cc_user_maintenance, loc(%(cc_maintabcaption_user_maintenance)) ],
+			[ :cc_study_monitoring, loc(%(cc_maintabcaption_study_monitoring)) ],
+			[ :cc_manual_adjustments, loc(%(cc_maintabcaption_manual_adjustments))]		
+		] %>
 <% end %>
+
