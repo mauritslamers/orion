@@ -53,15 +53,21 @@ OrionFw.Module = SC.Record.extend(
   _moduleNameAndOSIRISid: null,
   
   moduleNameAndOSIRISid: function() { 
-  	if(this._moduleNameAndOSIRISid == null){
+  	//if(this._moduleNameAndOSIRISid == null){
 	  	var tmpname = [this.get('name'), this.get('serialnumber')].compact().join(' ') + " "; 
-  		tmpname =[tmpname, this.get('collegeyear')].compact().join('[') + "] ";
-  		tmpname = [tmpname, this.get('OSIRISid')].compact().join('(') + ")";
+	  	var tmpcollegeyear = this.get('collegeyear');
+	  	var tmpOSIRISid = this.get('OSIRISid');
+	  	if(tmpcollegeyear != ""){
+	  		tmpname =[tmpname, this.get('collegeyear')].compact().join('[') + "] ";
+	  	} 
+	  	if(tmpOSIRISid != ""){
+	  		tmpname = [tmpname, this.get('OSIRISid')].compact().join('(') + ")";
+  		}
   		this._moduleNameAndOSIRISid = tmpname;
   		return tmpname;
-  	} else {
-  		return this._moduleNameAndOSIRISid;
-  	}
+  	//} else {
+  	//	return this._moduleNameAndOSIRISid;
+  	//}
   }.property('name', 'serialnumber','collegeyear','OSIRISid'),
   
   modEdu: SC.Record.hasMany('OrionFw.ModEdu','moduleId')

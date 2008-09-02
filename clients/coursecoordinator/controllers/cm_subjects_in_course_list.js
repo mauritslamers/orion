@@ -13,7 +13,7 @@ require('core');
   @version 0.1
   @static
 */
-CourseCoordinator.CM_subjectsInCourseListController = SC.CollectionController.create(
+CourseCoordinator.CM_subjectsInCourseListController = SC.ArrayController.create(
 /** @scope Coursecoordinator.cmSubjectsInCourseListController */ {
 
   // TODO: Add your own code here.
@@ -21,16 +21,14 @@ CourseCoordinator.CM_subjectsInCourseListController = SC.CollectionController.cr
 
     _selectedCourseBinding : 'CourseCoordinator.CM_courseListController.selection',
 
-	subjectsInCourse: '',
+	//subjectsInCourse: '',
 	
 	_selectedCourseObserver: function(){
 		var tmpselectedCourse = this.get('_selectedCourse');
 		if((tmpselectedCourse != null) && (typeof(tmpselectedCourse) == "object")){
 			var tmpguid = this.get('_selectedCourse').get('guid');
-			//CourseCoordinator.tmpmodules = OrionFw.Module.collection();
-			var tmpmodules = SC.Store.findRecords( { 'educationId': tmpguid }, OrionFw.ModEdu).get('moduleId');
-			this.set('subjectsInCourse', tmpmodules);
-			//this.set('content',	SC.Store.findRecords( { 'educationId': tmpguid }, OrionFw.ModEdu).get('moduleId'));
+			//var tmpmodules = SC.Store.findRecords( { 'educationId': tmpguid }, OrionFw.ModEdu).get('moduleId');
+			this.set('content', SC.Store.findRecords( { 'educationId': tmpguid }, OrionFw.ModEdu).get('moduleId'));
 		}
 	}.observes('_selectedCourse')
 
