@@ -40,28 +40,28 @@ OrionFw.Module = SC.Record.extend(
   _moduleName: null, // cached name
   
   moduleName: function() { 
-  	if(this._moduleName == null){
-	  	var tmpname = [this.get('name'), this.get('serialnumber')].compact().join(' ') + " "; 
-  		tmpname =[tmpname, this.get('collegeyear')].compact().join('[') + "]";
-  		this._moduleName = tmpname;
-  		return tmpname;
-  	} else {
-  		return this._moduleName;
-  	}
+    if(this._moduleName == null){
+      var tmpname = [this.get('name'), this.get('serialnumber')].compact().join(' ') + " "; 
+      tmpname =[tmpname, this.get('collegeyear')].compact().join('[') + "]";
+      this._moduleName = tmpname;
+      return tmpname;
+    } else {
+      return this._moduleName;
+    }
   }.property('name', 'serialnumber','collegeyear'),
   
   _moduleNameAndOSIRISid: null,
   
   moduleNameAndOSIRISid: function() { 
-  	if(this._moduleNameAndOSIRISid == null){
-	  	var tmpname = [this.get('name'), this.get('serialnumber')].compact().join(' ') + " "; 
-  		tmpname =[tmpname, this.get('collegeyear')].compact().join('[') + "] ";
-  		tmpname = [tmpname, this.get('OSIRISid')].compact().join('(') + ")";
-  		this._moduleNameAndOSIRISid = tmpname;
-  		return tmpname;
-  	} else {
-  		return this._moduleNameAndOSIRISid;
-  	}
+    if(this._moduleNameAndOSIRISid == null){
+      var tmpname = [this.get('name'), this.get('serialnumber')].compact().join(' ') + " "; 
+      tmpname =[tmpname, this.get('collegeyear')].compact().join('[') + "] ";
+      tmpname = [tmpname, this.get('OSIRISid')].compact().join('(') + ")";
+      this._moduleNameAndOSIRISid = tmpname;
+      return tmpname;
+    } else {
+      return this._moduleNameAndOSIRISid;
+    }
   }.property('name', 'serialnumber','collegeyear','OSIRISid'),
   
   modEdu: SC.Record.hasMany('OrionFw.ModEdu','moduleId')

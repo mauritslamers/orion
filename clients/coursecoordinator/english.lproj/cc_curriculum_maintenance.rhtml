@@ -1,93 +1,93 @@
 <% view :cc_curriculum_maintenance_tab do %>
-	Curriculum maintenance is the place where the course is assembled. <br>
-	Course is a collection of modules (subjects). <br>
-	A student is following a specific education and a course coordinator coordinates one or more courses. <br>
-	
-	<div class="cc_cm_course_list">
-		<%= label_view :cc_cm_course_list_label, :tag => 'h4', :value => loc(%(cc_cm_course_list_label)) %>
-		<% scroll_view :cc_cm_course_list_sv do %>
-			<%= collection_view :cc_cm_course_list_cv, 
-				:example_view => 'SC.ListItemView',
-				:is_editable => false,
-				:content_value_key => 'name',
-				:can_order_content => true,
-				:content_value_editable => false,
-				:can_reorder_content => true,
-				:bind => {
-					:content => 'CourseCoordinator.CM_courseListController.arrangedObjects',
-					:selection => 'CourseCoordinator.CM_courseListController.selection'
-				}
-			%>
-		<% end %>
-	</div>
-	
-	<div class="cc_cm_subjects_in_course">
-		<p>
-		<%= label_view :cc_cm_subjects_in_course_list_label, :tag => 'h4', :value => loc(%(cc_cm_subjects_in_course_list_label)) %>
-		<% scroll_view :cc_cm_subjects_in_course_list_sv do %>
-			<%= collection_view :cc_cm_subjects_in_course_list_cv, 
-				:example_view => 'SC.ListItemView',
-				:is_editable => false,
-				:content_value_key => 'name',
-				:can_order_content => true,
-				:content_value_editable => false,
-				:can_reorder_content => true,
-				:bind => {
-					:content => 'CourseCoordinator.CM_subjectsInCourseListController.arrangedObjects',
-					:selection => 'CourseCoordinator.CM_subjectsInCourseListController.selection'
-				}
-			%>
-		<% end %>
-		</p>
-		<p>
-		<%= button_view :cc_cm_add_subject_to_selected_course_button, 
-			:title => loc(%(cc_cm_add_subject_to_selected_course_button_title)),
-			:bind => {
-				:enabled => 'CourseCoordinator.CM_courseListController.selection'
-			}
-		%> 
-		</p>
-	</div>
+  Curriculum maintenance is the place where the course is assembled. <br>
+  Course is a collection of modules (subjects). <br>
+  A student is following a specific education and a course coordinator coordinates one or more courses. <br>
+  
+  <div class="cc_cm_course_list">
+    <%= label_view :cc_cm_course_list_label, :tag => 'h4', :value => loc(%(cc_cm_course_list_label)) %>
+    <% scroll_view :cc_cm_course_list_sv do %>
+      <%= collection_view :cc_cm_course_list_cv, 
+        :example_view => 'SC.ListItemView',
+        :is_editable => false,
+        :content_value_key => 'name',
+        :can_order_content => true,
+        :content_value_editable => false,
+        :can_reorder_content => true,
+        :bind => {
+          :content => 'CourseCoordinator.CM_courseListController.arrangedObjects',
+          :selection => 'CourseCoordinator.CM_courseListController.selection'
+        }
+      %>
+    <% end %>
+  </div>
+  
+  <div class="cc_cm_subjects_in_course">
+    <p>
+    <%= label_view :cc_cm_subjects_in_course_list_label, :tag => 'h4', :value => loc(%(cc_cm_subjects_in_course_list_label)) %>
+    <% scroll_view :cc_cm_subjects_in_course_list_sv do %>
+      <%= collection_view :cc_cm_subjects_in_course_list_cv, 
+        :example_view => 'SC.ListItemView',
+        :is_editable => false,
+        :content_value_key => 'name',
+        :can_order_content => true,
+        :content_value_editable => false,
+        :can_reorder_content => true,
+        :bind => {
+          :content => 'CourseCoordinator.CM_subjectsInCourseListController.arrangedObjects',
+          :selection => 'CourseCoordinator.CM_subjectsInCourseListController.selection'
+        }
+      %>
+    <% end %>
+    </p>
+    <p>
+    <%= button_view :cc_cm_add_subject_to_selected_course_button, 
+      :title => loc(%(cc_cm_add_subject_to_selected_course_button_title)),
+      :bind => {
+        :enabled => 'CourseCoordinator.CM_courseListController.selection'
+      }
+    %> 
+    </p>
+  </div>
 
-	<div class="cc_cm_subject_also_in_course">
-		<p>
-		<%= label_view :cc_cm_subject_also_in_course_list_label, :tag => 'h4', :value => loc(%(cc_cm_subject_also_in_course_list_label)) %>
-		<% scroll_view :cc_cm_subject_also_in_course_list_sv do %>
-			<%= collection_view :cc_cm_subject_also_in_course_list_cv, 
-				:example_view => 'SC.ListItemView',
-				:is_editable => false,
-				:content_value_key => 'name',
-				:can_order_content => true,
-				:content_value_editable => false,
-				:can_reorder_content => true,
-				:bind => {
-					:content => 'CourseCoordinator.CM_subjectAlsoInCourseListController.arrangedObjects',
-					:selection => 'CourseCoordinator.CM_subjectAlsoInCourseListController.selection'
-				}
-			%>
-		<% end %>
-		</p>
-		<p>
-		<%= button_view :cc_cm_create_course_button, :title => loc(%(cc_cm_create_course_button_title))	
-		%>
-		<%= button_view :cc_cm_edit_selected_course_button, 
-			:title => loc(%(cc_cm_edit_selected_course_button_title)),
-			:bind => {
-				:enabled => 'CourseCoordinator.CM_courseListController.selection'
-			}
-		%> 
-		</p>
-		<p>
-		<%= button_view :cc_cm_create_subject_button, :title => loc(%(cc_cm_create_subject_button_title)) %> 
-		<%= button_view :cc_cm_edit_selected_subject, 
-			:title => loc(%(cc_cm_edit_selected_subject)),
-			:bind => {
-				:enabled => 'CourseCoordinator.CM_courseListController.selection'
-			}
-		%> 
-		</p>
-		
-	</div>
+  <div class="cc_cm_subject_also_in_course">
+    <p>
+    <%= label_view :cc_cm_subject_also_in_course_list_label, :tag => 'h4', :value => loc(%(cc_cm_subject_also_in_course_list_label)) %>
+    <% scroll_view :cc_cm_subject_also_in_course_list_sv do %>
+      <%= collection_view :cc_cm_subject_also_in_course_list_cv, 
+        :example_view => 'SC.ListItemView',
+        :is_editable => false,
+        :content_value_key => 'name',
+        :can_order_content => true,
+        :content_value_editable => false,
+        :can_reorder_content => true,
+        :bind => {
+          :content => 'CourseCoordinator.CM_subjectAlsoInCourseListController.arrangedObjects',
+          :selection => 'CourseCoordinator.CM_subjectAlsoInCourseListController.selection'
+        }
+      %>
+    <% end %>
+    </p>
+    <p>
+    <%= button_view :cc_cm_create_course_button, :title => loc(%(cc_cm_create_course_button_title))  
+    %>
+    <%= button_view :cc_cm_edit_selected_course_button, 
+      :title => loc(%(cc_cm_edit_selected_course_button_title)),
+      :bind => {
+        :enabled => 'CourseCoordinator.CM_courseListController.selection'
+      }
+    %> 
+    </p>
+    <p>
+    <%= button_view :cc_cm_create_subject_button, :title => loc(%(cc_cm_create_subject_button_title)) %> 
+    <%= button_view :cc_cm_edit_selected_subject, 
+      :title => loc(%(cc_cm_edit_selected_subject)),
+      :bind => {
+        :enabled => 'CourseCoordinator.CM_courseListController.selection'
+      }
+    %> 
+    </p>
+    
+  </div>
 <% end %>
 
 
