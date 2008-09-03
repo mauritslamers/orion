@@ -24,11 +24,15 @@ CourseCoordinator.CM_subjectsInCourseListController = SC.ArrayController.create(
   //subjectsInCourse: '',
   
   _selectedCourseObserver: function(){
-    var tmpselectedCourse = this.get('_selectedCourse');
-    if((tmpselectedCourse != null) && (typeof(tmpselectedCourse) == "object")){
-      var tmpguid = this.get('_selectedCourse').get('guid');
-      //var tmpmodules = SC.Store.findRecords( { 'educationId': tmpguid }, OrionFw.ModEdu).get('moduleId');
-      this.set('content', SC.Store.findRecords( { 'educationId': tmpguid }, OrionFw.ModEdu).get('moduleId'));
+    var tmpSelectedCourse = this.get('_selectedCourse');
+    if((tmpSelectedCourse != null) && (typeof(tmpSelectedCourse) == "object")){
+      var tmpGuid = this.get('_selectedCourse').get('guid');
+      if(!isNaN(tmpGuid)){
+        var tmpModules = SC.Store.findRecords( { 'educationId': tmpGuid }, OrionFw.ModEdu).get('moduleId');
+        if((tmpModules != null) && (tmpModules instanceof Array)){
+          this.set('content', tmpModules);
+        }
+      }
     }
   }.observes('_selectedCourse')
 
