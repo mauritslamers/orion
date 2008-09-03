@@ -45,9 +45,9 @@ OrionFw.Education = SC.Record.extend(
   modEdu: SC.Record.hasMany('OrionFw.ModEdu','educationId')
 
   //modules: function(){
-  	//var tmpId = this.get('guid');
-  //	var tmpCollection = this.get('modEdu');
-  //	return tmpCollection.get('records').get('moduleId');
+    //var tmpId = this.get('guid');
+  //  var tmpCollection = this.get('modEdu');
+  //  return tmpCollection.get('records').get('moduleId');
   //}
 });
 

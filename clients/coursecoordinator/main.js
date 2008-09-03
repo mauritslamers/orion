@@ -32,7 +32,7 @@ function main() {
 
   // TODO: Set the content property on your primary controller
   // ex: Coursecoordinator.contactsController.set('content',Coursecoordinator.contacts);
-    CourseCoordinator.courses = OrionFw.Education.collection();
-    CourseCoordinator.courses.refresh();
+  CourseCoordinator.courses = OrionFw.Education.collection();
+  CourseCoordinator.courses.refresh();
   CourseCoordinator.CM_courseListController.set('content',CourseCoordinator.courses);
 } ;
