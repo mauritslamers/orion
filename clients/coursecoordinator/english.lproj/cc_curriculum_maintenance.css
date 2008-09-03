@@ -1,8 +1,15 @@
 .cc_cm_course_list {
+<<<<<<< HEAD:clients/coursecoordinator/english.lproj/cc_curriculum_maintenance.css
   float: left;  
   margin-right: 3%;
   height: 40%;
   width: 270px;
+=======
+	float: left;	
+	margin-right: 3%;
+	height: 40%;
+	width: 250px;
+>>>>>>> cae03f457bf7aa821baf1400a1e9213f4cdf2e48:clients/coursecoordinator/english.lproj/cc_curriculum_maintenance.css
 }
 
 .cc_cm_course_list_sv {
@@ -25,10 +32,17 @@
 }
 
 .cc_cm_subjects_in_course {
+<<<<<<< HEAD:clients/coursecoordinator/english.lproj/cc_curriculum_maintenance.css
   float: left;  
   margin-right: 3%;
   height: 40%;
   width: 270px;  
+=======
+	float: left;	
+	margin-right: 3%;
+	height: 40%;
+	width: 300px;	
+>>>>>>> cae03f457bf7aa821baf1400a1e9213f4cdf2e48:clients/coursecoordinator/english.lproj/cc_curriculum_maintenance.css
 }
 
 .cc_cm_subjects_in_course_list_sv {
