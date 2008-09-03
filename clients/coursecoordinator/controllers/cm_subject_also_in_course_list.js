@@ -25,9 +25,12 @@ CourseCoordinator.CM_subjectAlsoInCourseListController = SC.ArrayController.crea
   _selectedSubjectObserver: function(){
   	var tmpSubject = this.get('_selectedSubject');
   	if((tmpSubject != null) && (typeof(tmpSubject) == "object")){
-  		var tmpguid = tmpSubject.get('guid');
-	  	var tmpEducations = SC.Store.findRecords({'moduleId':tmpguid},OrionFw.ModEdu).get('educationId'); 
-  		this.set('content',tmpEducations);
+  		var tmpGuid = tmpSubject.get('guid');
+  		if(!isNaN(tmpGuid)){
+  	  	var tmpEducations = SC.Store.findRecords({'moduleId':tmpguid},OrionFw.ModEdu).get('educationId'); 
+  	  	if((tmpEducations != null) && (tmpEducations instanceof Array)){
+    		  this.set('content',tmpEducations);
+  	  	}
   	}
   }.observes('_selectedSubject')
 
