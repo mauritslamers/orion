@@ -18,7 +18,20 @@ CourseCoordinator.CM_courseListController = SC.CollectionController.create(
 
   // TODO: Add your own code here.
   allowsEmptySelection: true,  allowsMultipleSelection: false,
-  orderBy: 'name DESC'
-
+  courseSelected: false,
+  
+  
+  _selectionObserver: function(){
+    var tmpSelection = this.get('selection');
+    if((tmpSelection != null) && (typeof(tmpSelection) == 'object')){
+      // check whether valid  
+      var tmpSize = tmpSelection.size();
+      if(tmpSize == 1){
+        this.set('courseSelected',true);
+      } else {
+        this.set('courseSelected',false);
+      }
+    } 
+  }.observes('selection')
 
 }) ;

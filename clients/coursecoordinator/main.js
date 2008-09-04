@@ -33,6 +33,7 @@ function main() {
   // TODO: Set the content property on your primary controller
   // ex: Coursecoordinator.contactsController.set('content',Coursecoordinator.contacts);
   var courses = OrionFw.Education.collection();
+  courses.set('orderBy',['name DESC']);
   courses.refresh();
   CourseCoordinator.CM_courseListController.set('content',courses);
 } ;

@@ -18,7 +18,7 @@ CourseCoordinator.CM_subjectAlsoInCourseListController = SC.ArrayController.crea
 
   // TODO: Add your own code here.
   
-  allowsEmptySelection: false,  allowsMultipleSelection: false,
+  allowsEmptySelection: true,  allowsMultipleSelection: false,
   
   _selectedSubjectBinding: 'CourseCoordinator.CM_subjectsInCourseListController.selection',
   
@@ -27,10 +27,12 @@ CourseCoordinator.CM_subjectAlsoInCourseListController = SC.ArrayController.crea
   	if((tmpSubject != null) && (typeof(tmpSubject) == "object")){
   		var tmpGuid = tmpSubject.get('guid');
   		if(!isNaN(tmpGuid)){
-  	  	var tmpEducations = SC.Store.findRecords({'moduleId':tmpguid},OrionFw.ModEdu).get('educationId'); 
+  	  	var tmpEducations = SC.Store.findRecords({'moduleId':tmpGuid},OrionFw.ModEdu).get('educationId'); 
   	  	if((tmpEducations != null) && (tmpEducations instanceof Array)){
     		  this.set('content',tmpEducations);
+    		  this.set('selection',[]);
   	  	}
+  		}
   	}
   }.observes('_selectedSubject')
 

@@ -43,7 +43,7 @@
     <%= button_view :cc_cm_add_subject_to_selected_course_button, 
       :title => loc('_cc_cm_add_subject_to_selected_course_button_title'),
       :bind => {
-        :enabled => 'CourseCoordinator.CM_courseListController.selection'
+        :enabled => 'CourseCoordinator.CM_courseListController.courseSelected'
       }
     %> 
     </p>
@@ -69,21 +69,23 @@
     <% end %>
     </p>
     <p>
-    <%= button_view :cc_cm_create_course_button, :title => loc('_cc_cm_create_course_button_title')  
+    <%= button_view :cc_cm_create_course_button, 
+       :title => loc('_cc_cm_create_course_button_title')
     %>
     <%= button_view :cc_cm_edit_selected_course_button, 
       :title => loc('_cc_cm_edit_selected_course_button_title'),
       :bind => {
-        :enabled => 'CourseCoordinator.CM_courseListController.selection'
+        :enabled => 'CourseCoordinator.CM_courseListController.courseSelected'
       }
     %> 
     </p>
     <p>
-    <%= button_view :cc_cm_create_subject_button, :title => loc('_cc_cm_create_subject_button_title') %> 
+    <%= button_view :cc_cm_create_subject_button, 
+      :title => loc('_cc_cm_create_subject_button_title') %> 
     <%= button_view :cc_cm_edit_selected_subject, 
       :title => loc('_cc_cm_edit_selected_subject'),
       :bind => {
-        :enabled => 'CourseCoordinator.CM_courseListController.selection'
+        :enabled => 'CourseCoordinator.CM_subjectsInCourseListController.subjectSelected'
       }
     %> 
     </p>
@@ -91,5 +93,23 @@
   </div>
 <% end %>
 
+<% view :cc_cm_add_subjects_to_selected_course_pane, :pane => :panel, :visible => false, :width => 900, :height => 600 do %>
+    <%= label_view :cc_cm_add_subjects_to_selected_course_pane_subjects_already_in_course_list_label, 
+         :tag => 'h4', :value => loc('_cc_cm_subjects_in_course_list_label') %>
+    <% scroll_view :cc_cm_add_subjects_to_selected_course_pane_subjects_already_in_course_list_sv do %>
+      <%= collection_view :cc_cm_add_subjects_to_selected_course_pane_subjects_already_in_course_list_cv, 
+        :example_view => 'SC.ListItemView',
+        :is_editable => false,
+        :content_value_key => 'name',
+        :can_order_content => true,
+        :content_value_editable => false,
+        :can_reorder_content => true,
+        :bind => {
+          :content => 'CourseCoordinator.CM_subjectAlsoInCourseListController.arrangedObjects',
+          :selection => 'CourseCoordinator.CM_subjectAlsoInCourseListController.selection'
+        }
+      %>
+  <% end %>
+<% end %>
 
 

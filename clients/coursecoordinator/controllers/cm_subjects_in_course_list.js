@@ -17,7 +17,11 @@ CourseCoordinator.CM_subjectsInCourseListController = SC.ArrayController.create(
 /** @scope Coursecoordinator.cmSubjectsInCourseListController */ {
 
   // TODO: Add your own code here.
-  allowsEmptySelection: false,  allowsMultipleSelection: false,
+  allowsEmptySelection: true,  allowsMultipleSelection: false,
+
+  orderBy: ['name DESC'],
+
+  subjectSelected: false,
 
   _selectedCourseBinding : 'CourseCoordinator.CM_courseListController.selection',
 
@@ -34,6 +38,19 @@ CourseCoordinator.CM_subjectsInCourseListController = SC.ArrayController.create(
         }
       }
     }
-  }.observes('_selectedCourse')
+  }.observes('_selectedCourse'),
+
+  _selectionObserver: function(){
+    var tmpSelection = this.get('selection');
+    if((tmpSelection != null) && (typeof(tmpSelection) == 'object')){
+      // check whether valid  
+      var tmpSize = tmpSelection.size();
+      if(tmpSize == 1){
+        this.set('subjectSelected',true);
+      } else {
+        this.set('subjectSelected',false);
+      }
+    } 
+  }.observes('selection')
 
 }) ;
