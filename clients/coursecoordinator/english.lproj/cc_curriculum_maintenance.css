@@ -3,19 +3,44 @@
   margin-right: 3%;
   height: 40%;
   width: 250px;
+  //display: none;
 }
 
 .cc_cm_course_list_sv {
   height: 300px;
-  //width: 20%;
+  width: 270px;
+  position: absolute;
+  width: 200px;
+ /* 
+  position: absolute;
+  top: 200px;
+  width: 270px;
+  bottom: 580px;
+  left: 20px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  */
 }
 
-/*
+
 .cc_cm_course_list_cv {
-  height: 300px;
-  //width: 20%;
+//  height: 280px;
+//  width: 260px;
+//  position: absolute;
+  position: absolute;
+  top: 0px;
+  width: 250px;
+  bottom: 180px;
+  left: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+
 }
-*/
+
 
 .cc_cm_course_list_cv .sc-collection-item {
   position:relative;
@@ -68,6 +93,42 @@
 }
 */
 .cc_cm_subject_also_in_course_list_cv .sc-collection-item {
+  position:relative;
+  font: 12px;
+  //height: 300px;
+  //width: 20%;
+}
+
+.cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_list{
+  float: left; 
+  width: 270px;
+  margin-right: 3%;
+}
+
+.cc_cm_add_subjects_to_selected_course_pane_subjects_not_yet_in_course_list{
+  float: left; 
+  width: 270px;
+  
+}
+
+.cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_list_sv {
+  height: 200px;
+  width: 270px;
+}
+
+.cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_list_cv .sc-collection-item {
+  position:relative;
+  font: 12px;
+  //height: 300px;
+  //width: 20%;
+}
+
+.cc_cm_add_subjects_to_selected_course_pane_subjects_already_in_course_list_sv {
+  height: 200px;
+  width: 270px;
+}
+
+.cc_cm_add_subjects_to_selected_course_pane_subjects_already_in_course_list_cv .sc-collection-item {
   position:relative;
   font: 12px;
   //height: 300px;
