@@ -7,7 +7,8 @@
     <%= label_view :cc_cm_course_list_label, :tag => 'h4', :value => loc('_cc_cm_course_list_label') %>
     <% scroll_view :cc_cm_course_list_sv do %>
       <%= source_list_view :cc_cm_course_list_cv, 
-        
+        :example_view => 'SC.ListItemView',
+        :width => 300,
         :is_editable => false,
         :content_value_key => 'name',
         :can_order_content => false,
