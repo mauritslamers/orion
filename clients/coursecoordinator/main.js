@@ -36,4 +36,10 @@ function main() {
   courses.set('orderBy',['name DESC']);
   courses.refresh();
   CourseCoordinator.CM_courseListController.set('content',courses);
+  
+  var subjects = OrionFw.Module.collection();
+  subjects.set('orderBy',['name DESC']);
+  subjects.set('conditions', { 'guid' : ['']});
+  CourseCoordinator.CM_subjectsInCourseListController.set('content',subjects);
+  subjects.refresh();
 } ;

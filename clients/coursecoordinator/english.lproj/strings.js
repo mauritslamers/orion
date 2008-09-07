@@ -10,7 +10,7 @@
 //
 Object.extend(String.English,{
   // "_String Key": "Localized String"
-  "_cc_maintabcaption_curriculum_maintenance" : "Curriculum",
+  "_cc_maintabcaption_curriculum_maintenance" : "Curriculum Maintenance",
   "_cc_maintabcaption_course_program" : "Course Program",
   "_cc_maintabcaption_path_maintenance" : "Path Maintenance",
   "_cc_maintabcaption_user_maintenance" : "User Maintenance",

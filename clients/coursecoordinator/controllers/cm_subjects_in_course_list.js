@@ -13,7 +13,7 @@ require('core');
   @version 0.1
   @static
 */
-CourseCoordinator.CM_subjectsInCourseListController = SC.ArrayController.create(
+CourseCoordinator.CM_subjectsInCourseListController = SC.CollectionController.create(
 /** @scope Coursecoordinator.cmSubjectsInCourseListController */ {
 
   // TODO: Add your own code here.
@@ -28,7 +28,7 @@ CourseCoordinator.CM_subjectsInCourseListController = SC.ArrayController.create(
   //subjectsInCourse: '',
   
   _selectedCourseObserver: function(){
-    var tmpSelectedCourse = this.get('_selectedCourse');
+/*    var tmpSelectedCourse = this.get('_selectedCourse');
     if((tmpSelectedCourse != null) && (typeof(tmpSelectedCourse) == "object")){
       var tmpGuid = this.get('_selectedCourse').get('guid');
       if(!isNaN(tmpGuid)){
@@ -37,6 +37,17 @@ CourseCoordinator.CM_subjectsInCourseListController = SC.ArrayController.create(
           this.set('content', tmpModules);
         }
       }
+    }
+ */
+    var tmpSelectedCourse = this.get('_selectedCourse');
+    if((tmpSelectedCourse != null) && (typeof(tmpSelectedCourse) == "object")){
+       var tmpGuid = tmpSelectedCourse.get('guid');
+       if((tmpGuid != null) && (!isNaN(tmpGuid))){
+          var tmpSubjectIds = afindRecords( { 'educationId' : tmpGuid }, OrionFw.ModEdu).get('moduleId');
+          if((tmpSubjectIds instanceof Array) && (tmpSubjectIds.length > 0)){
+            this.set('conditions', {'guid' : tmpSubjectIds} );
+          }
+       }  
     }
   }.observes('_selectedCourse'),
 

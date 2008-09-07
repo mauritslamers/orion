@@ -94,6 +94,7 @@
 <% end %>
 
 <% view :cc_cm_add_subjects_to_selected_course_pane, :pane => :panel, :visible => false, :width => 900, :height => 600 do %>
+<div class="cc_cm_add_subjects_to_selected_course_pane_subjects_already_in_course_list">
     <%= label_view :cc_cm_add_subjects_to_selected_course_pane_subjects_already_in_course_list_label, 
          :tag => 'h4', :value => loc('_cc_cm_subjects_in_course_list_label') %>
     <% scroll_view :cc_cm_add_subjects_to_selected_course_pane_subjects_already_in_course_list_sv do %>
@@ -110,6 +111,7 @@
         }
       %>
   <% end %>
+
 <% end %>
 
 

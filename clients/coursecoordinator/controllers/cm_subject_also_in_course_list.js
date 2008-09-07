@@ -23,17 +23,17 @@ CourseCoordinator.CM_subjectAlsoInCourseListController = SC.ArrayController.crea
   _selectedSubjectBinding: 'CourseCoordinator.CM_subjectsInCourseListController.selection',
   
   _selectedSubjectObserver: function(){
-  	var tmpSubject = this.get('_selectedSubject');
-  	if((tmpSubject != null) && (typeof(tmpSubject) == "object")){
-  		var tmpGuid = tmpSubject.get('guid');
-  		if(!isNaN(tmpGuid)){
-  	  	var tmpEducations = SC.Store.findRecords({'moduleId':tmpGuid},OrionFw.ModEdu).get('educationId'); 
-  	  	if((tmpEducations != null) && (tmpEducations instanceof Array)){
-    		  this.set('content',tmpEducations);
-    		  this.set('selection',[]);
-  	  	}
-  		}
-  	}
+    var tmpSubject = this.get('_selectedSubject');
+    if((tmpSubject != null) && (typeof(tmpSubject) == "object")){
+      var tmpGuid = tmpSubject.get('guid');
+      if(!isNaN(tmpGuid)){
+        var tmpEducations = SC.Store.findRecords({'moduleId':tmpGuid},OrionFw.ModEdu).get('educationId'); 
+        if((tmpEducations != null) && (tmpEducations instanceof Array)){
+          this.set('content',tmpEducations);
+          this.set('selection',[]);
+        }
+      }
+    }
   }.observes('_selectedSubject')
 
 }) ;
