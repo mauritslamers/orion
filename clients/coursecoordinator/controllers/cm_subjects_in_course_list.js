@@ -43,7 +43,7 @@ CourseCoordinator.CM_subjectsInCourseListController = SC.CollectionController.cr
     if((tmpSelectedCourse != null) && (typeof(tmpSelectedCourse) == "object")){
        var tmpGuid = tmpSelectedCourse.get('guid');
        if((tmpGuid != null) && (!isNaN(tmpGuid))){
-          var tmpSubjectIds = afindRecords( { 'educationId' : tmpGuid }, OrionFw.ModEdu).get('moduleId');
+          var tmpSubjectIds = SC.Store.findRecords( { 'educationId' : tmpGuid }, OrionFw.ModEdu).get('moduleId');
           if((tmpSubjectIds instanceof Array) && (tmpSubjectIds.length > 0)){
             this.set('conditions', {'guid' : tmpSubjectIds} );
           }
