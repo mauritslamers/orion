@@ -18,8 +18,8 @@ CourseCoordinator.CM_subjectAlsoInCourseListController = SC.ArrayController.crea
 
   // TODO: Add your own code here.
   
-  allowsEmptySelection: true,  allowsMultipleSelection: false,
-  
+  allowsEmptySelection: true,  allowsMultipleSelection: false
+/*  
   _selectedSubjectBinding: 'CourseCoordinator.CM_subjectsInCourseListController.selection',
   
   _selectedSubjectObserver: function(){
@@ -35,5 +35,5 @@ CourseCoordinator.CM_subjectAlsoInCourseListController = SC.ArrayController.crea
   		}
   	}
   }.observes('_selectedSubject')
-
+*/
 }) ;

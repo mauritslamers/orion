@@ -13,7 +13,7 @@ require('core');
   @version 0.1
   @static
 */
-CourseCoordinator.CM_subjectsInCourseListController = SC.ArrayController.create(
+CourseCoordinator.CM_subjectsInCourseListController = SC.CollectionController.create(
 /** @scope Coursecoordinator.cmSubjectsInCourseListController */ {
 
   // TODO: Add your own code here.
@@ -21,12 +21,12 @@ CourseCoordinator.CM_subjectsInCourseListController = SC.ArrayController.create(
 
   orderBy: ['name DESC'],
 
-  subjectSelected: false,
-
+  subjectSelected: false
+ /* 
   _selectedCourseBinding : 'CourseCoordinator.CM_courseListController.selection',
 
   //subjectsInCourse: '',
-  
+
   _selectedCourseObserver: function(){
     var tmpSelectedCourse = this.get('_selectedCourse');
     if((tmpSelectedCourse != null) && (typeof(tmpSelectedCourse) == "object")){
@@ -52,5 +52,5 @@ CourseCoordinator.CM_subjectsInCourseListController = SC.ArrayController.create(
       }
     } 
   }.observes('selection')
-
+*/
 }) ;

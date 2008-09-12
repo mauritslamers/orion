@@ -6,13 +6,12 @@
   <div class="cc_cm_course_list">
     <%= label_view :cc_cm_course_list_label, :tag => 'h4', :value => loc('_cc_cm_course_list_label') %>
     <% scroll_view :cc_cm_course_list_sv do %>
-      <%= source_list_view :cc_cm_course_list_cv, 
+      <%= list_view :cc_cm_course_list_cv, 
         :example_view => 'SC.ListItemView',
-        :width => 300,
+        :row_height => 20,
         :is_editable => false,
         :content_value_key => 'name',
         :can_order_content => false,
-        :content_value_editable => false,
         :can_reorder_content => false,
         :bind => {
           :content => 'CourseCoordinator.CM_courseListController.arrangedObjects',
@@ -26,7 +25,7 @@
     <p>
     <%= label_view :cc_cm_subjects_in_course_list_label, :tag => 'h4', :value => loc('_cc_cm_subjects_in_course_list_label') %>
     <% scroll_view :cc_cm_subjects_in_course_list_sv do %>
-      <%= collection_view :cc_cm_subjects_in_course_list_cv, 
+      <%= list_view :cc_cm_subjects_in_course_list_cv, 
         :example_view => 'SC.ListItemView',
         :is_editable => false,
         :content_value_key => 'name',
@@ -55,13 +54,14 @@
     <p>
     <%= label_view :cc_cm_subject_also_in_course_list_label, :tag => 'h4', :value => loc('_cc_cm_subject_also_in_course_list_label') %>
     <% scroll_view :cc_cm_subject_also_in_course_list_sv do %>
-      <%= collection_view :cc_cm_subject_also_in_course_list_cv, 
+      <%= list_view :cc_cm_subject_also_in_course_list_cv, 
         :example_view => 'SC.ListItemView',
         :is_editable => false,
         :content_value_key => 'name',
         :can_order_content => false,
         :content_value_editable => false,
         :can_reorder_content => false,
+        :row_height => 20,
         :bind => {
           :content => 'CourseCoordinator.CM_subjectAlsoInCourseListController.arrangedObjects',
           :selection => 'CourseCoordinator.CM_subjectAlsoInCourseListController.selection'
