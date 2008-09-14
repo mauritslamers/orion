@@ -21,8 +21,8 @@ CourseCoordinator.CM_subjectsInCourseListController = SC.CollectionController.cr
 
   orderBy: ['name DESC'],
 
-  subjectSelected: false
- /* 
+  subjectSelected: false,
+ 
   _selectedCourseBinding : 'CourseCoordinator.CM_courseListController.selection',
 
   //subjectsInCourse: '',
@@ -32,9 +32,14 @@ CourseCoordinator.CM_subjectsInCourseListController = SC.CollectionController.cr
     if((tmpSelectedCourse != null) && (typeof(tmpSelectedCourse) == "object")){
       var tmpGuid = this.get('_selectedCourse').get('guid');
       if(!isNaN(tmpGuid)){
-        var tmpModules = SC.Store.findRecords( { 'educationId': tmpGuid }, OrionFw.ModEdu).get('moduleId');
-        if((tmpModules != null) && (tmpModules instanceof Array)){
-          this.set('content', tmpModules);
+       // var tmpModules = SC.Store.findRecords( { 'educationId': tmpGuid }, OrionFw.ModEdu).get('moduleId');
+       var tmpModules = OrionFw.ModEdu.findAll( { 'educationId' : tmpGuid }).get('moduleId');
+       if((tmpModules != null) && (tmpModules instanceof Array)){
+          content = this.get('content');
+          if(content != null){
+            //this.set('content', tmpModules);
+            content.set('conditions',{'guid':tmpModules});
+          }
         }
       }
     }
@@ -52,5 +57,5 @@ CourseCoordinator.CM_subjectsInCourseListController = SC.CollectionController.cr
       }
     } 
   }.observes('selection')
-*/
+
 }) ;
