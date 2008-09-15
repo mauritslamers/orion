@@ -24,5 +24,6 @@ Object.extend(String.English,{
   "_cc_cm_create_subject_button_title" : "Create new subject",
   "_cc_cm_edit_selected_subject" : "Edit selected subject",
   "_cc_cm_add_subject_to_selected_course_button_title" : "Add existing subject to selected course",
-  "_cc_cm_add_subjects_to_selected_course_list_label" : "Subjects to add"
+  "_cc_cm_add_subjects_to_selected_course_list_label" : "Subjects to add",
+  "_cc_cm_add_subjects_to_selected_course_pane_select_different_department_label" : "Select a different department"
 }) ;
