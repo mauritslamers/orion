@@ -1,0 +1,23 @@
+#body {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 800px;
+  width: 1000px; 
+}
+
+#cc_maintab {
+  position: absolute;
+  top: 0px; 
+  left: 0px;
+  height: 800px;
+  width: 1000px;
+}
+
+.root {
+ position: absolute;
+ top: 40px;
+ left: 0px;
+ height: 800px;
+ width: 1000px; 
+}
