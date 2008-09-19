@@ -10,7 +10,7 @@
 
 #cc_cm_course_list {
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: 20px;
   height: 400px;
   width: 300px;
@@ -18,7 +18,7 @@
 
 #cc_cm_subjects_in_course {
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: 320px;
   height: 400px;
   width: 300px;  
@@ -26,7 +26,7 @@
 
 #cc_cm_subject_also_in_course {
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: 620px;
   height: 400px;
   width: 300px;  
@@ -35,116 +35,70 @@
 /* Course list */
 
 #cc_cm_course_list_sv {
-  top: 40px;
-  left: 0px;
   height: 300px;
   width: 270px;
-  position: absolute;
 }
 
-#cc_cm_course_list_lv {
-  top: 40px;
-  left: 20px;
-  height: 280px;
-  width: 260px;
-  position: absolute;
-}
-
-.cc_cm_course_list_lv .sc-list-item-view {
-  font: 12px;
-  width: 100px;
-}
 
 /* subjects in course list */
 
-.cc_cm_subjects_in_course_list_sv {
+#cc_cm_subjects_in_course_list_sv {
   height: 300px;
   width: 270px;
   //position: absolute;
 }
 
-.cc_cm_subjects_in_course_list_lv {
-  height: 280px;
-  width: 260px;
-}
-
-
-.cc_cm_subjects_in_course_list_lv .sc-list-item-view {
-  font: 12px;
-}
 
 /* Subjects also in course list */
 
-.cc_cm_subject_also_in_course_list_sv {
+#cc_cm_subject_also_in_course_list_sv {
   height: 200px;
   width: 270px;
   //width: 20%;  
 }
 
 
-.cc_cm_subject_also_in_course_list_lv {
-  height: 280px;
-  width: 260px;
-}
-
-.cc_cm_subject_also_in_course_list_lv .sc-list-item-view {
-   font: 12px;
-}
-
 /* Add subjects to selected course pane */
 
 /* DIVs in pane */
 
-.cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_list{
-  float: left; 
+#cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_list{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 400px;
   width: 270px;
-  margin-right: 3%;
 }
 
-.cc_cm_add_subjects_to_selected_course_pane_subjects_not_yet_in_course_list{
-  float: left; 
+#cc_cm_add_subjects_to_selected_course_pane_subjects_not_yet_in_course_list{
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  height: 400px;
   width: 270px;
-  margin-right: 6%;
 }
 
-.cc_cm_add_subjects_to_selected_course_pane_select_different_department{
-  float: left; 
-  width: 200px; 
+#cc_cm_add_subjects_to_selected_course_pane_select_different_department{
+  position: absolute;
+  top: 20px;
+  left: 600px;
+  height: 400px;
+  width: 270px;
 }
 
 
-.cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_list_sv {
+#cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_list_sv {
   height: 200px;
   width: 270px;
 }
 
-.cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_list_cv .sc-collection-item {
-  position:relative;
-  font: 12px;
-  //height: 300px;
-  //width: 20%;
-}
-
-.cc_cm_add_subjects_to_selected_course_pane_subjects_already_in_course_list_sv {
+#cc_cm_add_subjects_to_selected_course_pane_subjects_already_in_course_list_sv {
   height: 200px;
   width: 270px;
 }
 
-.cc_cm_add_subjects_to_selected_course_pane_subjects_already_in_course_list_cv .sc-collection-item {
-  position:relative;
-  font: 12px;
-  //height: 300px;
-  //width: 20%;
-}
-
-.cc_cm_add_subjects_to_selected_course_pane_select_different_department_sv {
+#cc_cm_add_subjects_to_selected_course_pane_select_different_department_sv {
   height: 200px;
   width: 200px;
 }
 
-.cc_cm_add_subjects_to_selected_course_pane_select_different_department_sv .sc-collection-item {
-  position:relative;
-  font: 12px;
-  //height: 300px;
-  //width: 20%;
-}
