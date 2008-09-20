@@ -14,3 +14,4 @@ CourseCoordinator = SC.Object.create({
   FIXTURES: []
 
 }) ;
+

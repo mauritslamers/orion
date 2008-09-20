@@ -1,5 +1,6 @@
 <% content_for('body') do %>
   <%= tab_view :cc_maintab, :lazy_tabs => true, 
+    :now_showing => 'ccCurriculumMaintenance',
     :segments => [
       [ :cc_curriculum_maintenance, loc('_cc_maintabcaption_curriculum_maintenance') ],
       [ :cc_course_program, loc('_cc_maintabcaption_course_program') ],

@@ -3,35 +3,38 @@
   Course is a collection of modules (subjects). <br>
   A student is following a specific education and a course coordinator coordinates one or more courses. <br>
   
-  <div class="cc_cm_course_list">
+  <%view :cc_cm_course_list do %>
     <%= label_view :cc_cm_course_list_label, :tag => 'h4', :value => loc('_cc_cm_course_list_label') %>
-    <% scroll_view :cc_cm_course_list_sv do %>
-      <%= collection_view :cc_cm_course_list_cv, 
+    <% scroll_view :cc_cm_course_list_sv, :height => 300 do %>
+      <%= list_view :cc_cm_course_list_lv,
         :example_view => 'SC.ListItemView',
+        :row_height => 20,
+        :height => 300,
         :is_editable => false,
         :content_value_key => 'name',
-        :can_order_content => true,
-        :content_value_editable => false,
-        :can_reorder_content => true,
+        :can_order_content => false,
+        :can_reorder_content => false,
         :bind => {
           :content => 'CourseCoordinator.CM_courseListController.arrangedObjects',
           :selection => 'CourseCoordinator.CM_courseListController.selection'
         }
       %>
     <% end %>
-  </div>
+  <% end %>
   
-  <div class="cc_cm_subjects_in_course">
+  <%view :cc_cm_subjects_in_course do %>
     <p>
     <%= label_view :cc_cm_subjects_in_course_list_label, :tag => 'h4', :value => loc('_cc_cm_subjects_in_course_list_label') %>
     <% scroll_view :cc_cm_subjects_in_course_list_sv do %>
-      <%= collection_view :cc_cm_subjects_in_course_list_cv, 
+      <%= list_view :cc_cm_subjects_in_course_list_lv, 
         :example_view => 'SC.ListItemView',
+        :row_height => 20,
+        :height => 300,
         :is_editable => false,
-        :content_value_key => 'name',
-        :can_order_content => true,
+        :content_value_key => 'moduleName',
+        :can_order_content => false,
         :content_value_editable => false,
-        :can_reorder_content => true,
+        :can_reorder_content => false,
         :bind => {
           :content => 'CourseCoordinator.CM_subjectsInCourseListController.arrangedObjects',
           :selection => 'CourseCoordinator.CM_subjectsInCourseListController.selection'
@@ -39,6 +42,7 @@
       %>
     <% end %>
     </p>
+    
     <p>
     <%= button_view :cc_cm_add_subject_to_selected_course_button, 
       :title => loc('_cc_cm_add_subject_to_selected_course_button_title'),
@@ -47,20 +51,22 @@
       }
     %> 
     </p>
-  </div>
+  <% end %>
 
 
-  <div class="cc_cm_subject_also_in_course">
+  <% view :cc_cm_subject_also_in_course do %>
     <p>
     <%= label_view :cc_cm_subject_also_in_course_list_label, :tag => 'h4', :value => loc('_cc_cm_subject_also_in_course_list_label') %>
     <% scroll_view :cc_cm_subject_also_in_course_list_sv do %>
-      <%= collection_view :cc_cm_subject_also_in_course_list_cv, 
+      <%= list_view :cc_cm_subject_also_in_course_list_lv, 
         :example_view => 'SC.ListItemView',
         :is_editable => false,
         :content_value_key => 'name',
-        :can_order_content => true,
+        :can_order_content => false,
         :content_value_editable => false,
-        :can_reorder_content => true,
+        :can_reorder_content => false,
+        :row_height => 20,
+        :height => 200,
         :bind => {
           :content => 'CourseCoordinator.CM_subjectAlsoInCourseListController.arrangedObjects',
           :selection => 'CourseCoordinator.CM_subjectAlsoInCourseListController.selection'
@@ -90,14 +96,15 @@
     %> 
     </p>
     
-  </div>
+  <% end %>
 <% end %>
 
 <% view :cc_cm_add_subjects_to_selected_course_pane, :pane => :panel, :visible => false, :width => 900, :height => 600 do %>
-    <%= label_view :cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_to_course_list_label, 
-         :tag => 'h4', :value => loc('_cc_cm_subjects_to_add_to_course_list_label') %>
-    <% scroll_view :cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_to_course_list_sv do %>
-      <%= collection_view :cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_to_course_list_cv, 
+  <% view :cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_list do %>
+    <%= label_view :cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_to_course_label, 
+         :tag => 'h4', :value => loc('_cc_cm_add_subjects_to_selected_course_list_label') %>
+    <% scroll_view :cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_list_sv do %>
+      <%= list_view :cc_cm_add_subjects_to_selected_course_pane_subjects_to_add_list_lv, 
         :example_view => 'SC.ListItemView',
         :is_editable => false,
         :content_value_key => 'name',
@@ -105,13 +112,48 @@
         :content_value_editable => false,
         :can_reorder_content => true,
         :bind => {
-          :content => 'CourseCoordinator.CM_subjectsInCourseListController.arrangedObjects',
-          :selection => 'CourseCoordinator.CM_subjectsInCourseListController.selection'
+          :content => 'CourseCoordinator.CM_addSubjectsToCoursePaneSubjectsToAddController.arrangedObjects',
+          :selection => 'CourseCoordinator.CM_addSubjectsToCoursePaneSubjectsToAddController.selection'
         }
       %>
+    <% end %>    
   <% end %>
-  
-  
+  <% view :cc_cm_add_subjects_to_selected_course_pane_subjects_not_yet_in_course_list do %>
+    <%= label_view :cc_cm_add_subjects_to_selected_course_pane_subjects_already_in_course_list_label, 
+         :tag => 'h4', :value => loc('_cc_cm_subjects_in_course_list_label') %>
+    <% scroll_view :cc_cm_add_subjects_to_selected_course_pane_subjects_already_in_course_list_sv do %>
+      <%= list_view :cc_cm_add_subjects_to_selected_course_pane_subjects_already_in_course_list_lv, 
+        :example_view => 'SC.ListItemView',
+        :is_editable => false,
+        :content_value_key => 'name',
+        :can_order_content => true,
+        :content_value_editable => false,
+        :can_reorder_content => true,
+        :bind => {
+          :content => 'CourseCoordinator.CM_addSubjectsToCoursePaneAvailableSubjectsController.arrangedObjects',
+          :selection => 'CourseCoordinator.CM_addSubjectsToCoursePaneAvailableSubjectsController.selection'
+        }
+      %>
+    <% end %>
+  <% end %>
+  <% view :cc_cm_add_subjects_to_selected_course_pane_select_different_department do %>
+      <%= label_view :cc_cm_add_subjects_to_selected_course_pane_select_different_department_label, 
+         :tag => 'h4', :value => loc('_cc_cm_add_subjects_to_selected_course_pane_select_different_department_label') %>
+    <% scroll_view :cc_cm_add_subjects_to_selected_course_pane_select_different_department_sv do %>
+      <%= list_view :cc_cm_add_subjects_to_selected_course_pane_select_different_department_lv, 
+        :example_view => 'SC.ListItemView',
+        :is_editable => false,
+        :content_value_key => 'name',
+        :can_order_content => true,
+        :content_value_editable => false,
+        :can_reorder_content => true,
+        :bind => {
+          :content => 'CourseCoordinator.CM_addSubjectsToCoursePaneAvailableDepartmentsController.arrangedObjects',
+          :selection => 'CourseCoordinator.CM_addSubjectsToCoursePaneAvailableDepartmentsController.selection'
+        }
+      %>
+    <% end %>
+  <% end %>
 <% end %>
 
 

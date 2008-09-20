@@ -5858,27 +5858,27 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
     {
         "type": "Module",
         "id": "22458",
-        "name": "Solf",
+        "name": "Solfègelab",
         "collegeyear": "2007",
         "consecutivelessonseries": "y",
         "OSIRIS_id": "M-BM-ASO1-1-1",
         "serialnumber": "1",
-        "name_english": "Solf"
+        "name_english": "Solfège lab"
     },
     {
         "type": "Module",
         "id": "22459",
-        "name": "Solf",
+        "name": "Solfègelab",
         "collegeyear": "2007",
         "consecutivelessonseries": "y",
         "OSIRIS_id": "M-BM-ASO2-1-1",
         "serialnumber": "2",
-        "name_english": "Solf"
+        "name_english": "Solfège lab"
     },
     {
         "type": "Module",
         "id": "22460",
-        "name": "Alexandertechniek ori",
+        "name": "Alexandertechniek oriëntatie",
         "collegeyear": "2007",
         "consecutivelessonseries": "n",
         "OSIRIS_id": "M-BM-OAT1-1-1",
@@ -5888,62 +5888,62 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
     {
         "type": "Module",
         "id": "22461",
-        "name": "Ensemble djemb",
+        "name": "Ensemble djembé",
         "collegeyear": "2007",
         "consecutivelessonseries": "y",
         "OSIRIS_id": "M-BM-EDJ1-1-2",
         "serialnumber": "1",
-        "name_english": "Djemb"
+        "name_english": "Djembé ensemble"
     },
     {
         "type": "Module",
         "id": "22462",
-        "name": "Ensemble djemb",
+        "name": "Ensemble djembé",
         "collegeyear": "2007",
         "consecutivelessonseries": "y",
         "OSIRIS_id": "M-BM-EDJ2-2-2",
         "serialnumber": "2",
-        "name_english": "Djemb"
+        "name_english": "Djembé ensemble"
     },
     {
         "type": "Module",
         "id": "22463",
-        "name": "Ensemble djemb",
+        "name": "Ensemble djembé",
         "collegeyear": "2007",
         "consecutivelessonseries": "y",
         "OSIRIS_id": "M-BM-EDJ3-3-2",
         "serialnumber": "3",
-        "name_english": "Djemb"
+        "name_english": "Djembé ensemble"
     },
     {
         "type": "Module",
         "id": "22464",
-        "name": "Ensemble djemb",
+        "name": "Ensemble djembé",
         "collegeyear": "2007",
         "consecutivelessonseries": "y",
         "OSIRIS_id": "M-BM-EDJ4-4-2",
         "serialnumber": "4",
-        "name_english": "Djemb"
+        "name_english": "Djembé ensemble"
     },
     {
         "type": "Module",
         "id": "22468",
-        "name": "Solf",
+        "name": "Solfègelab",
         "collegeyear": "2007",
         "consecutivelessonseries": "y",
         "OSIRIS_id": "M-BM-ASO3-2-1",
         "serialnumber": "3",
-        "name_english": "Solf"
+        "name_english": "Solfège lab"
     },
     {
         "type": "Module",
         "id": "22469",
-        "name": "Solf",
+        "name": "Solfègelab",
         "collegeyear": "2007",
         "consecutivelessonseries": "y",
         "OSIRIS_id": "M-BM-ASO4-2-2",
         "serialnumber": "4",
-        "name_english": "Solf"
+        "name_english": "Solfège lab"
     },
     {
         "type": "Module",
