@@ -1,0 +1,12 @@
+#ae_choose_candidate {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  height: 60px;
+  width: 300px;
+}
+
+#ae_choose_candidate_sv {
+  height: 60px;
+  width: 270px;
+}

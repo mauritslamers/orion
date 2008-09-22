@@ -1,0 +1,27 @@
+<% content_for('body') do %>
+    <% view :ae_choose_candidate do %>
+        <% scroll_view :ae_choose_candidate_sv do %>
+            <%= list_view :ae_choose_candidate_lv,           
+                :example_view => 'SC.ListItemView',
+                :row_height => 20,
+                :height => 300,
+                :is_editable => false,
+                :content_value_key => 'forwardName',
+                :can_order_content => false,
+                :can_reorder_content => false,
+                :bind => {
+                  :content => 'AdmissionExam.candidateChoiceController.arrangedObjects',
+                  :selection => 'AdmissionExam.candidateChoiceController.selection'
+                }
+              %>
+        <% end %>
+    <% end %>
+    <% view :ae_main_sourcelist_view do %>
+        <%= source_list_view :ae_main_sourcelist_sl
+            
+        
+            
+        
+        %>
+    <% end %>
+<% end %>
