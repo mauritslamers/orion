@@ -47,7 +47,8 @@
     <%= button_view :cc_cm_add_subject_to_selected_course_button, 
       :title => loc('_cc_cm_add_subject_to_selected_course_button_title'),
       :bind => {
-        :enabled => 'CourseCoordinator.CM_courseListController.courseSelected'
+        :enabled => 'CourseCoordinator.CM_courseListController.courseSelected',
+        :action => 'CourseCoordinator.CM_addSubjectsToCoursePaneController.show'
       }
     %> 
     </p>
