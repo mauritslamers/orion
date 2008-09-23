@@ -10,4 +10,6 @@
 //
 Object.extend(String.English,{
   // "_String Key": "Localized String"
+  "ae_open_choose_candidate_pane_button" : "Select candidate",
+  "ae_close_choose_candidate_pane_button" : "Close"
 }) ;

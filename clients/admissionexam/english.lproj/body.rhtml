@@ -1,4 +1,85 @@
 <% content_for('body') do %>
+    <% view :ae_chosen_candidate do %>
+        <%= text_field_view :ae_chosen_candidate_tfv,
+                :content_value_key => 'forwardName',
+                :content_value_editable => false,
+                :bind => {
+                    :content => 'AdmissionExam.candidateChoiceController.selection'
+                }
+               %>
+        <%= button_view :ae_open_choose_candidate_pane,
+            :title => loc('ae_open_choose_candidate_pane_button'),
+            :action => 'AdmissionExam.chooseCandidatePaneController.show'
+            %>
+    <% end %>
+    <% view :ae_candidate_information do %>
+       <% scroll_view :ae_candidate_information_menu_sv, 
+           :height => 500,
+           :width => 200 do %>        
+               <%= source_list_view :ae_candidate_information_menu_slv,
+                      :height => 500, 
+                      :width => 200,
+                      :can_reorder_content => true,
+                      :content_value_key => 'name',
+                      :content_value_editable => false,
+                      :content_icon_key => 'iconClassName',
+                      :bind => { 
+                        :content => 'AdmissionExam.candidateInformationSourceListViewController.arrangedObjects', 
+                        :selection => 'AdmissionExam.candidateInformationSourceListViewController.selection' 
+                      }
+                %>   
+       <% end %>
+       
+       <% view :ae_candidate_information_student_information, 
+            :bind => {
+                :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.studentInfoSelected'
+            } do %>
+            StudentInfo
+       
+       <% end %>
+       <% view :ae_candidate_information_commission_information, 
+            :bind => {
+                :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.commissionInfoSelected'
+            } do %>
+         Commissie-info
+       
+       <% end %>    
+       <% view :ae_candidate_information_evaluation, 
+            :bind => {
+                :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.evaluationSelected'
+            } do %>
+         Evaluatie
+       
+       <% end %> 
+       <% view :ae_candidate_information_admission_test, 
+            :bind => {
+                :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.admissionTestSelected'
+            } do %>
+         Toelatingstoets
+       
+       <% end %>            
+       <% view :ae_candidate_information_performance_information, 
+            :bind => {
+                :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.performanceInfoSelected'
+            } do %>
+         Performance info
+       
+       <% end %>                        
+       <% view :ae_candidate_information_overview, 
+            :bind => {
+                :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.overviewSelected'
+            } do %>
+         Overzicht
+       
+       <% end %>
+     
+    <% end %>
+<% end %>
+
+<% view :ae_choose_candidate_pane, :pane => :panel, 
+        :visible => false, 
+        :width => 400, 
+        :height => 400 do %>
     <% view :ae_choose_candidate do %>
         <% scroll_view :ae_choose_candidate_sv do %>
             <%= list_view :ae_choose_candidate_lv,           
@@ -15,13 +96,10 @@
                 }
               %>
         <% end %>
+        <%= button_view :ae_open_choose_candidate_pane,
+            :title => loc('ae_close_choose_candidate_pane_button'),
+            :action => 'AdmissionExam.chooseCandidatePaneController.hide'
+            %>
     <% end %>
-    <% view :ae_main_sourcelist_view do %>
-        <%= source_list_view :ae_main_sourcelist_sl
-            
-        
-            
-        
-        %>
-    <% end %>
+
 <% end %>

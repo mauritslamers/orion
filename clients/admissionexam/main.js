@@ -19,9 +19,6 @@ function main() {
   OrionFw.server.preload(OrionFw.FIXTURES);
   // TODO: refresh() any collections you have created to get their records.
   // ex: Admissionexam.contacts.refresh() ;
-  var students = OrionFw.Student.collection();
-  students.set('orderBy',['lastname ASC']);
-  AdmissionExam.candidateChoiceController.set('content',students);
 
   // Step 2: Instantiate Your Views
   // The default code just activates all the views you have on the page. If
@@ -31,7 +28,8 @@ function main() {
 
   // Step 3. Set the content property on your primary controller.
   // This will make your app come alive!
-
+  var tmpMenuItems = SC.Store.findRecords(AdmissionExam.AEMenuItem);
+  AdmissionExam.candidateInformationSourceListViewController.set('content',tmpMenuItems);
   // TODO: Set the content property on your primary controller
   // ex: Admissionexam.contactsController.set('content',Admissionexam.contacts);
 
