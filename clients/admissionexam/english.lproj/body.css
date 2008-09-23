@@ -31,56 +31,91 @@
   position: absolute;  
 }
 
-#ae_candidate_information_student_information {
+#ae_candidate_information_views {
   position: absolute;
   left: 210px;
   top: 0px;
   height: 500px;
-  width: 400px; 
-  border: solid 1px gray;
+  width: 600px; 
+  border: solid 1px #AAAAAA;
+  background-color: #E6E3EF;   
+}
+
+
+#ae_candidate_information_student_information {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 500px;
+  width: 600px; 
 }
 
 #ae_candidate_information_commission_information {
   position: absolute;
-  left: 210px;
+  left: 0px;
   top: 0px;
   height: 500px;
-  width: 400px;
-  border: solid 1px gray;  
+  width: 600px;
 }
 
 #ae_candidate_information_evaluation {
   position: absolute;
-  left: 210px;
+  left: 0px;
   top: 0px;
   height: 500px;
-  width: 400px;
-  border: solid 1px gray;  
+  width: 600px; 
 }
 
 #ae_candidate_information_performance_information {
   position: absolute;
-  left: 210px;
+  left: 0px;
   top: 0px;
   height: 500px;
-  width: 400px;
-  border: solid 1px gray;  
+  width: 600px;
 }
 
 #ae_candidate_information_overview {
   position: absolute;
-  left: 210px;
+  left: 0px;
   top: 0px;
   height: 500px;
-  width: 400px; 
-  border: solid 1px gray;
+  width: 600px; 
 }
 
 #ae_candidate_information_admission_test {
   position: absolute;
-  left: 210px;
+  left: 0px;
   top: 0px;
   height: 500px;
-  width: 400px;
-  border: solid 1px gray;
+  width: 600px;
+}
+
+#ae_ci_si_firstname_lv {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 3px;   
+  width: 100px;
+}
+
+#ae_ci_si_firstname_tfv {
+  position: absolute;
+  top: 10px;
+  left: 120px;
+  width: 200px;
+}
+
+#ae_ci_si_inbetween_lv {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  margin: 3px;   
+  width: 100px;
+}
+
+#ae_ci_si_inbetween_tfv {
+  position: absolute;
+  top: 50px;
+  left: 120px;
+  width: 200px;
 }

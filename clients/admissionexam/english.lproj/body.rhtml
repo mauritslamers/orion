@@ -29,50 +29,65 @@
                       }
                 %>   
        <% end %>
-       
-       <% view :ae_candidate_information_student_information, 
-            :bind => {
-                :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.studentInfoSelected'
-            } do %>
-            StudentInfo
-       
-       <% end %>
-       <% view :ae_candidate_information_commission_information, 
-            :bind => {
-                :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.commissionInfoSelected'
-            } do %>
-         Commissie-info
-       
-       <% end %>    
-       <% view :ae_candidate_information_evaluation, 
-            :bind => {
-                :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.evaluationSelected'
-            } do %>
-         Evaluatie
-       
-       <% end %> 
-       <% view :ae_candidate_information_admission_test, 
-            :bind => {
-                :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.admissionTestSelected'
-            } do %>
-         Toelatingstoets
-       
-       <% end %>            
-       <% view :ae_candidate_information_performance_information, 
-            :bind => {
-                :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.performanceInfoSelected'
-            } do %>
-         Performance info
-       
-       <% end %>                        
-       <% view :ae_candidate_information_overview, 
-            :bind => {
-                :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.overviewSelected'
-            } do %>
-         Overzicht
-       
-       <% end %>
-     
+       <% view :ae_candidate_information_views do %>
+           <% view :ae_candidate_information_student_information, 
+                :bind => {
+                    :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.studentInfoSelected'
+                } do %>
+                
+                
+                <%= label_view :ae_ci_si_firstname_lv, :tag => 'h4', :value => loc('_ae_ci_si_firstname') %>
+                <%= text_field_view :ae_ci_si_firstname_tfv,
+                    :content_value_key => 'firstname',
+                    :bind => {
+                        :content => 'AdmissionExam.examFormController.selectedStudent'
+                    }
+                %>
+                <%= label_view :ae_ci_si_inbetween_lv, :tag => 'h4', :value => loc('_ae_ci_si_inbetween') %>
+                <%= text_field_view :ae_ci_si_inbetween_tfv,
+                    :content_value_key => 'inbetween',
+                    :bind => {
+                        :content => 'AdmissionExam.examFormController.selectedStudent'
+                    }
+                %>                
+                
+                
+           <% end %>
+           <% view :ae_candidate_information_commission_information, 
+                :bind => {
+                    :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.commissionInfoSelected'
+                } do %>
+           
+           <% end %>    
+           <% view :ae_candidate_information_evaluation, 
+                :bind => {
+                    :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.evaluationSelected'
+                } do %>
+
+           
+           <% end %> 
+           <% view :ae_candidate_information_admission_test, 
+                :bind => {
+                    :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.admissionTestSelected'
+                } do %>
+
+           
+           <% end %>            
+           <% view :ae_candidate_information_performance_information, 
+                :bind => {
+                    :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.performanceInfoSelected'
+                } do %>
+
+           
+           <% end %>                        
+           <% view :ae_candidate_information_overview, 
+                :bind => {
+                    :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.overviewSelected'
+                } do %>
+
+           
+           <% end %>
+        <% end %>
     <% end %>
 <% end %>
 
