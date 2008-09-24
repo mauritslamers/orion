@@ -16,7 +16,18 @@ require('orion_fw');
 */
 AdmissionExam.candidateChoiceController = SC.CollectionController.create(
 /** @scope Admissionexam.candidateChoiceController */ {
+  
+  canEditCollection: true,
+  commitChangesImmediately: false,
 
   // TODO: Add your own code here.
+  selectionSet: function(){
+    var selection = this.get('selection');
+    if((selection) && (selection.length > 0)){
+      return true; 
+    } else {
+      return false;
+    }
+  }.property('selection')
 
 }) ;

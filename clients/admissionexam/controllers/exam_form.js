@@ -17,6 +17,9 @@ AdmissionExam.examFormController = SC.Object.create(
 /** @scope Admissionexam.examFormController */ {
 
   // TODO: Add your own code here.
-  selectedStudentBinding: 'AdmissionExam.candidateChoiceController.selection'
+  
+  selectedCandidateBinding: 'AdmissionExam.candidateChoiceController.selection'
+  
+
   
 }) ;

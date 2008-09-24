@@ -12,9 +12,9 @@ require('core');
   @author AuthorName
   @version 0.1
 */
-AdmissionExam.AECandidate = SC.Record.extend(
+AdmissionExam.AECandidate = OrionFw.Student.extend(
 /** @scope Admissionexam.AECandidate.prototype */ {
-
+  
   // TODO: Add your own code here.
   properties: ['id','firstname','inbetween','lastname','address','postcode','city']
 }) ;
