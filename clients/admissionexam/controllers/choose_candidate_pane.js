@@ -21,7 +21,7 @@ AdmissionExam.chooseCandidatePaneController = SC.Object.create(
     SC.page.aeChooseCandidatePane.set('isVisible',true);
     var students = AdmissionExam.AECandidate.collection();
     students.set('orderBy',['lastname ASC']);
-    AdmissionExam.candidateChoiceController.set('content',students);
+    AdmissionExam.candidateChoiceController.set('content',students);    
   },
   
   hide: function(){

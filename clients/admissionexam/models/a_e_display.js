@@ -15,6 +15,12 @@ require('core');
 AdmissionExam.AEMenuItem = SC.Record.extend(
 /** @scope Admissionexam.AEDisplay.prototype */ {
    iconClassName: 'sc-icon-folder-16',
+   
+   editView: function(){
+     var viewname = '#' + this.get('view');
+     return $view(viewname);
+   }.property('view'),
+   
   // TODO: Add your own code here.
    properties: [ 'id', 'name', 'view']
 }) ;

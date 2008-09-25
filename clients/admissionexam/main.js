@@ -32,5 +32,7 @@ function main() {
   AdmissionExam.candidateInformationSourceListViewController.set('content',tmpMenuItems);
   // TODO: Set the content property on your primary controller
   // ex: Admissionexam.contactsController.set('content',Admissionexam.contacts);
-
+  var students = AdmissionExam.AECandidate.collection();
+  students.set('orderBy',['lastname ASC']);
+  AdmissionExam.candidateChoiceController.set('content',students);
 } ;

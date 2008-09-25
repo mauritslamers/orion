@@ -39,6 +39,7 @@
   width: 600px; 
   border: solid 1px #AAAAAA;
   background-color: #E6E3EF;   
+  z-index: 100;
 }
 
 
