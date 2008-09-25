@@ -1,20 +1,21 @@
 // ==========================================================================
-// Admissionexam.AEDisplay
+// Admissionexam.CurrentExamCommissionController
 // ==========================================================================
 
 require('core');
 
 /** @class
 
-  (Document your class here)
+  (Document Your View Here)
 
-  @extends SC.Record
+  @extends SC.Object
   @author AuthorName
   @version 0.1
+  @static
 */
-AdmissionExam.AEMenuItem = SC.Record.extend(
-/** @scope Admissionexam.AEDisplay.prototype */ {
-   iconClassName: 'sc-icon-folder-16',
+AdmissionExam.currentExamCommissionController = SC.ObjectController.create(
+/** @scope Admissionexam.currentExamCommissionController */ {
+
   // TODO: Add your own code here.
-   properties: [ 'id', 'name', 'view']
+
 }) ;

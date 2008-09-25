@@ -1,9 +1,8 @@
 // ==========================================================================
-// Admissionexam.CandidateChoiceController
+// Admissionexam.SelectedCandidateController
 // ==========================================================================
 
 require('core');
-require('orion_fw');
 
 /** @class
 
@@ -14,10 +13,11 @@ require('orion_fw');
   @version 0.1
   @static
 */
-AdmissionExam.candidateChoiceController = SC.CollectionController.create(
-/** @scope Admissionexam.candidateChoiceController */ {
+AdmissionExam.selectedCandidateController = SC.ObjectController.create(
+/** @scope Admissionexam.selectedCandidateController */ {
+
+  // TODO: Add your own code here.
   
-  canEditCollection: true,
-  commitChangesImmediately: false
+  contentBinding: 'AdmissionExam.candidateChoiceController.selection'
 
 }) ;

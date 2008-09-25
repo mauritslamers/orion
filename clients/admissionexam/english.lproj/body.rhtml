@@ -4,7 +4,7 @@
                 :enabled => false,
                 :content_value_key => 'forwardName',
                 :bind => {
-                    :content => 'AdmissionExam.examFormController.selectedCandidate'
+                    :content => 'AdmissionExam.selectedCandidateController'
                 }
                %>
         <%= button_view :ae_open_choose_candidate_pane,
@@ -14,7 +14,7 @@
     <% end %>
     <% view :ae_candidate_information, 
       :bind => {
-        :is_visible => 'AdmissionExam.candidateChoiceController.selectionSet' 
+        :is_visible => 'AdmissionExam.candidateChoiceController.hasSelection' 
       } do %>
        <% scroll_view :ae_candidate_information_menu_sv, 
            :height => 500,
@@ -32,92 +32,12 @@
                       }
                 %>   
        <% end %>
-       <% view :ae_candidate_information_views do %>
-           <% view :ae_candidate_information_student_information, :visible => false,
-                :bind => {
-                    :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.studentInfoSelected'
-                } do %>
-                
-                
-                <%= label_view :ae_ci_si_firstname_lv, :tag => 'h4', :value => loc('_ae_ci_si_firstname') %>
-                <%= text_field_view :ae_ci_si_firstname_tfv,
-                    :content_value_key => 'firstname',
-                    :is_editable => true,
-                    :bind => {
-                        :content => 'AdmissionExam.examFormController.selectedCandidate'
-                    }
-                %>
-                <%= label_view :ae_ci_si_inbetween_lv, :tag => 'h4', :value => loc('_ae_ci_si_inbetween') %>
-                <%= text_field_view :ae_ci_si_inbetween_tfv,
-                    :content_value_key => 'inbetween',
-                    :bind => {
-                        :content => 'AdmissionExam.examFormController.selectedCandidate'
-                    }
-                %>                
-                <%= label_view :ae_ci_si_lastname_lv, :tag => 'h4', :value => loc('_ae_ci_si_lastname') %>
-                <%= text_field_view :ae_ci_si_lastname_tfv,
-                    :content_value_key => 'lastname',
-                    :bind => {
-                        :content => 'AdmissionExam.examFormController.selectedCandidate'
-                    }
-                %>                
-                <%= label_view :ae_ci_si_address_lv, :tag => 'h4', :value => loc('_ae_ci_si_address') %>
-                <%= text_field_view :ae_ci_si_address_tfv,
-                    :content_value_key => 'address',
-                    :bind => {
-                        :content => 'AdmissionExam.examFormController.selectedCandidate'
-                    }
-                %> 
-                <%= label_view :ae_ci_si_postcode_lv, :tag => 'h4', :value => loc('_ae_ci_si_postcode') %>
-                <%= text_field_view :ae_ci_si_postcode_tfv,
-                    :content_value_key => 'postcode',
-                    :bind => {
-                        :content => 'AdmissionExam.examFormController.selectedCandidate'
-                    }
-                %>                   
-                <%= label_view :ae_ci_si_city_lv, :tag => 'h4', :value => loc('_ae_ci_si_city') %>
-                <%= text_field_view :ae_ci_si_city_tfv,
-                    :content_value_key => 'city',
-                    :bind => {
-                        :content => 'AdmissionExam.examFormController.selectedCandidate'
-                    }
-                %>                                     
-           <% end %>
-           <% view :ae_candidate_information_commission_information, :visible => false,
-                :bind => {
-                    :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.commissionInfoSelected'
-                } do %>
-           
-           <% end %>    
-           <% view :ae_candidate_information_evaluation, 
-                :bind => {
-                    :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.evaluationSelected'
-                } do %>
+       <%= container_view :ae_candidate_information_views, 
+           :bind => {
+              :content => 'AdmissionExam.examFormController.selectedView'
+           }          
+       %>
 
-           
-           <% end %> 
-           <% view :ae_candidate_information_admission_test, 
-                :bind => {
-                    :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.admissionTestSelected'
-                } do %>
-
-           
-           <% end %>            
-           <% view :ae_candidate_information_performance_information, 
-                :bind => {
-                    :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.performanceInfoSelected'
-                } do %>
-
-           
-           <% end %>                        
-           <% view :ae_candidate_information_overview, 
-                :bind => {
-                    :is_visible => 'AdmissionExam.candidateInformationSourceListViewController.overviewSelected'
-                } do %>
-
-           
-           <% end %>
-        <% end %>
     <% end %>
 <% end %>
 
@@ -148,3 +68,65 @@
     <% end %>
 
 <% end %>
+
+<% view :ae_candidate_information_student_information do %>
+    
+    <%= label_view :ae_ci_si_firstname_lv, :tag => 'h4', :value => loc('_ae_ci_si_firstname') %>
+    <%= text_field_view :ae_ci_si_firstname_tfv,
+        :bind => {
+            :value => 'AdmissionExam.selectedCandidateController.firstname'
+        }
+    %>
+    <%= label_view :ae_ci_si_inbetween_lv, :tag => 'h4', :value => loc('_ae_ci_si_inbetween') %>
+    <%= text_field_view :ae_ci_si_inbetween_tfv,
+        :bind => {
+            :value => 'AdmissionExam.selectedCandidateController.inbetween'
+        }
+    %>                
+    <%= label_view :ae_ci_si_lastname_lv, :tag => 'h4', :value => loc('_ae_ci_si_lastname') %>
+    <%= text_field_view :ae_ci_si_lastname_tfv,
+        :bind => {
+            :value => 'AdmissionExam.selectedCandidateController.lastname'
+        }
+    %>                
+    <%= label_view :ae_ci_si_address_lv, :tag => 'h4', :value => loc('_ae_ci_si_address') %>
+    <%= text_field_view :ae_ci_si_address_tfv,
+        :bind => {
+            :value => 'AdmissionExam.selectedCandidateController.address'
+        }
+    %> 
+    <%= label_view :ae_ci_si_postcode_lv, :tag => 'h4', :value => loc('_ae_ci_si_postcode') %>
+    <%= text_field_view :ae_ci_si_postcode_tfv,
+        :bind => {
+            :value => 'AdmissionExam.selectedCandidateController.postcode'
+        }
+    %>                   
+    <%= label_view :ae_ci_si_city_lv, :tag => 'h4', :value => loc('_ae_ci_si_city') %>
+    <%= text_field_view :ae_ci_si_city_tfv,
+        :bind => {
+            :value => 'AdmissionExam.selectedCandidateController.city'
+        }
+    %>                                     
+<% end %>
+
+<% view :ae_candidate_information_commission_information do %>
+    Commission
+<% end %>  
+
+  
+           <% view :ae_candidate_information_evaluation do %>
+
+             Evaluation
+           <% end %> 
+           <% view :ae_candidate_information_admission_test do %>
+                Admission test
+           
+           <% end %>            
+           <% view :ae_candidate_information_performance_information do %>
+            performance
+           
+           <% end %>                        
+           <% view :ae_candidate_information_overview do %>
+            overview
+           
+           <% end %>
