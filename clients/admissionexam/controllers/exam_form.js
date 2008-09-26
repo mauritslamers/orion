@@ -17,7 +17,9 @@ AdmissionExam.examFormController = SC.ObjectController.create(
 /** @scope Admissionexam.examFormController */ {
 
   // TODO: Add your own code here.
+  contentBinding: 'AdmissionExam.candidateInformationSourceListViewController.selection'
   
+  /*
   _selectedViewBinding: 'AdmissionExam.candidateInformationSourceListViewController.selection',
 
   selectedView: function(){
@@ -29,7 +31,7 @@ AdmissionExam.examFormController = SC.ObjectController.create(
        return $view('#ae_candidate_information_evaluation');   
     }
   }.property('_selectedView')
-  
+  */
   
   //selectedView: $view('#ae_candidate_information_student_information')
   
