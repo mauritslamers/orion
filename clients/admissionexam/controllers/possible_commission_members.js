@@ -1,5 +1,5 @@
 // ==========================================================================
-// Admissionexam.ExamFormController
+// Admissionexam.PossibleCommissionMembersController
 // ==========================================================================
 
 require('core');
@@ -13,13 +13,9 @@ require('core');
   @version 0.1
   @static
 */
-AdmissionExam.examFormController = SC.ObjectController.create(
-/** @scope Admissionexam.examFormController */ {
+AdmissionExam.possibleCommissionMembersController = SC.CollectionController.create(
+/** @scope Admissionexam.possibleCommissionMembersController */ {
 
   // TODO: Add your own code here.
-  contentBinding: 'AdmissionExam.candidateInformationSourceListViewController.selection'
 
-  
-
-  
 }) ;

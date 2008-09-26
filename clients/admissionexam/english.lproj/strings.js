@@ -18,5 +18,10 @@ Object.extend(String.English,{
   "_ae_ci_si_address" : "Address:",
   "_ae_ci_si_postcode" : "Postcode:",
   "_ae_ci_si_city": "City:",
-  
+  "_ae_ci_si_save_changes": "Save Changes",
+  "_ae_ci_si_revert_changes": "Revert Changes",
+  "_ae_ci_ci_commission_members_label" : "Commission members",
+  "_ae_ci_ci_possible_commission_members_label" : "Choose a teacher to add",
+  "_ae_ci_ci_commission_members_remove_selected" : "Remove selected teacher",
+  "_ae_ci_ci_commission_possible_members_add_selected" : "Add selected teacher"
 }) ;

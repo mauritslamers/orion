@@ -1,0 +1,43 @@
+#ae_ci_ci_commission_members_label {
+   position: absolute;
+   height: 300px;
+   width: 250px;
+   top: 15px;
+   left: 10px;      
+}
+
+#ae_ci_ci_commission_members_sv {
+   position: absolute;
+   height: 300px;
+   width: 250px;
+   top: 25px;
+   left: 10px;   
+}
+
+#ae_ci_ci_commission_members_remove_selected {
+   position: absolute;
+   top: 345px;
+   left: 10px;    
+}
+
+#ae_ci_ci_possible_commission_members_label {
+   position: absolute;
+   height: 250px;
+   width: 250px;
+   top: 15px;
+   left: 270px;      
+}
+
+#ae_ci_ci_possible_commission_members_sv {
+   position: absolute;
+   height: 250px;
+   width: 250px;
+   top: 25px;
+   left: 270px;   
+}
+
+#ae_ci_ci_commission_possible_members_add_selected {
+   position: absolute;
+   top: 345px;
+   left: 270px;    
+}

@@ -17,8 +17,8 @@ AdmissionExam.AEMenuItem = SC.Record.extend(
    iconClassName: 'sc-icon-folder-16',
    
    editView: function(){
-     var viewname = '#' + this.get('view');
-     return $view(viewname);
+     var viewname = this.get('view').dasherize().camelize();
+     return SC.page.get(viewname);
    }.property('view'),
    
   // TODO: Add your own code here.
