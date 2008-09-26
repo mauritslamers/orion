@@ -49,6 +49,18 @@ OrionFw.Teacher = SC.Record.extend(
   		var reversename = lastname + ", " + firstname + "(" + inbetween + ")";
   	}
   	return reversename;
+  }.property('firstname', 'inbetween', 'lastname'),
+  
+  forwardName: function(){
+       	var firstname = this.get('firstname');
+  	var inbetween = this.get('inbetween');
+  	var lastname = this.get('lastname');
+  	if(inbetween == ""){
+  		var reversename = firstname + " " + lastname;	
+  	} else {
+  		var reversename = firstname + " " + inbetween + " " + lastname;
+  	}
+  	return reversename; 
   }.property('firstname', 'inbetween', 'lastname') 
 
 }) ;

@@ -35,4 +35,8 @@ function main() {
   var students = AdmissionExam.AECandidate.collection();
   students.set('orderBy',['lastname ASC']);
   AdmissionExam.candidateChoiceController.set('content',students);
+  
+  var teachers = OrionFw.Teacher.collection();
+  teachers.set('orderBy',['lastname ASC']);
+  AdmissionExam.possibleCommissionMembersController.set('content',teachers);
 } ;

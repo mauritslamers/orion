@@ -19,7 +19,10 @@
     <%= button_view :ae_ci_ci_commission_members_remove_selected,
         :title => loc('_ae_ci_ci_commission_members_remove_selected'),
         :action => '',
-        :enabled => 'AdmissionExam.currentExamCommissionController.selection'
+        :bind => {
+          :enabled => 'AdmissionExam.currentExamCommissionController.hasSelection'  
+        }
+        
     %>
    
    <%= label_view :ae_ci_ci_possible_commission_members_label, 
@@ -42,6 +45,8 @@
     <%= button_view :ae_ci_ci_commission_possible_members_add_selected,
         :title => loc('_ae_ci_ci_commission_possible_members_add_selected'),
         :action => '',
-        :enabled => 'AdmissionExam.possibleCommissionMembersController.selection'
+        :bind => {
+            :enabled => 'AdmissionExam.possibleCommissionMembersController.hasSelection'
+        }
     %>
 <% end %>  
