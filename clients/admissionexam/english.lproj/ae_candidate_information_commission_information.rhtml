@@ -44,7 +44,7 @@
     <% end %>    
     <%= button_view :ae_ci_ci_commission_possible_members_add_selected,
         :title => loc('_ae_ci_ci_commission_possible_members_add_selected'),
-        :action => '',
+        :action => 'AdmissionExam.commissionCompositionController.addMemberToCurrentCommission',
         :bind => {
             :enabled => 'AdmissionExam.possibleCommissionMembersController.hasSelection'
         }

@@ -4,7 +4,7 @@
 
 require('core');
 require('orion_fw');
-
+require('a_e_candidate');
 /** @class
 
   (Document Your View Here)
@@ -18,6 +18,7 @@ AdmissionExam.candidateChoiceController = SC.CollectionController.create(
 /** @scope Admissionexam.candidateChoiceController */ {
   
   canEditCollection: true,
-  commitChangesImmediately: false
+  commitChangesImmediately: false,
+  content: SC.Collection.create( { recordType: 'AdmissionExam.AECandidate' })
 
 }) ;

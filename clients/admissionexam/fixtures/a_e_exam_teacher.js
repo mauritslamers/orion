@@ -6,6 +6,12 @@ require('core') ;
 
 AdmissionExam.FIXTURES = AdmissionExam.FIXTURES.concat([
 
+
+  { guid: 20,
+    type: "AEExamTeacher",
+    teacherId: '79',
+    examId: '1'
+  }
   // TODO: Add your data fixtures here.
   // All fixture records must have a unique guid and a type matching the
   // name of your contact.  See the example below.

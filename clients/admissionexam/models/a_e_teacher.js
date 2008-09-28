@@ -16,5 +16,6 @@ AdmissionExam.AETeacher = SC.Record.extend(
 /** @scope Admissionexam.AETeacher.prototype */ {
 
   // TODO: Add your own code here.
-
+  
+  properties: ['id','username','firstname','inbetween','lastname','email','orionUserId']
 }) ;

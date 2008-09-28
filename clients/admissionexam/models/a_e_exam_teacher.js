@@ -16,5 +16,8 @@ AdmissionExam.AEExamTeacher = SC.Record.extend(
 /** @scope Admissionexam.AEExamTeacher.prototype */ {
 
   // TODO: Add your own code here.
-  properties: ['id','username','firstname','inbetween','lastname','email','orionUserId']
+  properties: ['id','examId','teacherId'],
+  
+  teacherIdType: 'OrionFw.Teacher'
+  
 }) ;

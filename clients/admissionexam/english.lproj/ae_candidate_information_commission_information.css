@@ -1,9 +1,8 @@
 #ae_ci_ci_commission_members_label {
    position: absolute;
-   height: 300px;
-   width: 250px;
-   top: 15px;
-   left: 10px;      
+   top: 5px;
+   left: 10px;
+   margin-top: 0px;      
 }
 
 #ae_ci_ci_commission_members_sv {
@@ -22,10 +21,9 @@
 
 #ae_ci_ci_possible_commission_members_label {
    position: absolute;
-   height: 250px;
-   width: 250px;
-   top: 15px;
-   left: 270px;      
+   top: 5px;
+   left: 270px;
+   margin-top: 0px;      
 }
 
 #ae_ci_ci_possible_commission_members_sv {

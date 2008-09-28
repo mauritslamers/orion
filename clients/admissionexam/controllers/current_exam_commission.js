@@ -13,9 +13,24 @@ require('core');
   @version 0.1
   @static
 */
-AdmissionExam.currentExamCommissionController = SC.ObjectController.create(
+AdmissionExam.currentExamCommissionController = SC.CollectionController.create(
 /** @scope Admissionexam.currentExamCommissionController */ {
-
-  // TODO: Add your own code here.
+  
+  _arrangedObjects: [],
+  
+  arrangedObjects: function( key, value ) { 
+      if ( value ) {
+         /* adjust for incoming array, store internally, e.g. this._aryToReturn */ 
+         var newList = [];
+         value.each(function(s){ 
+               newList.push(s.get('teacherId')); 
+               });
+         this.set('_arrangedObjects',newList);
+      }
+      // our model:
+      //else return (this._aryToReturn) ? this._aryToReturn: []; 
+      else return (this._arrangedObjects) ? this._arrangedObjects: []; 
+  }.property()
+  
 
 }) ;
