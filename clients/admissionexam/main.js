@@ -32,9 +32,19 @@ function main() {
   AdmissionExam.candidateInformationSourceListViewController.set('content',tmpMenuItems);
   // TODO: Set the content property on your primary controller
   // ex: Admissionexam.contactsController.set('content',Admissionexam.contacts);
+  var students = AdmissionExam.AECandidate.collection();
+  students.set('orderBy',['lastname ASC']);
+  AdmissionExam.candidateChoiceController.set('content',students);
+  
+  var teachers = OrionFw.Teacher.collection();
+  teachers.set('orderBy',['lastname ASC']);
+  AdmissionExam.possibleCommissionMembersController.set('content',teachers);
   
   var examMembers = AdmissionExam.AEExamTeacher.collection();
   examMembers.set('orderBy',['lastname ASC']);
   //examMembers.set('conditions', {'examId' : ['1']});
   AdmissionExam.currentExamCommissionController.set('content',examMembers);
+  
+  var exams = AdmissionExam.AEExam.collection();
+  AdmissionExam.currentExamController.set('content',exams);
 } ;

@@ -12,7 +12,8 @@
             :can_reorder_content => false,
             :bind => {
                 :content => 'AdmissionExam.currentExamCommissionController.arrangedObjects',
-                :selection => 'AdmissionExam.currentExamCommissionController.selection'
+                :selection => 'AdmissionExam.currentExamCommissionController.selection',
+                :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
             }
             %>
     <% end %>
@@ -38,7 +39,8 @@
             :can_reorder_content => false,
             :bind => {
                 :content => 'AdmissionExam.possibleCommissionMembersController.arrangedObjects',
-                :selection => 'AdmissionExam.possibleCommissionMembersController.selection'
+                :selection => 'AdmissionExam.possibleCommissionMembersController.selection',
+                :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
             }
             %>
     <% end %>    

@@ -20,7 +20,7 @@ AdmissionExam.commissionCompositionController = SC.Object.create(
    addMemberToCurrentCommission: function(){
       var selection = AdmissionExam.possibleCommissionMembersController.get('selection');
       if((selection) && (selection instanceof Array)){
-         var teacherId = selection[0]; // as selection is an array, and we need an object
+         var teacherId = selection[0]; // a selection is an array, and we need an object
          AdmissionExam.AEExamTeacher.newRecord( { 'examId' : 1, 'teacherId': teacherId }); 
       }
   },
@@ -28,7 +28,7 @@ AdmissionExam.commissionCompositionController = SC.Object.create(
   removeMemberFromCurrentCommission: function(){
      var selection = AdmissionExam.currentExamCommissionController.get('selection');
      if((selection) && (selection instanceof Array)){
-         var teacher = selection[0];
+         var teacher = selection[0]; // a selection is an array, and we need an object
          
      }
   }

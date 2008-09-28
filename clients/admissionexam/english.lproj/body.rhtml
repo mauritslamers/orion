@@ -8,7 +8,7 @@
                 }
                %>
         <%= button_view :ae_open_choose_candidate_pane,
-            :title => loc('ae_open_choose_candidate_pane_button'),
+            :title => loc('_ae_open_choose_candidate_pane_button'),
             :action => 'AdmissionExam.chooseCandidatePaneController.show'
             %>
     <% end %>
@@ -43,14 +43,14 @@
 
 <% view :ae_choose_candidate_pane, :pane => :panel, 
         :visible => false, 
-        :width => 400, 
+        :width => 800, 
         :height => 400 do %>
     <% view :ae_choose_candidate do %>
         <% scroll_view :ae_choose_candidate_sv do %>
             <%= list_view :ae_choose_candidate_lv,           
                 :example_view => 'SC.ListItemView',
                 :row_height => 20,
-                :height => 300,
+                :height => 200,
                 :is_editable => false,
                 :content_value_key => 'forwardName',
                 :can_order_content => false,
@@ -61,10 +61,33 @@
                 }
               %>
         <% end %>
-        <%= button_view :ae_open_choose_candidate_pane,
-            :title => loc('ae_close_choose_candidate_pane_button'),
-            :action => 'AdmissionExam.chooseCandidatePaneController.hide'
+        <% scroll_view :ae_exam_list_of_chosen_candidate_sv do %>
+            <%= list_view :ae_exam_list_of_chosen_candidate_lv,           
+                :example_view => 'SC.ListItemView',
+                :row_height => 20,
+                :height => 200,
+                :is_editable => false,
+                :content_value_key => 'examDate',
+                :can_order_content => false,
+                :can_reorder_content => false,
+                :bind => {
+                  :content => 'AdmissionExam.examListOfChosenCandidateController.arrangedObjects',
+                  :selection => 'AdmissionExam.examListOfChosenCandidateController.selection'
+                }
+              %>
+        <% end %>
+
+        
+        <%= button_view :ae_new_exam_with_candidate,
+            :title => loc('_ae_new_exam_with_candidate_button'),
+            :action => 'AdmissionExam.admissionExamApplicationController.createNewExam'
             %>
+        <%= button_view :ae_review_exam_with_candidate,
+            :title => loc('_ae_review_exam_with_candidate_button'),
+            :action => 'AdmissionExam.admissionExamApplicationController.reviewExam'
+            %>
+            
+            
     <% end %>
 
 <% end %>

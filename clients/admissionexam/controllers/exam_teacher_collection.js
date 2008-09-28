@@ -1,10 +1,9 @@
 // ==========================================================================
-// Admissionexam.CandidateChoiceController
+// Admissionexam.ExamTeacherCollectionController
 // ==========================================================================
 
 require('core');
-require('orion_fw');
-require('a_e_candidate');
+
 /** @class
 
   (Document Your View Here)
@@ -14,10 +13,9 @@ require('a_e_candidate');
   @version 0.1
   @static
 */
-AdmissionExam.candidateChoiceController = SC.CollectionController.create(
-/** @scope Admissionexam.candidateChoiceController */ {
-  
-  canEditCollection: true,
-  commitChangesImmediately: false
+AdmissionExam.examTeacherCollectionController = SC.CollectionController.create(
+/** @scope Admissionexam.examTeacherCollectionController */ {
+
+  // TODO: Add your own code here.
 
 }) ;
