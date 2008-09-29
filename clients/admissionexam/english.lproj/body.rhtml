@@ -18,12 +18,12 @@
       } do %>
        <% scroll_view :ae_candidate_information_menu_sv, 
            :height => 500,
-           :width => 200 do %>        
+           :width => 250 do %>        
                <%= source_list_view :ae_candidate_information_menu_slv,
                       :height => 500, 
-                      :width => 200,
+                      :width => 250,
                       :can_reorder_content => true,
-                      :content_value_key => 'name',
+                      :content_value_key => 'localised_name',
                       :content_value_editable => false,
                       :content_icon_key => 'iconClassName',
                       :bind => { 

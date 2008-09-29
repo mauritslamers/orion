@@ -24,5 +24,18 @@ Object.extend(String.English,{
   "_ae_ci_ci_commission_members_label" : "Commission members",
   "_ae_ci_ci_possible_commission_members_label" : "Choose a teacher to add",
   "_ae_ci_ci_commission_members_remove_selected" : "Remove selected teacher",
-  "_ae_ci_ci_commission_possible_members_add_selected" : "Add selected teacher"
+  "_ae_ci_ci_commission_possible_members_add_selected" : "Add selected teacher",
+  "_ae_ci_cb_years_self_study" : "Years of self study",
+  "_ae_ci_cb_years_lessons" : "Years of lessons",
+  "_ae_ci_cb_interest_in_preparation_course" : "Interest in preparation course",
+  "_ae_ci_cb_desired_course" : "Desired Course",
+  "_yes" : "Yes",
+  "_no" : "No",
+  "_information_about_candidate": 'Information about candidate',
+  "_information_about_commission" : 'Information about commission',
+  "_candidate_background" : 'Background of the candidate',
+  "_commission_evaluation" : 'Commission Evaluation',
+  "_candidate_performance_information" : 'Candidate Performance Information',
+  "_candidate_information_overview" : "Overview of candidate information",
+  "_input_admission_test" : "Input of admission test results"
 }) ;

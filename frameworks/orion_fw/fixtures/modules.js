@@ -1,12 +1,12 @@
 // ==========================================================================
-// OrionFw Module Fixtures
+// OrionFw Subject Fixtures
 // ==========================================================================
 
 require('orion_fw');
 
 OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21865",
         "name": "Compositie\/songwriting",
         "collegeyear": "2007",
@@ -16,7 +16,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Composition\/songwriting"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21866",
         "name": "Analyse\/harmonie klassiek",
         "collegeyear": "2007",
@@ -26,7 +26,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21867",
         "name": "Analyse\/harmonie klassiek",
         "collegeyear": "2007",
@@ -36,7 +36,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21868",
         "name": "ATV jazz en pop",
         "collegeyear": "2007",
@@ -46,7 +46,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Practical music theory jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21869",
         "name": "ATV jazz en pop",
         "collegeyear": "2007",
@@ -56,7 +56,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Practical music theory jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21870",
         "name": "Geschiedenis\/analyse klassiek",
         "collegeyear": "2007",
@@ -66,7 +66,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "History\/analysis of classical music"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21871",
         "name": "Geschiedenis\/analyse klassiek",
         "collegeyear": "2007",
@@ -76,7 +76,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "History\/analysis of classical music"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21872",
         "name": "Arrangeren jazz en pop",
         "collegeyear": "2007",
@@ -86,7 +86,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Arranging jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21873",
         "name": "Arrangeren jazz en pop",
         "collegeyear": "2007",
@@ -96,7 +96,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Arranging jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21874",
         "name": "Solfegelab jazz en pop",
         "collegeyear": "2007",
@@ -106,7 +106,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Solfege lab jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21875",
         "name": "Harmonie aan de beiaard",
         "collegeyear": "2007",
@@ -116,7 +116,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon harmony"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21876",
         "name": "Analyse-vormleer",
         "collegeyear": "2007",
@@ -126,7 +126,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Structural analysis"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21877",
         "name": "Analyse-vormleer",
         "collegeyear": "2007",
@@ -136,7 +136,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Structural analysis"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21878",
         "name": "Algemene muziekgeschiedenis",
         "collegeyear": "2007",
@@ -146,7 +146,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Music history"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21879",
         "name": "Algemene muziekgeschiedenis",
         "collegeyear": "2007",
@@ -156,7 +156,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Music history"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21880",
         "name": "Algemene muziekleer",
         "collegeyear": "2007",
@@ -166,7 +166,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "General music theory"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21881",
         "name": "Algemene muziekleer",
         "collegeyear": "2007",
@@ -176,7 +176,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "General music theory"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21882",
         "name": "Algemene muziekleer jazz en pop",
         "collegeyear": "2007",
@@ -186,7 +186,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Music theory jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21883",
         "name": "Altviool",
         "collegeyear": "2007",
@@ -196,7 +196,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21884",
         "name": "Continuospel",
         "collegeyear": "2007",
@@ -206,7 +206,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Basso continuo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21885",
         "name": "Continuospel",
         "collegeyear": "2007",
@@ -216,7 +216,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Basso continuo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21886",
         "name": "Blokfluit",
         "collegeyear": "2007",
@@ -226,7 +226,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Recorder"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21887",
         "name": "Blokfluit",
         "collegeyear": "2007",
@@ -236,7 +236,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Recorder"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21888",
         "name": "Barokhobo",
         "collegeyear": "2007",
@@ -246,7 +246,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21889",
         "name": "Barokhobo",
         "collegeyear": "2007",
@@ -256,7 +256,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21890",
         "name": "Barokcello",
         "collegeyear": "2007",
@@ -266,7 +266,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21891",
         "name": "Barokcello",
         "collegeyear": "2007",
@@ -276,7 +276,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21892",
         "name": "Barokviool",
         "collegeyear": "2007",
@@ -286,7 +286,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21893",
         "name": "Barokviool",
         "collegeyear": "2007",
@@ -296,7 +296,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21894",
         "name": "Correpetitie",
         "collegeyear": "2007",
@@ -306,7 +306,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21895",
         "name": "Correpetitie",
         "collegeyear": "2007",
@@ -316,7 +316,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21896",
         "name": "Ensembles oude muziek",
         "collegeyear": "2007",
@@ -326,7 +326,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21897",
         "name": "Ensembles oude muziek",
         "collegeyear": "2007",
@@ -336,7 +336,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21898",
         "name": "Fluit",
         "collegeyear": "2007",
@@ -346,7 +346,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Flute"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21899",
         "name": "Fysiologie",
         "collegeyear": "2007",
@@ -356,7 +356,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Physiology"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21900",
         "name": "Viola da gamba",
         "collegeyear": "2007",
@@ -366,7 +366,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola da gamba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21901",
         "name": "Viola da gamba",
         "collegeyear": "2007",
@@ -376,7 +376,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola da gamba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21902",
         "name": "Hoorn",
         "collegeyear": "2007",
@@ -386,7 +386,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "French horn"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21903",
         "name": "Muzieknotatieprogramma's",
         "collegeyear": "2007",
@@ -396,7 +396,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Music notation program course"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21904",
         "name": "Improvisatieklas",
         "collegeyear": "2007",
@@ -406,7 +406,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Improvisation class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21905",
         "name": "Pianovaardigheden klassiek",
         "collegeyear": "2007",
@@ -416,7 +416,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano skills"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21906",
         "name": "Pianovaardigheden klassiek",
         "collegeyear": "2007",
@@ -426,7 +426,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano skills"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21907",
         "name": "Klarinet",
         "collegeyear": "2007",
@@ -436,7 +436,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Clarinet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21908",
         "name": "Piano jazz en pop",
         "collegeyear": "2007",
@@ -446,7 +446,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21909",
         "name": "Muziekgeschiedenis Jazz & Pop",
         "collegeyear": "2007",
@@ -456,7 +456,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Jazz and pop history"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21910",
         "name": "Muziekgeschiedenis Jazz & Pop",
         "collegeyear": "2007",
@@ -466,7 +466,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Jazz and pop history"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21911",
         "name": "Orgelbouw",
         "collegeyear": "2007",
@@ -476,7 +476,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Organ design"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21912",
         "name": "Orientatie op studie",
         "collegeyear": "2007",
@@ -486,7 +486,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Orientation course on study aspects"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21913",
         "name": "Piano",
         "collegeyear": "2007",
@@ -496,7 +496,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21914",
         "name": "Prima vistaspel",
         "collegeyear": "2007",
@@ -506,7 +506,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Sight reading"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21915",
         "name": "Clavecimbel\/continuospel",
         "collegeyear": "2007",
@@ -516,7 +516,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Sec. subject harpsichord\/continuo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21916",
         "name": "Clavecimbel\/continuospel",
         "collegeyear": "2007",
@@ -526,7 +526,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Sec. subject harpsichord\/continuo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21917",
         "name": "Pianovaardigheden jazz en pop",
         "collegeyear": "2007",
@@ -536,7 +536,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano skills"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21918",
         "name": "Pianovaardigheden jazz en pop",
         "collegeyear": "2007",
@@ -546,7 +546,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano skills"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21919",
         "name": "Sw orkestliteratuur",
         "collegeyear": "2007",
@@ -556,7 +556,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion orchestral literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21920",
         "name": "Sw orkestliteratuur",
         "collegeyear": "2007",
@@ -566,7 +566,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion orchestral literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21921",
         "name": "Sw pauken",
         "collegeyear": "2007",
@@ -576,7 +576,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion timpani"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21922",
         "name": "Sw pauken",
         "collegeyear": "2007",
@@ -586,7 +586,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion timpani"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21923",
         "name": "Correpetitie",
         "collegeyear": "2007",
@@ -596,7 +596,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21924",
         "name": "Correpetitie",
         "collegeyear": "2007",
@@ -606,7 +606,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21925",
         "name": "Correpetitie",
         "collegeyear": "2007",
@@ -616,7 +616,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21926",
         "name": "Correpetitie",
         "collegeyear": "2007",
@@ -626,7 +626,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21927",
         "name": "Correpetitie",
         "collegeyear": "2007",
@@ -636,7 +636,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21928",
         "name": "Muziekgeschiedenis Jazz & Pop",
         "collegeyear": "2007",
@@ -646,7 +646,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Jazz and pop history"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21929",
         "name": "Muziekgeschiedenis Jazz & Pop",
         "collegeyear": "2007",
@@ -656,7 +656,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Jazz and pop history"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21930",
         "name": "Correpetitie",
         "collegeyear": "2007",
@@ -666,7 +666,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21931",
         "name": "Steunvak klarinet",
         "collegeyear": "2007",
@@ -676,7 +676,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Secondary subject clarinet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21932",
         "name": "ATV jazz en pop",
         "collegeyear": "2007",
@@ -686,7 +686,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Practical music theory jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21933",
         "name": "Steunvak klarinet",
         "collegeyear": "2007",
@@ -696,7 +696,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Secondary subject clarinet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21934",
         "name": "Steunvak klarinet",
         "collegeyear": "2007",
@@ -706,7 +706,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Secondary subject clarinet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21936",
         "name": "Techniek",
         "collegeyear": "2007",
@@ -716,7 +716,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21938",
         "name": "Techniek",
         "collegeyear": "2007",
@@ -726,7 +726,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21939",
         "name": "Steunvak techniek\/klassiek",
         "collegeyear": "2007",
@@ -736,7 +736,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/classical music"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21940",
         "name": "Steunvak techniek\/klassiek",
         "collegeyear": "2007",
@@ -746,7 +746,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/classical music"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21941",
         "name": "Techniek bij saxofoon",
         "collegeyear": "2007",
@@ -756,7 +756,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21942",
         "name": "Techniek bij saxofoon",
         "collegeyear": "2007",
@@ -766,7 +766,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21943",
         "name": "Techniek\/leesles",
         "collegeyear": "2007",
@@ -776,7 +776,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/sight reading"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21944",
         "name": "Techniek\/leesles",
         "collegeyear": "2007",
@@ -786,7 +786,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/sight reading"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21945",
         "name": "Basgitaar jazz en pop",
         "collegeyear": "2007",
@@ -796,7 +796,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bass guitar jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21946",
         "name": "Contrabas jazz en pop",
         "collegeyear": "2007",
@@ -806,7 +806,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21947",
         "name": "Contrabas jazz en pop",
         "collegeyear": "2007",
@@ -816,7 +816,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21948",
         "name": "Combo",
         "collegeyear": "2007",
@@ -826,7 +826,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Combo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21949",
         "name": "Combo",
         "collegeyear": "2007",
@@ -836,7 +836,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Combo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21950",
         "name": "Drums jazz en pop",
         "collegeyear": "2007",
@@ -846,7 +846,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Drums"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21951",
         "name": "Drums jazz en pop",
         "collegeyear": "2007",
@@ -856,7 +856,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Drums"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21952",
         "name": "Gitaar jazz en pop",
         "collegeyear": "2007",
@@ -866,7 +866,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Guitar jazz # pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21953",
         "name": "Gitaar jazz en pop",
         "collegeyear": "2007",
@@ -876,7 +876,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Guitar jazz # pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21954",
         "name": "Piano jazz en pop",
         "collegeyear": "2007",
@@ -886,7 +886,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21955",
         "name": "Saxofoon jazz en pop",
         "collegeyear": "2007",
@@ -896,7 +896,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21956",
         "name": "Saxofoon jazz en pop",
         "collegeyear": "2007",
@@ -906,7 +906,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21957",
         "name": "Trompet jazz en pop",
         "collegeyear": "2007",
@@ -916,7 +916,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21958",
         "name": "Sw mallets-solo-setup",
         "collegeyear": "2007",
@@ -926,7 +926,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Perc. mallets-solo-set up"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21959",
         "name": "Zang jazz en pop",
         "collegeyear": "2007",
@@ -936,7 +936,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21960",
         "name": "Zang jazz en pop",
         "collegeyear": "2007",
@@ -946,7 +946,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21961",
         "name": "Saxofoon",
         "collegeyear": "2007",
@@ -956,7 +956,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21962",
         "name": "Saxofoon",
         "collegeyear": "2007",
@@ -966,7 +966,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21963",
         "name": "Trombone",
         "collegeyear": "2007",
@@ -976,7 +976,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trombone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21964",
         "name": "Trompet",
         "collegeyear": "2007",
@@ -986,7 +986,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21965",
         "name": "Traverso",
         "collegeyear": "2007",
@@ -996,7 +996,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Traverso"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21966",
         "name": "Traverso",
         "collegeyear": "2007",
@@ -1006,7 +1006,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Traverso"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21967",
         "name": "Cello",
         "collegeyear": "2007",
@@ -1016,7 +1016,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21968",
         "name": "Viool",
         "collegeyear": "2007",
@@ -1026,7 +1026,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21969",
         "name": "Zang",
         "collegeyear": "2007",
@@ -1036,7 +1036,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21970",
         "name": "Zang",
         "collegeyear": "2007",
@@ -1046,7 +1046,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21971",
         "name": "Contrabas",
         "collegeyear": "2007",
@@ -1056,7 +1056,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21972",
         "name": "Tuba",
         "collegeyear": "2007",
@@ -1066,7 +1066,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Tuba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21973",
         "name": "Praktische harmonie",
         "collegeyear": "2007",
@@ -1076,7 +1076,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Practical harmony"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21974",
         "name": "Toegepaste muziektheorie",
         "collegeyear": "2007",
@@ -1086,7 +1086,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Practical music theory"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21975",
         "name": "Toegepaste muziektheorie",
         "collegeyear": "2007",
@@ -1096,7 +1096,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Practical music theory"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21976",
         "name": "Beiaard",
         "collegeyear": "2007",
@@ -1106,7 +1106,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21977",
         "name": "Beiaard",
         "collegeyear": "2007",
@@ -1116,7 +1116,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21978",
         "name": "Beiaardliteratuur",
         "collegeyear": "2007",
@@ -1126,7 +1126,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21979",
         "name": "Contrabas",
         "collegeyear": "2007",
@@ -1136,7 +1136,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21980",
         "name": "Groepsles compositie A",
         "collegeyear": "2007",
@@ -1146,7 +1146,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson composition A"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21981",
         "name": "Groepsles compositie B",
         "collegeyear": "2007",
@@ -1156,7 +1156,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson composition B"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21982",
         "name": "Groepsles harp",
         "collegeyear": "2007",
@@ -1166,7 +1166,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson harp"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21983",
         "name": "Groepsles orgel",
         "collegeyear": "2007",
@@ -1176,7 +1176,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21984",
         "name": "Rietenles",
         "collegeyear": "2007",
@@ -1186,7 +1186,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Reed crafting"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21985",
         "name": "Ensemble slagwerk",
         "collegeyear": "2007",
@@ -1196,7 +1196,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Ensembles"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21986",
         "name": "Techniek zang jazz en pop",
         "collegeyear": "2007",
@@ -1206,7 +1206,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21987",
         "name": "Solfegelab jazz en pop",
         "collegeyear": "2007",
@@ -1216,7 +1216,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Solfege lab jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21988",
         "name": "Kleine trom",
         "collegeyear": "2007",
@@ -1226,7 +1226,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/snare drum"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21989",
         "name": "Kleine trom",
         "collegeyear": "2007",
@@ -1236,7 +1236,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/snare drum"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21990",
         "name": "Kleine trom",
         "collegeyear": "2007",
@@ -1246,7 +1246,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/snare drum"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21991",
         "name": "Basgitaar jazz en pop",
         "collegeyear": "2007",
@@ -1256,7 +1256,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bass guitar jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21992",
         "name": "Basgitaar jazz en pop",
         "collegeyear": "2007",
@@ -1266,7 +1266,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bass guitar jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21993",
         "name": "Basgitaar jazz en pop",
         "collegeyear": "2007",
@@ -1276,7 +1276,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bass guitar jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21994",
         "name": "Basgitaar jazz en pop",
         "collegeyear": "2007",
@@ -1286,7 +1286,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bass guitar jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21995",
         "name": "Basgitaar jazz en pop",
         "collegeyear": "2007",
@@ -1296,7 +1296,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bass guitar jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21996",
         "name": "Contrabas jazz en pop",
         "collegeyear": "2007",
@@ -1306,7 +1306,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21997",
         "name": "Contrabas jazz en pop",
         "collegeyear": "2007",
@@ -1316,7 +1316,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21998",
         "name": "Contrabas jazz en pop",
         "collegeyear": "2007",
@@ -1326,7 +1326,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "21999",
         "name": "Contrabas jazz en pop",
         "collegeyear": "2007",
@@ -1336,7 +1336,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22000",
         "name": "Contrabas jazz en pop",
         "collegeyear": "2007",
@@ -1346,7 +1346,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22001",
         "name": "Combo",
         "collegeyear": "2007",
@@ -1356,7 +1356,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Combo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22002",
         "name": "Combo",
         "collegeyear": "2007",
@@ -1366,7 +1366,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Combo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22003",
         "name": "Combo",
         "collegeyear": "2007",
@@ -1376,7 +1376,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Combo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22004",
         "name": "Combo",
         "collegeyear": "2007",
@@ -1386,7 +1386,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Combo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22005",
         "name": "Combo",
         "collegeyear": "2007",
@@ -1396,7 +1396,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Combo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22006",
         "name": "Combo",
         "collegeyear": "2007",
@@ -1406,7 +1406,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Combo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22007",
         "name": "Drums jazz en pop",
         "collegeyear": "2007",
@@ -1416,7 +1416,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Drums"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22008",
         "name": "Drums jazz en pop",
         "collegeyear": "2007",
@@ -1426,7 +1426,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Drums"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22009",
         "name": "Drums jazz en pop",
         "collegeyear": "2007",
@@ -1436,7 +1436,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Drums"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22010",
         "name": "Drums jazz en pop",
         "collegeyear": "2007",
@@ -1446,7 +1446,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Drums"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22011",
         "name": "Drums jazz en pop",
         "collegeyear": "2007",
@@ -1456,7 +1456,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Drums"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22012",
         "name": "Drums jazz en pop",
         "collegeyear": "2007",
@@ -1466,7 +1466,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Drums"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22013",
         "name": "Gitaar jazz en pop",
         "collegeyear": "2007",
@@ -1476,7 +1476,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Guitar jazz # pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22014",
         "name": "Gitaar jazz en pop",
         "collegeyear": "2007",
@@ -1486,7 +1486,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Guitar jazz # pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22015",
         "name": "Gitaar jazz en pop",
         "collegeyear": "2007",
@@ -1496,7 +1496,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Guitar jazz # pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22016",
         "name": "Gitaar jazz en pop",
         "collegeyear": "2007",
@@ -1506,7 +1506,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Guitar jazz # pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22017",
         "name": "Gitaar jazz en pop",
         "collegeyear": "2007",
@@ -1516,7 +1516,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Guitar jazz # pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22018",
         "name": "Piano jazz en pop",
         "collegeyear": "2007",
@@ -1526,7 +1526,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22019",
         "name": "Piano jazz en pop",
         "collegeyear": "2007",
@@ -1536,7 +1536,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22020",
         "name": "Piano jazz en pop",
         "collegeyear": "2007",
@@ -1546,7 +1546,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22021",
         "name": "Piano jazz en pop",
         "collegeyear": "2007",
@@ -1556,7 +1556,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22022",
         "name": "Piano jazz en pop",
         "collegeyear": "2007",
@@ -1566,7 +1566,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22023",
         "name": "Saxofoon jazz en pop",
         "collegeyear": "2007",
@@ -1576,7 +1576,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22024",
         "name": "Saxofoon jazz en pop",
         "collegeyear": "2007",
@@ -1586,7 +1586,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22025",
         "name": "Saxofoon jazz en pop",
         "collegeyear": "2007",
@@ -1596,7 +1596,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22026",
         "name": "Saxofoon jazz en pop",
         "collegeyear": "2007",
@@ -1606,7 +1606,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22027",
         "name": "Saxofoon jazz en pop",
         "collegeyear": "2007",
@@ -1616,7 +1616,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22028",
         "name": "Trompet jazz en pop",
         "collegeyear": "2007",
@@ -1626,7 +1626,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22029",
         "name": "Trompet jazz en pop",
         "collegeyear": "2007",
@@ -1636,7 +1636,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22030",
         "name": "Trompet jazz en pop",
         "collegeyear": "2007",
@@ -1646,7 +1646,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22031",
         "name": "Trompet jazz en pop",
         "collegeyear": "2007",
@@ -1656,7 +1656,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22032",
         "name": "Trompet jazz en pop",
         "collegeyear": "2007",
@@ -1666,7 +1666,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22033",
         "name": "Trompet jazz en pop",
         "collegeyear": "2007",
@@ -1676,7 +1676,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22034",
         "name": "Zang jazz en pop",
         "collegeyear": "2007",
@@ -1686,7 +1686,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22035",
         "name": "Zang jazz en pop",
         "collegeyear": "2007",
@@ -1696,7 +1696,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22036",
         "name": "Zang jazz en pop",
         "collegeyear": "2007",
@@ -1706,7 +1706,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22037",
         "name": "Zang jazz en pop",
         "collegeyear": "2007",
@@ -1716,7 +1716,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22038",
         "name": "Techniek zang jazz en pop",
         "collegeyear": "2007",
@@ -1726,7 +1726,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22039",
         "name": "Techniek zang jazz en pop",
         "collegeyear": "2007",
@@ -1736,7 +1736,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22040",
         "name": "Techniek zang jazz en pop",
         "collegeyear": "2007",
@@ -1746,7 +1746,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22041",
         "name": "Techniek zang jazz en pop",
         "collegeyear": "2007",
@@ -1756,7 +1756,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22042",
         "name": "Techniek zang jazz en pop",
         "collegeyear": "2007",
@@ -1766,7 +1766,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22043",
         "name": "Steunvak fluit",
         "collegeyear": "2007",
@@ -1776,7 +1776,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Secondary subject flute"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22044",
         "name": "Steunvak fluit",
         "collegeyear": "2007",
@@ -1786,7 +1786,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Secondary subject flute"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22045",
         "name": "Steunvak klarinet",
         "collegeyear": "2007",
@@ -1796,7 +1796,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Secondary subject clarinet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22046",
         "name": "Pianovaardigheden jazz en pop",
         "collegeyear": "2007",
@@ -1806,7 +1806,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano skills"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22047",
         "name": "Pianovaardigheden jazz en pop",
         "collegeyear": "2007",
@@ -1816,7 +1816,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano skills"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22048",
         "name": "Pianovaardigheden jazz en pop",
         "collegeyear": "2007",
@@ -1826,7 +1826,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano skills"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22052",
         "name": "Techniek bij saxofoon",
         "collegeyear": "2007",
@@ -1836,7 +1836,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22053",
         "name": "Sectieles",
         "collegeyear": "2007",
@@ -1846,7 +1846,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Sax section"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22054",
         "name": "Sectieles",
         "collegeyear": "2007",
@@ -1856,7 +1856,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Sax section"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22055",
         "name": "Sectieles",
         "collegeyear": "2007",
@@ -1866,7 +1866,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Sax section"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22056",
         "name": "Techniek",
         "collegeyear": "2007",
@@ -1876,7 +1876,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22057",
         "name": "Techniek",
         "collegeyear": "2007",
@@ -1886,7 +1886,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22058",
         "name": "Techniek",
         "collegeyear": "2007",
@@ -1896,7 +1896,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22059",
         "name": "Techniek",
         "collegeyear": "2007",
@@ -1906,7 +1906,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22060",
         "name": "Steunvak techniek\/klassiek",
         "collegeyear": "2007",
@@ -1916,7 +1916,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "technique\/classical music"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22061",
         "name": "Steunvak techniek\/klassiek",
         "collegeyear": "2007",
@@ -1926,7 +1926,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/classical music"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22062",
         "name": "Techniek bij saxofoon",
         "collegeyear": "2007",
@@ -1936,7 +1936,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22063",
         "name": "Sectieles",
         "collegeyear": "2007",
@@ -1946,7 +1946,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Sax section"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22064",
         "name": "Techniek bij saxofoon",
         "collegeyear": "2007",
@@ -1956,7 +1956,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22065",
         "name": "Clavecimbel",
         "collegeyear": "2007",
@@ -1966,7 +1966,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harpsichord"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22066",
         "name": "Clavecimbel",
         "collegeyear": "2007",
@@ -1976,7 +1976,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harpsichord"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22067",
         "name": "Correpetitie historisch",
         "collegeyear": "2007",
@@ -1986,7 +1986,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22068",
         "name": "Correpetitie historisch",
         "collegeyear": "2007",
@@ -1996,7 +1996,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22069",
         "name": "Renaissancekoor",
         "collegeyear": "2007",
@@ -2006,7 +2006,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22070",
         "name": "Algemene muziekleer jazz en pop",
         "collegeyear": "2007",
@@ -2016,7 +2016,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Music theory jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22071",
         "name": "Solfegelab jazz en pop",
         "collegeyear": "2007",
@@ -2026,7 +2026,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Solfege lab jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22072",
         "name": "Solfegelab jazz en pop",
         "collegeyear": "2007",
@@ -2036,7 +2036,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Solfege lab jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22073",
         "name": "Kleine trom",
         "collegeyear": "2007",
@@ -2046,7 +2046,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/snare drum"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22074",
         "name": "Kleine trom",
         "collegeyear": "2007",
@@ -2056,7 +2056,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/snare drum"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22075",
         "name": "Basgitaar jazz en pop",
         "collegeyear": "2007",
@@ -2066,7 +2066,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bass guitar jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22076",
         "name": "Saxofoon jazz en pop",
         "collegeyear": "2007",
@@ -2076,7 +2076,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22077",
         "name": "Steunvak techniek\/klassiek",
         "collegeyear": "2007",
@@ -2086,7 +2086,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/classical music"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22078",
         "name": "Steunvak techniek\/klassiek",
         "collegeyear": "2007",
@@ -2096,7 +2096,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/classical music"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22079",
         "name": "Steunvak techniek\/klassiek",
         "collegeyear": "2007",
@@ -2106,7 +2106,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/classical music"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22080",
         "name": "Muziek van de twintigste eeuw",
         "collegeyear": "2007",
@@ -2116,7 +2116,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Twentieth century music"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22081",
         "name": "Analyse hedendaagse muziek",
         "collegeyear": "2007",
@@ -2126,7 +2126,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Analysis of contemporary music"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22082",
         "name": "Analyse hedendaagse muziek",
         "collegeyear": "2007",
@@ -2136,7 +2136,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Analysis of contemporary music"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22083",
         "name": "Analyse",
         "collegeyear": "2007",
@@ -2146,7 +2146,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Analysis"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22084",
         "name": "Analyse",
         "collegeyear": "2007",
@@ -2156,7 +2156,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Analysis"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22085",
         "name": "Analyse",
         "collegeyear": "2007",
@@ -2166,7 +2166,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Analysis"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22086",
         "name": "Analyse",
         "collegeyear": "2007",
@@ -2176,7 +2176,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Analysis"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22087",
         "name": "ATV eindproductie",
         "collegeyear": "2007",
@@ -2186,7 +2186,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Theory final production"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22088",
         "name": "Basisvaardigheden muziekproductie",
         "collegeyear": "2007",
@@ -2196,7 +2196,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Basic skills music production"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22089",
         "name": "Harmonie aan de beiaard",
         "collegeyear": "2007",
@@ -2206,7 +2206,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon harmony"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22090",
         "name": "Harmonie aan de beiaard",
         "collegeyear": "2007",
@@ -2216,7 +2216,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon harmony"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22091",
         "name": "Harmonie aan de beiaard",
         "collegeyear": "2007",
@@ -2226,7 +2226,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon harmony"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22092",
         "name": "Harmonie aan de beiaard",
         "collegeyear": "2007",
@@ -2236,7 +2236,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon harmony"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22093",
         "name": "Harmonie aan de beiaard",
         "collegeyear": "2007",
@@ -2246,7 +2246,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon harmony"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22094",
         "name": "Algemene muziekgeschiedenis",
         "collegeyear": "2007",
@@ -2256,7 +2256,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Music history"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22095",
         "name": "Algemene muziekgeschiedenis",
         "collegeyear": "2007",
@@ -2266,7 +2266,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Music history"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22096",
         "name": "Praktische harmonie",
         "collegeyear": "2007",
@@ -2276,7 +2276,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Practical harmony"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22097",
         "name": "Praktische harmonie",
         "collegeyear": "2007",
@@ -2286,7 +2286,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Practical harmony"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22098",
         "name": "Arrangeren",
         "collegeyear": "2007",
@@ -2296,7 +2296,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Arranging"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22099",
         "name": "Toegepaste muziektheorie",
         "collegeyear": "2007",
@@ -2306,7 +2306,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Practical music theory"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22100",
         "name": "Toegepaste muziektheorie",
         "collegeyear": "2007",
@@ -2316,7 +2316,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Practical music theory"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22101",
         "name": "Toegepaste muziektheorie",
         "collegeyear": "2007",
@@ -2326,7 +2326,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Practical music theory"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22102",
         "name": "Altviool",
         "collegeyear": "2007",
@@ -2336,7 +2336,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22103",
         "name": "Altviool",
         "collegeyear": "2007",
@@ -2346,7 +2346,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22104",
         "name": "Altviool",
         "collegeyear": "2007",
@@ -2356,7 +2356,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22105",
         "name": "Altviool",
         "collegeyear": "2007",
@@ -2366,7 +2366,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22106",
         "name": "Altviool",
         "collegeyear": "2007",
@@ -2376,7 +2376,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22107",
         "name": "Altviool",
         "collegeyear": "2007",
@@ -2386,7 +2386,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22108",
         "name": "Basso continuopraktijk",
         "collegeyear": "2007",
@@ -2396,7 +2396,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Continuo playing"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22109",
         "name": "Beiaard",
         "collegeyear": "2007",
@@ -2406,7 +2406,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22110",
         "name": "Beiaard",
         "collegeyear": "2007",
@@ -2416,7 +2416,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22111",
         "name": "Beiaard",
         "collegeyear": "2007",
@@ -2426,7 +2426,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22112",
         "name": "Beiaard",
         "collegeyear": "2007",
@@ -2436,7 +2436,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22113",
         "name": "Beiaard",
         "collegeyear": "2007",
@@ -2446,7 +2446,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22114",
         "name": "Beiaard",
         "collegeyear": "2007",
@@ -2456,7 +2456,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22115",
         "name": "Arrangeren voor beiaard",
         "collegeyear": "2007",
@@ -2466,7 +2466,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Arranging for carillon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22116",
         "name": "Campanologie",
         "collegeyear": "2007",
@@ -2476,7 +2476,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Campanology"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22117",
         "name": "Campanologie",
         "collegeyear": "2007",
@@ -2486,7 +2486,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Campanology"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22118",
         "name": "Computerversteken",
         "collegeyear": "2007",
@@ -2496,7 +2496,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Drum pinning with computer"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22119",
         "name": "Beiaardliteratuur",
         "collegeyear": "2007",
@@ -2506,7 +2506,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22120",
         "name": "Versteken",
         "collegeyear": "2007",
@@ -2516,7 +2516,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Drum pinning"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22121",
         "name": "ATV eindproductie",
         "collegeyear": "2007",
@@ -2526,7 +2526,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Theory final production"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22122",
         "name": "Versteken",
         "collegeyear": "2007",
@@ -2536,7 +2536,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Drum pinning"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22123",
         "name": "Contrabas",
         "collegeyear": "2007",
@@ -2546,7 +2546,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22124",
         "name": "Contrabas",
         "collegeyear": "2007",
@@ -2556,7 +2556,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22125",
         "name": "Contrabas",
         "collegeyear": "2007",
@@ -2566,7 +2566,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22126",
         "name": "Koorliteratuur en -scholing",
         "collegeyear": "2007",
@@ -2576,7 +2576,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22127",
         "name": "Koorliteratuur en -scholing",
         "collegeyear": "2007",
@@ -2586,7 +2586,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22128",
         "name": "Koorliteratuur en -scholing",
         "collegeyear": "2007",
@@ -2596,7 +2596,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22129",
         "name": "Koorliteratuur en -scholing",
         "collegeyear": "2007",
@@ -2606,7 +2606,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22130",
         "name": "Koor",
         "collegeyear": "2007",
@@ -2616,7 +2616,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22131",
         "name": "Koor bij hoofdvak zang",
         "collegeyear": "2007",
@@ -2626,7 +2626,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22132",
         "name": "Koor bij hoofdvak zang",
         "collegeyear": "2007",
@@ -2636,7 +2636,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22133",
         "name": "Liedklas",
         "collegeyear": "2007",
@@ -2646,7 +2646,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Lieder class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22134",
         "name": "Liedklas",
         "collegeyear": "2007",
@@ -2656,7 +2656,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Lieder class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22135",
         "name": "Liedklas voor pianisten",
         "collegeyear": "2007",
@@ -2666,7 +2666,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Lieder class for pianists"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22136",
         "name": "Contrabas",
         "collegeyear": "2007",
@@ -2676,7 +2676,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22137",
         "name": "Contrabas",
         "collegeyear": "2007",
@@ -2686,7 +2686,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22138",
         "name": "Compositie",
         "collegeyear": "2007",
@@ -2696,7 +2696,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Composition"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22139",
         "name": "Compositie",
         "collegeyear": "2007",
@@ -2706,7 +2706,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Composition"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22140",
         "name": "Compositie",
         "collegeyear": "2007",
@@ -2716,7 +2716,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Composition"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22141",
         "name": "Compositie",
         "collegeyear": "2007",
@@ -2726,7 +2726,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Composition"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22142",
         "name": "Compositie",
         "collegeyear": "2007",
@@ -2736,7 +2736,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Composition"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22143",
         "name": "Compositie",
         "collegeyear": "2007",
@@ -2746,7 +2746,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Composition"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22144",
         "name": "Componistenportret",
         "collegeyear": "2007",
@@ -2756,7 +2756,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Composers portrait project"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22145",
         "name": "Declamatie italiaans",
         "collegeyear": "2007",
@@ -2766,7 +2766,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Italian recitation"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22146",
         "name": "Ensemble duospel",
         "collegeyear": "2007",
@@ -2776,7 +2776,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Ensemble duo performance"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22147",
         "name": "Ensemble harp",
         "collegeyear": "2007",
@@ -2786,7 +2786,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harp ensemble"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22148",
         "name": "Ensemble harp",
         "collegeyear": "2007",
@@ -2796,7 +2796,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harp ensemble"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22149",
         "name": "Ensemble harp",
         "collegeyear": "2007",
@@ -2806,7 +2806,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harp ensemble"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22150",
         "name": "Fagot",
         "collegeyear": "2007",
@@ -2816,7 +2816,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bassoon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22151",
         "name": "Fagot",
         "collegeyear": "2007",
@@ -2826,7 +2826,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bassoon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22152",
         "name": "Fagot",
         "collegeyear": "2007",
@@ -2836,7 +2836,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bassoon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22153",
         "name": "Fagot",
         "collegeyear": "2007",
@@ -2846,7 +2846,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bassoon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22154",
         "name": "Fagot",
         "collegeyear": "2007",
@@ -2856,7 +2856,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bassoon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22155",
         "name": "Fagot",
         "collegeyear": "2007",
@@ -2866,7 +2866,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bassoon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22156",
         "name": "Fluit",
         "collegeyear": "2007",
@@ -2876,7 +2876,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Flute"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22157",
         "name": "Fluit",
         "collegeyear": "2007",
@@ -2886,7 +2886,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Flute"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22158",
         "name": "Fluit",
         "collegeyear": "2007",
@@ -2896,7 +2896,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Flute"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22159",
         "name": "Fluit",
         "collegeyear": "2007",
@@ -2906,7 +2906,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Flute"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22160",
         "name": "Fluit",
         "collegeyear": "2007",
@@ -2916,7 +2916,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Flute"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22161",
         "name": "Groepsles compositie A",
         "collegeyear": "2007",
@@ -2926,7 +2926,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson composition A"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22162",
         "name": "Groepsles compositie A",
         "collegeyear": "2007",
@@ -2936,7 +2936,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson composition A"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22163",
         "name": "Groepsles compositie A",
         "collegeyear": "2007",
@@ -2946,7 +2946,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson composition A"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22164",
         "name": "Groepsles compositie B",
         "collegeyear": "2007",
@@ -2956,7 +2956,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson composition B"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22165",
         "name": "Groepsles compositie B",
         "collegeyear": "2007",
@@ -2966,7 +2966,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson composition B"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22166",
         "name": "Groepsles compositie B",
         "collegeyear": "2007",
@@ -2976,7 +2976,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson composition B"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22167",
         "name": "Groepsles compositie C",
         "collegeyear": "2007",
@@ -2986,7 +2986,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson composition C"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22168",
         "name": "Groepsles compositie C",
         "collegeyear": "2007",
@@ -2996,7 +2996,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson composition C"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22169",
         "name": "Groepsles harp",
         "collegeyear": "2007",
@@ -3006,7 +3006,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson harp"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22170",
         "name": "Groepsles harp",
         "collegeyear": "2007",
@@ -3016,7 +3016,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson harp"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22171",
         "name": "Groepsles harp",
         "collegeyear": "2007",
@@ -3026,7 +3026,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson harp"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22172",
         "name": "Groepsles hoofdvak",
         "collegeyear": "2007",
@@ -3036,7 +3036,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22173",
         "name": "Groepsles orgel",
         "collegeyear": "2007",
@@ -3046,7 +3046,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22174",
         "name": "Groepsles orgel",
         "collegeyear": "2007",
@@ -3056,7 +3056,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22175",
         "name": "Groepsles orgel",
         "collegeyear": "2007",
@@ -3066,7 +3066,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22177",
         "name": "Harp",
         "collegeyear": "2007",
@@ -3076,7 +3076,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harp"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22178",
         "name": "Harp",
         "collegeyear": "2007",
@@ -3086,7 +3086,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harp"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22179",
         "name": "Harp",
         "collegeyear": "2007",
@@ -3096,7 +3096,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harp"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22180",
         "name": "Harp",
         "collegeyear": "2007",
@@ -3106,7 +3106,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harp"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22181",
         "name": "Harp",
         "collegeyear": "2007",
@@ -3116,7 +3116,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harp"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22182",
         "name": "Harp",
         "collegeyear": "2007",
@@ -3126,7 +3126,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harp"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22183",
         "name": "Liedklas voor pianisten",
         "collegeyear": "2007",
@@ -3136,7 +3136,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Lieder class for pianists"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22184",
         "name": "Muzikale leiding",
         "collegeyear": "2007",
@@ -3146,7 +3146,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Conducting\/ensemble coaching"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22185",
         "name": "Orgel",
         "collegeyear": "2007",
@@ -3156,7 +3156,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Organ"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22186",
         "name": "Orgel",
         "collegeyear": "2007",
@@ -3166,7 +3166,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Organ"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22187",
         "name": "Orgel",
         "collegeyear": "2007",
@@ -3176,7 +3176,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Organ"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22188",
         "name": "Orgel",
         "collegeyear": "2007",
@@ -3186,7 +3186,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Organ"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22189",
         "name": "Orgel",
         "collegeyear": "2007",
@@ -3196,7 +3196,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Organ"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22190",
         "name": "Orgel",
         "collegeyear": "2007",
@@ -3206,7 +3206,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Organ"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22191",
         "name": "Orkestklas",
         "collegeyear": "2007",
@@ -3216,7 +3216,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Orchestral class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22192",
         "name": "Saxofoonorkest",
         "collegeyear": "2007",
@@ -3226,7 +3226,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone orchestra"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22193",
         "name": "Orkestklas",
         "collegeyear": "2007",
@@ -3236,7 +3236,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Orchestral class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22194",
         "name": "Orkestklas",
         "collegeyear": "2007",
@@ -3246,7 +3246,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Orchestral class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22195",
         "name": "Orgellandschappen",
         "collegeyear": "2007",
@@ -3256,7 +3256,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Organ excursions"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22196",
         "name": "Saxofoonorkest",
         "collegeyear": "2007",
@@ -3266,7 +3266,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone orchestra"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22197",
         "name": "Saxofoonorkest",
         "collegeyear": "2007",
@@ -3276,7 +3276,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone orchestra"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22198",
         "name": "Productie afstudeerproject",
         "collegeyear": "2007",
@@ -3286,7 +3286,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Production final project"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22199",
         "name": "Piano",
         "collegeyear": "2007",
@@ -3296,7 +3296,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22200",
         "name": "Piano",
         "collegeyear": "2007",
@@ -3306,7 +3306,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22201",
         "name": "Piano",
         "collegeyear": "2007",
@@ -3316,7 +3316,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22202",
         "name": "Praktijk van het productieproces",
         "collegeyear": "2007",
@@ -3326,7 +3326,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Practice of the productional proces"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22203",
         "name": "Piano",
         "collegeyear": "2007",
@@ -3336,7 +3336,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22204",
         "name": "Piano",
         "collegeyear": "2007",
@@ -3346,7 +3346,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22205",
         "name": "Piano",
         "collegeyear": "2007",
@@ -3356,7 +3356,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22206",
         "name": "Harmonie aan de beiaard",
         "collegeyear": "2007",
@@ -3366,7 +3366,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon harmony"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22207",
         "name": "Tuba",
         "collegeyear": "2007",
@@ -3376,7 +3376,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Tuba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22208",
         "name": "Orkestklas",
         "collegeyear": "2007",
@@ -3386,7 +3386,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Orchestral class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22209",
         "name": "Continuospel",
         "collegeyear": "2007",
@@ -3396,7 +3396,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Basso continuo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22210",
         "name": "Continuospel",
         "collegeyear": "2007",
@@ -3406,7 +3406,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Basso continuo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22211",
         "name": "Sw mallets-solo-setup",
         "collegeyear": "2007",
@@ -3416,7 +3416,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Perc. mallets-solo-set up"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22212",
         "name": "Sw mallets-solo-setup",
         "collegeyear": "2007",
@@ -3426,7 +3426,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Perc. mallets-solo-set up"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22213",
         "name": "Continuospel",
         "collegeyear": "2007",
@@ -3436,7 +3436,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Basso continuo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22214",
         "name": "Sw mallets-solo-setup",
         "collegeyear": "2007",
@@ -3446,7 +3446,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Perc. mallets-solo-set up"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22215",
         "name": "Sw mallets-solo-setup",
         "collegeyear": "2007",
@@ -3456,7 +3456,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Perc. mallets-solo-set up"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22216",
         "name": "Continuospel",
         "collegeyear": "2007",
@@ -3466,7 +3466,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Basso continuo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22217",
         "name": "Hobo",
         "collegeyear": "2007",
@@ -3476,7 +3476,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22218",
         "name": "Hobo",
         "collegeyear": "2007",
@@ -3486,7 +3486,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22219",
         "name": "Hobo",
         "collegeyear": "2007",
@@ -3496,7 +3496,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22220",
         "name": "Hobo",
         "collegeyear": "2007",
@@ -3506,7 +3506,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22221",
         "name": "Hobo",
         "collegeyear": "2007",
@@ -3516,7 +3516,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22222",
         "name": "Hobo",
         "collegeyear": "2007",
@@ -3526,7 +3526,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22223",
         "name": "Hoorn",
         "collegeyear": "2007",
@@ -3536,7 +3536,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "French horn"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22224",
         "name": "Hoorn",
         "collegeyear": "2007",
@@ -3546,7 +3546,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "French horn"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22225",
         "name": "Hoorn",
         "collegeyear": "2007",
@@ -3556,7 +3556,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "French horn"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22226",
         "name": "Hoorn",
         "collegeyear": "2007",
@@ -3566,7 +3566,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "French horn"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22227",
         "name": "Hoorn",
         "collegeyear": "2007",
@@ -3576,7 +3576,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "French horn"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22228",
         "name": "Hoorn",
         "collegeyear": "2007",
@@ -3586,7 +3586,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "French horn"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22229",
         "name": "Improvisatieklas",
         "collegeyear": "2007",
@@ -3596,7 +3596,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Improvisation class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22230",
         "name": "Koordirectie",
         "collegeyear": "2007",
@@ -3606,7 +3606,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir conducting"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22231",
         "name": "Koordirectie",
         "collegeyear": "2007",
@@ -3616,7 +3616,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir conducting"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22232",
         "name": "Koordirectie",
         "collegeyear": "2007",
@@ -3626,7 +3626,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir conducting"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22233",
         "name": "Koordirectie",
         "collegeyear": "2007",
@@ -3636,7 +3636,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir conducting"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22234",
         "name": "Koordirectie",
         "collegeyear": "2007",
@@ -3646,7 +3646,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir conducting"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22235",
         "name": "Koordirectie",
         "collegeyear": "2007",
@@ -3656,7 +3656,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir conducting"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22236",
         "name": "Pianovaardigheden klassiek",
         "collegeyear": "2007",
@@ -3666,7 +3666,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano skills"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22237",
         "name": "Pianovaardigheden klassiek",
         "collegeyear": "2007",
@@ -3676,7 +3676,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano skills"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22238",
         "name": "Pianovaardigheden klassiek",
         "collegeyear": "2007",
@@ -3686,7 +3686,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano skills"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22239",
         "name": "Pianovaardigheden klassiek",
         "collegeyear": "2007",
@@ -3696,7 +3696,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano skills"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22240",
         "name": "Klarinet",
         "collegeyear": "2007",
@@ -3706,7 +3706,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Clarinet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22241",
         "name": "Klarinet",
         "collegeyear": "2007",
@@ -3716,7 +3716,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Clarinet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22242",
         "name": "Klarinet",
         "collegeyear": "2007",
@@ -3726,7 +3726,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Clarinet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22243",
         "name": "Klarinet",
         "collegeyear": "2007",
@@ -3736,7 +3736,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Clarinet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22244",
         "name": "Klarinet",
         "collegeyear": "2007",
@@ -3746,7 +3746,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Clarinet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22245",
         "name": "Klarinet",
         "collegeyear": "2007",
@@ -3756,7 +3756,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Clarinet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22246",
         "name": "Koorliteratuur en -scholing",
         "collegeyear": "2007",
@@ -3766,7 +3766,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22247",
         "name": "Koorliteratuur en -scholing",
         "collegeyear": "2007",
@@ -3776,7 +3776,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22248",
         "name": "ATV jazz en pop",
         "collegeyear": "2007",
@@ -3786,7 +3786,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Practical music theory jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22249",
         "name": "Partituurvaardigheid componisten",
         "collegeyear": "2007",
@@ -3796,7 +3796,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Score proficiency for composers"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22250",
         "name": "Partituurvaardigheid componisten",
         "collegeyear": "2007",
@@ -3806,7 +3806,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Score proficiency for composers"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22251",
         "name": "Partituurvaardigheden dirigenten",
         "collegeyear": "2007",
@@ -3816,7 +3816,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Score proficiency for conductors"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22252",
         "name": "Partituurvaardigheden dirigenten",
         "collegeyear": "2007",
@@ -3826,7 +3826,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Score proficiency for conductors"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22253",
         "name": "Rietenles",
         "collegeyear": "2007",
@@ -3836,7 +3836,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Reed crafting"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22254",
         "name": "Rietenles",
         "collegeyear": "2007",
@@ -3846,7 +3846,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Reed crafting"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22255",
         "name": "Rietenles",
         "collegeyear": "2007",
@@ -3856,7 +3856,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Reed crafting"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22256",
         "name": "Stagebespeling",
         "collegeyear": "2007",
@@ -3866,7 +3866,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Recital"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22257",
         "name": "Stagebespeling",
         "collegeyear": "2007",
@@ -3876,7 +3876,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Recital"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22258",
         "name": "Steunvak drums",
         "collegeyear": "2007",
@@ -3886,7 +3886,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Secondary subject drums"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22259",
         "name": "Ensemble slagwerk",
         "collegeyear": "2007",
@@ -3896,7 +3896,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Ensembles"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22260",
         "name": "Ensemble slagwerk",
         "collegeyear": "2007",
@@ -3906,7 +3906,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Ensembles"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22261",
         "name": "Ensemble slagwerk",
         "collegeyear": "2007",
@@ -3916,7 +3916,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Ensembles"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22262",
         "name": "Steunvak orkestdirectie",
         "collegeyear": "2007",
@@ -3926,7 +3926,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Orchestral conducting"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22263",
         "name": "Trompet jazz en pop",
         "collegeyear": "2007",
@@ -3936,7 +3936,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22264",
         "name": "Declamatie duits",
         "collegeyear": "2007",
@@ -3946,7 +3946,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "German recitation"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22265",
         "name": "Ensemble harp",
         "collegeyear": "2007",
@@ -3956,7 +3956,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harp ensemble"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22266",
         "name": "Techniek\/leesles",
         "collegeyear": "2007",
@@ -3966,7 +3966,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/sight reading"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22267",
         "name": "Techniek\/leesles",
         "collegeyear": "2007",
@@ -3976,7 +3976,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/sight reading"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22268",
         "name": "Techniek\/leesles",
         "collegeyear": "2007",
@@ -3986,7 +3986,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/sight reading"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22269",
         "name": "Techniek\/leesles",
         "collegeyear": "2007",
@@ -3996,7 +3996,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/sight reading"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22270",
         "name": "Tandemles bas\/drums",
         "collegeyear": "2007",
@@ -4006,7 +4006,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Tandem lesson bass\/drums"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22272",
         "name": "Techniek zang jazz en pop",
         "collegeyear": "2007",
@@ -4016,7 +4016,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22273",
         "name": "Compositie",
         "collegeyear": "2007",
@@ -4026,7 +4026,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Composition"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22274",
         "name": "Groepsles compositie C",
         "collegeyear": "2007",
@@ -4036,7 +4036,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson composition C"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22275",
         "name": "Sw mallets-solo-setup",
         "collegeyear": "2007",
@@ -4046,7 +4046,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Perc. mallets-solo-set up"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22276",
         "name": "Continuospel",
         "collegeyear": "2007",
@@ -4056,7 +4056,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Basso continuo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22277",
         "name": "Sw mallets-solo-setup",
         "collegeyear": "2007",
@@ -4066,7 +4066,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Perc. mallets-solo-set up"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22278",
         "name": "Sw orkestliteratuur",
         "collegeyear": "2007",
@@ -4076,7 +4076,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion orchestra literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22279",
         "name": "Continuospel",
         "collegeyear": "2007",
@@ -4086,7 +4086,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Basso continuo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22280",
         "name": "Sw orkestliteratuur",
         "collegeyear": "2007",
@@ -4096,7 +4096,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion orchestral literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22281",
         "name": "Blokfluit",
         "collegeyear": "2007",
@@ -4106,7 +4106,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Recorder"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22282",
         "name": "Sw orkestliteratuur",
         "collegeyear": "2007",
@@ -4116,7 +4116,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion orchestral literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22283",
         "name": "Sw orkestliteratuur",
         "collegeyear": "2007",
@@ -4126,7 +4126,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion orchestral literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22284",
         "name": "Blokfluit",
         "collegeyear": "2007",
@@ -4136,7 +4136,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Recorder"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22285",
         "name": "Sw orkestliteratuur",
         "collegeyear": "2007",
@@ -4146,7 +4146,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion orchestral literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22286",
         "name": "Altviool",
         "collegeyear": "2007",
@@ -4156,7 +4156,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22287",
         "name": "Basso continuopraktijk",
         "collegeyear": "2007",
@@ -4166,7 +4166,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Continuo playing"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22288",
         "name": "Compositie",
         "collegeyear": "2007",
@@ -4176,7 +4176,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Composition"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22289",
         "name": "Fagot",
         "collegeyear": "2007",
@@ -4186,7 +4186,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bassoon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22290",
         "name": "Fagot",
         "collegeyear": "2007",
@@ -4196,7 +4196,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bassoon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22291",
         "name": "Fluit",
         "collegeyear": "2007",
@@ -4206,7 +4206,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Flute"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22292",
         "name": "Harp",
         "collegeyear": "2007",
@@ -4216,7 +4216,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harp"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22293",
         "name": "Harp",
         "collegeyear": "2007",
@@ -4226,7 +4226,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harp"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22294",
         "name": "Hobo",
         "collegeyear": "2007",
@@ -4236,7 +4236,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22295",
         "name": "Hoorn",
         "collegeyear": "2007",
@@ -4246,7 +4246,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "French horn"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22296",
         "name": "Klarinet",
         "collegeyear": "2007",
@@ -4256,7 +4256,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Clarinet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22297",
         "name": "Koor",
         "collegeyear": "2007",
@@ -4266,7 +4266,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22298",
         "name": "Orgel",
         "collegeyear": "2007",
@@ -4276,7 +4276,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Organ"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22299",
         "name": "Orgel",
         "collegeyear": "2007",
@@ -4286,7 +4286,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Organ"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22300",
         "name": "Saxofoonorkest",
         "collegeyear": "2007",
@@ -4296,7 +4296,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone orchestra"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22301",
         "name": "Piano",
         "collegeyear": "2007",
@@ -4306,7 +4306,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22302",
         "name": "Steunvak drums",
         "collegeyear": "2007",
@@ -4316,7 +4316,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Secondary subject drums"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22303",
         "name": "Sw mallets-solo-setup",
         "collegeyear": "2007",
@@ -4326,7 +4326,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Perc. mallets-solo-set up"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22304",
         "name": "Trompet",
         "collegeyear": "2007",
@@ -4336,7 +4336,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22305",
         "name": "Cello",
         "collegeyear": "2007",
@@ -4346,7 +4346,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22306",
         "name": "Viool",
         "collegeyear": "2007",
@@ -4356,7 +4356,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22307",
         "name": "Blokfluit",
         "collegeyear": "2007",
@@ -4366,7 +4366,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Recorder"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22308",
         "name": "Blokfluit",
         "collegeyear": "2007",
@@ -4376,7 +4376,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Recorder"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22309",
         "name": "Sw pauken",
         "collegeyear": "2007",
@@ -4386,7 +4386,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion timpani"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22310",
         "name": "Sw pauken",
         "collegeyear": "2007",
@@ -4396,7 +4396,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion timpani"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22311",
         "name": "Blokfluit",
         "collegeyear": "2007",
@@ -4406,7 +4406,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Recorder"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22312",
         "name": "Sw pauken",
         "collegeyear": "2007",
@@ -4416,7 +4416,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion timpani"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22313",
         "name": "Blokfluit",
         "collegeyear": "2007",
@@ -4426,7 +4426,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Recorder"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22314",
         "name": "Sw pauken",
         "collegeyear": "2007",
@@ -4436,7 +4436,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion timpani"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22315",
         "name": "Barokhobo",
         "collegeyear": "2007",
@@ -4446,7 +4446,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22316",
         "name": "Sw pauken",
         "collegeyear": "2007",
@@ -4456,7 +4456,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion timpani"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22317",
         "name": "Barokhobo",
         "collegeyear": "2007",
@@ -4466,7 +4466,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22318",
         "name": "Barokhobo",
         "collegeyear": "2007",
@@ -4476,7 +4476,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22319",
         "name": "Barokhobo",
         "collegeyear": "2007",
@@ -4486,7 +4486,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22320",
         "name": "Barokhobo",
         "collegeyear": "2007",
@@ -4496,7 +4496,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22321",
         "name": "Barokhobo",
         "collegeyear": "2007",
@@ -4506,7 +4506,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22322",
         "name": "Saxofoon",
         "collegeyear": "2007",
@@ -4516,7 +4516,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22323",
         "name": "Saxofoon",
         "collegeyear": "2007",
@@ -4526,7 +4526,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22324",
         "name": "Saxofoon",
         "collegeyear": "2007",
@@ -4536,7 +4536,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22325",
         "name": "Barokcello",
         "collegeyear": "2007",
@@ -4546,7 +4546,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22326",
         "name": "Kleine trom",
         "collegeyear": "2007",
@@ -4556,7 +4556,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/snare drum"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22327",
         "name": "Basgitaar jazz en pop",
         "collegeyear": "2007",
@@ -4566,7 +4566,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bass guitar jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22328",
         "name": "Contrabas jazz en pop",
         "collegeyear": "2007",
@@ -4576,7 +4576,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22329",
         "name": "Gitaar jazz en pop",
         "collegeyear": "2007",
@@ -4586,7 +4586,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Guitar jazz # pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22330",
         "name": "Piano jazz en pop",
         "collegeyear": "2007",
@@ -4596,7 +4596,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22331",
         "name": "Zang jazz en pop",
         "collegeyear": "2007",
@@ -4606,7 +4606,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22332",
         "name": "Techniek zang jazz en pop",
         "collegeyear": "2007",
@@ -4616,7 +4616,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22333",
         "name": "Pianovaardigheden jazz en pop",
         "collegeyear": "2007",
@@ -4626,7 +4626,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano skills"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22334",
         "name": "Steunvak techniek\/klassiek",
         "collegeyear": "2007",
@@ -4636,7 +4636,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique\/classical music"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22335",
         "name": "Harmonie aan de beiaard",
         "collegeyear": "2007",
@@ -4646,7 +4646,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon harmony"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22336",
         "name": "Toegepaste muziektheorie",
         "collegeyear": "2007",
@@ -4656,7 +4656,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Practical music theory"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22337",
         "name": "Arrangeren voor beiaard",
         "collegeyear": "2007",
@@ -4666,7 +4666,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Arranging for carillon"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22338",
         "name": "Contrabas",
         "collegeyear": "2007",
@@ -4676,7 +4676,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22339",
         "name": "Fluit",
         "collegeyear": "2007",
@@ -4686,7 +4686,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Flute"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22340",
         "name": "Groepsles compositie C",
         "collegeyear": "2007",
@@ -4696,7 +4696,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson composition C"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22341",
         "name": "Gregoriaans",
         "collegeyear": "2007",
@@ -4706,7 +4706,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Gregorian chant"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22342",
         "name": "Sw orkestliteratuur",
         "collegeyear": "2007",
@@ -4716,7 +4716,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion orchestral literature"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22343",
         "name": "Hobo",
         "collegeyear": "2007",
@@ -4726,7 +4726,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Oboe"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22344",
         "name": "Trombone",
         "collegeyear": "2007",
@@ -4736,7 +4736,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trombone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22345",
         "name": "Sw pauken",
         "collegeyear": "2007",
@@ -4746,7 +4746,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Percussion timpani"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22346",
         "name": "Barokcello",
         "collegeyear": "2007",
@@ -4756,7 +4756,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22347",
         "name": "Clavecimbel",
         "collegeyear": "2007",
@@ -4766,7 +4766,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harpsichord"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22348",
         "name": "Saxofoon",
         "collegeyear": "2007",
@@ -4776,7 +4776,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22349",
         "name": "Saxofoon",
         "collegeyear": "2007",
@@ -4786,7 +4786,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22350",
         "name": "Steunvak zang",
         "collegeyear": "2007",
@@ -4796,7 +4796,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Singing lessons"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22351",
         "name": "Saxofoon",
         "collegeyear": "2007",
@@ -4806,7 +4806,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22352",
         "name": "Barokcello",
         "collegeyear": "2007",
@@ -4816,7 +4816,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22353",
         "name": "Steunvak zang",
         "collegeyear": "2007",
@@ -4826,7 +4826,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Singing lessons"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22354",
         "name": "Barokcello",
         "collegeyear": "2007",
@@ -4836,7 +4836,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22355",
         "name": "Trombone",
         "collegeyear": "2007",
@@ -4846,7 +4846,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trombone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22356",
         "name": "Barokcello",
         "collegeyear": "2007",
@@ -4856,7 +4856,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22357",
         "name": "Barokcello",
         "collegeyear": "2007",
@@ -4866,7 +4866,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22358",
         "name": "Trombone",
         "collegeyear": "2007",
@@ -4876,7 +4876,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trombone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22359",
         "name": "Trombone",
         "collegeyear": "2007",
@@ -4886,7 +4886,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trombone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22360",
         "name": "Trombone",
         "collegeyear": "2007",
@@ -4896,7 +4896,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trombone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22361",
         "name": "Trombone",
         "collegeyear": "2007",
@@ -4906,7 +4906,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trombone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22362",
         "name": "Trombone",
         "collegeyear": "2007",
@@ -4916,7 +4916,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trombone"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22363",
         "name": "Trompet",
         "collegeyear": "2007",
@@ -4926,7 +4926,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22364",
         "name": "Trompet",
         "collegeyear": "2007",
@@ -4936,7 +4936,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22365",
         "name": "Trompet",
         "collegeyear": "2007",
@@ -4946,7 +4946,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22366",
         "name": "Trompet",
         "collegeyear": "2007",
@@ -4956,7 +4956,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22367",
         "name": "Trompet",
         "collegeyear": "2007",
@@ -4966,7 +4966,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22368",
         "name": "Tuba",
         "collegeyear": "2007",
@@ -4976,7 +4976,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Tuba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22369",
         "name": "Trompet",
         "collegeyear": "2007",
@@ -4986,7 +4986,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22370",
         "name": "Tuba",
         "collegeyear": "2007",
@@ -4996,7 +4996,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Tuba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22371",
         "name": "Tuba",
         "collegeyear": "2007",
@@ -5006,7 +5006,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Tuba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22372",
         "name": "Tuba",
         "collegeyear": "2007",
@@ -5016,7 +5016,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Tuba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22373",
         "name": "Tuba",
         "collegeyear": "2007",
@@ -5026,7 +5026,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Tuba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22374",
         "name": "Tuba",
         "collegeyear": "2007",
@@ -5036,7 +5036,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Tuba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22375",
         "name": "Cello",
         "collegeyear": "2007",
@@ -5046,7 +5046,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22376",
         "name": "Cello",
         "collegeyear": "2007",
@@ -5056,7 +5056,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22377",
         "name": "Cello",
         "collegeyear": "2007",
@@ -5066,7 +5066,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22378",
         "name": "Cello",
         "collegeyear": "2007",
@@ -5076,7 +5076,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22379",
         "name": "Cello",
         "collegeyear": "2007",
@@ -5086,7 +5086,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22380",
         "name": "Cello",
         "collegeyear": "2007",
@@ -5096,7 +5096,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Cello"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22381",
         "name": "Viool",
         "collegeyear": "2007",
@@ -5106,7 +5106,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22382",
         "name": "Viool",
         "collegeyear": "2007",
@@ -5116,7 +5116,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22383",
         "name": "Viool",
         "collegeyear": "2007",
@@ -5126,7 +5126,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22384",
         "name": "Viool",
         "collegeyear": "2007",
@@ -5136,7 +5136,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22385",
         "name": "Viool",
         "collegeyear": "2007",
@@ -5146,7 +5146,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22386",
         "name": "Viool",
         "collegeyear": "2007",
@@ -5156,7 +5156,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22387",
         "name": "Zang",
         "collegeyear": "2007",
@@ -5166,7 +5166,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22388",
         "name": "Zang",
         "collegeyear": "2007",
@@ -5176,7 +5176,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22389",
         "name": "Zang",
         "collegeyear": "2007",
@@ -5186,7 +5186,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22390",
         "name": "Zang",
         "collegeyear": "2007",
@@ -5196,7 +5196,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22391",
         "name": "Zang",
         "collegeyear": "2007",
@@ -5206,7 +5206,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22392",
         "name": "Zang",
         "collegeyear": "2007",
@@ -5216,7 +5216,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22393",
         "name": "Barokviool",
         "collegeyear": "2007",
@@ -5226,7 +5226,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22394",
         "name": "Barokviool",
         "collegeyear": "2007",
@@ -5236,7 +5236,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22395",
         "name": "Barokviool",
         "collegeyear": "2007",
@@ -5246,7 +5246,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22396",
         "name": "Barokviool",
         "collegeyear": "2007",
@@ -5256,7 +5256,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22397",
         "name": "Barokviool",
         "collegeyear": "2007",
@@ -5266,7 +5266,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22398",
         "name": "Barokviool",
         "collegeyear": "2007",
@@ -5276,7 +5276,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque violin"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22399",
         "name": "Clavecimbel",
         "collegeyear": "2007",
@@ -5286,7 +5286,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harpsichord"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22400",
         "name": "Clavecimbel",
         "collegeyear": "2007",
@@ -5296,7 +5296,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harpsichord"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22401",
         "name": "Clavecimbel",
         "collegeyear": "2007",
@@ -5306,7 +5306,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harpsichord"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22402",
         "name": "Clavecimbel",
         "collegeyear": "2007",
@@ -5316,7 +5316,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harpsichord"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22403",
         "name": "Clavecimbel",
         "collegeyear": "2007",
@@ -5326,7 +5326,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harpsichord"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22404",
         "name": "Correpetitie historisch",
         "collegeyear": "2007",
@@ -5336,7 +5336,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22405",
         "name": "Correpetitie historisch",
         "collegeyear": "2007",
@@ -5346,7 +5346,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22406",
         "name": "Correpetitie historisch",
         "collegeyear": "2007",
@@ -5356,7 +5356,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22407",
         "name": "Correpetitie historisch",
         "collegeyear": "2007",
@@ -5366,7 +5366,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22408",
         "name": "Correpetitie historisch",
         "collegeyear": "2007",
@@ -5376,7 +5376,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22409",
         "name": "Correpetitie historisch",
         "collegeyear": "2007",
@@ -5386,7 +5386,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22410",
         "name": "Ensembles oude muziek",
         "collegeyear": "2007",
@@ -5396,7 +5396,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22411",
         "name": "Ensembles oude muziek",
         "collegeyear": "2007",
@@ -5406,7 +5406,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22412",
         "name": "Ensembles oude muziek",
         "collegeyear": "2007",
@@ -5416,7 +5416,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22413",
         "name": "Ensembles oude muziek",
         "collegeyear": "2007",
@@ -5426,7 +5426,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22414",
         "name": "Ensembles oude muziek",
         "collegeyear": "2007",
@@ -5436,7 +5436,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22415",
         "name": "Ensembles oude muziek",
         "collegeyear": "2007",
@@ -5446,7 +5446,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22416",
         "name": "Viola da gamba",
         "collegeyear": "2007",
@@ -5456,7 +5456,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola da gamba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22417",
         "name": "Viola da gamba",
         "collegeyear": "2007",
@@ -5466,7 +5466,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola da gamba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22418",
         "name": "Viola da gamba",
         "collegeyear": "2007",
@@ -5476,7 +5476,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola da gamba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22419",
         "name": "Viola da gamba",
         "collegeyear": "2007",
@@ -5486,7 +5486,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola da gamba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22420",
         "name": "Viola da gamba",
         "collegeyear": "2007",
@@ -5496,7 +5496,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola da gamba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22421",
         "name": "Viola da gamba",
         "collegeyear": "2007",
@@ -5506,7 +5506,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola da gamba"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22422",
         "name": "Historische documentatie",
         "collegeyear": "2007",
@@ -5516,7 +5516,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Historical documentation"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22423",
         "name": "Historische documentatie",
         "collegeyear": "2007",
@@ -5526,7 +5526,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Historical documentation"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22424",
         "name": "Renaissancekoor",
         "collegeyear": "2007",
@@ -5536,7 +5536,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22425",
         "name": "Clavecimbel\/continuospel",
         "collegeyear": "2007",
@@ -5546,7 +5546,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Sec. subject harpsichord\/continuo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22426",
         "name": "Clavecimbel\/continuospel",
         "collegeyear": "2007",
@@ -5556,7 +5556,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Sec. subject harpsichord\/continuo"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22427",
         "name": "Traverso",
         "collegeyear": "2007",
@@ -5566,7 +5566,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Traverso"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22428",
         "name": "Traverso",
         "collegeyear": "2007",
@@ -5576,7 +5576,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Traverso"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22429",
         "name": "Traverso",
         "collegeyear": "2007",
@@ -5586,7 +5586,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Traverso"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22430",
         "name": "Traverso",
         "collegeyear": "2007",
@@ -5596,7 +5596,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Traverso"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22431",
         "name": "Traverso",
         "collegeyear": "2007",
@@ -5606,7 +5606,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Traverso"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22432",
         "name": "Traverso",
         "collegeyear": "2007",
@@ -5616,7 +5616,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Traverso"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22434",
         "name": "Declamatie frans",
         "collegeyear": "2007",
@@ -5626,7 +5626,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "French recitation"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22435",
         "name": "Techniek bij saxofoon",
         "collegeyear": "2007",
@@ -5636,7 +5636,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22436",
         "name": "Ensemble- en orkestspel",
         "collegeyear": "2007",
@@ -5646,7 +5646,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Ensemble\/orchestra"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22437",
         "name": "Vrijhouden orkest\/ensemble",
         "collegeyear": "2007",
@@ -5656,7 +5656,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Reserved for orchestra\/ensemble"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22438",
         "name": "Vrijhouden lunchpauzeconcert",
         "collegeyear": "2007",
@@ -5666,7 +5666,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Scheduled for lunch concert"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22439",
         "name": "Vrijhouden groepsles",
         "collegeyear": "2007",
@@ -5676,7 +5676,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Scheduled for group lesson"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22440",
         "name": "Muziekpedagogiek",
         "collegeyear": "2007",
@@ -5686,7 +5686,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Pedagogy"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22441",
         "name": "Muziekpedagogiek",
         "collegeyear": "2007",
@@ -5696,7 +5696,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Pedagogy"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22442",
         "name": "methodiek vakspecifiek",
         "collegeyear": "2007",
@@ -5706,7 +5706,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "instrumental or vocal methodology"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22443",
         "name": "methodiek vakspecifiek",
         "collegeyear": "2007",
@@ -5716,7 +5716,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "instrumental or vocal methodology"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22444",
         "name": "Stagereflectie",
         "collegeyear": "2007",
@@ -5726,7 +5726,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Internship for teaching musicians"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22445",
         "name": "Stagereflectie",
         "collegeyear": "2007",
@@ -5736,7 +5736,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Internship for teaching musicians"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22446",
         "name": "Cross cultural music lab",
         "collegeyear": "2007",
@@ -5746,7 +5746,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Cross cultural music lab"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22447",
         "name": "Geschiedenis\/theorie muziekprod",
         "collegeyear": "2007",
@@ -5756,7 +5756,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "History\/theory music production"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22448",
         "name": "Geschiedenis\/theorie muziekprod",
         "collegeyear": "2007",
@@ -5766,7 +5766,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "History\/theory production"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22449",
         "name": "Scriptie",
         "collegeyear": "2007",
@@ -5776,7 +5776,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Thesis for teaching musicians"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22450",
         "name": "Kleine harp",
         "collegeyear": "2007",
@@ -5786,7 +5786,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Small harp"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22451",
         "name": "Orientatie kerkmuziek",
         "collegeyear": "2007",
@@ -5796,7 +5796,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Orientation on church music"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22452",
         "name": "Groepsles hoofdvak",
         "collegeyear": "2007",
@@ -5806,7 +5806,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22453",
         "name": "Groepsles hoofdvak",
         "collegeyear": "2007",
@@ -5816,7 +5816,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22454",
         "name": "Groepsles hoofdvak",
         "collegeyear": "2007",
@@ -5826,7 +5826,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22455",
         "name": "Groepsles hoofdvak",
         "collegeyear": "2007",
@@ -5836,7 +5836,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22456",
         "name": "Techniekklas",
         "collegeyear": "2007",
@@ -5846,7 +5846,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Technique class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22457",
         "name": "Groepsles altviool",
         "collegeyear": "2007",
@@ -5856,7 +5856,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Group lesson viola"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22458",
         "name": "Solfègelab",
         "collegeyear": "2007",
@@ -5866,7 +5866,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Solfège lab"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22459",
         "name": "Solfègelab",
         "collegeyear": "2007",
@@ -5876,7 +5876,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Solfège lab"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22460",
         "name": "Alexandertechniek oriëntatie",
         "collegeyear": "2007",
@@ -5886,7 +5886,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Orientation course Alexander techni"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22461",
         "name": "Ensemble djembé",
         "collegeyear": "2007",
@@ -5896,7 +5896,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Djembé ensemble"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22462",
         "name": "Ensemble djembé",
         "collegeyear": "2007",
@@ -5906,7 +5906,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Djembé ensemble"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22463",
         "name": "Ensemble djembé",
         "collegeyear": "2007",
@@ -5916,7 +5916,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Djembé ensemble"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22464",
         "name": "Ensemble djembé",
         "collegeyear": "2007",
@@ -5926,7 +5926,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Djembé ensemble"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22468",
         "name": "Solfègelab",
         "collegeyear": "2007",
@@ -5936,7 +5936,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Solfège lab"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22469",
         "name": "Solfègelab",
         "collegeyear": "2007",
@@ -5946,7 +5946,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Solfège lab"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22476",
         "name": "Altviool vooropleiding",
         "collegeyear": "2007",
@@ -5956,7 +5956,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22477",
         "name": "ATV vooropleiding",
         "collegeyear": "2007",
@@ -5966,7 +5966,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Theory preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22478",
         "name": "Beiaard vooropleiding",
         "collegeyear": "2007",
@@ -5976,7 +5976,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22479",
         "name": "Blokfluit vooropleiding",
         "collegeyear": "2007",
@@ -5986,7 +5986,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Recorder preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22480",
         "name": "Barokhobo vooropleiding",
         "collegeyear": "2007",
@@ -5996,7 +5996,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque oboe preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22481",
         "name": "Barokcello vooropleiding",
         "collegeyear": "2007",
@@ -6006,7 +6006,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque cello preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22482",
         "name": "Barokviool vooropleiding",
         "collegeyear": "2007",
@@ -6016,7 +6016,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque violin preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22483",
         "name": "Contrabas vooropleiding",
         "collegeyear": "2007",
@@ -6026,7 +6026,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22484",
         "name": "Clavecimbel vooropleiding",
         "collegeyear": "2007",
@@ -6036,7 +6036,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harpsichord preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22485",
         "name": "Compositie vooropleiding",
         "collegeyear": "2007",
@@ -6046,7 +6046,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Composition preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22486",
         "name": "Fagot vooropleiding",
         "collegeyear": "2007",
@@ -6056,7 +6056,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bassoon preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22487",
         "name": "Fluit vooropleiding",
         "collegeyear": "2007",
@@ -6066,7 +6066,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Flute preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22488",
         "name": "Gamba vooropleiding",
         "collegeyear": "2007",
@@ -6076,7 +6076,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Gamba preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22489",
         "name": "Harp vooropleiding",
         "collegeyear": "2007",
@@ -6086,7 +6086,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harp preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22490",
         "name": "Hobo vooropleiding",
         "collegeyear": "2007",
@@ -6096,7 +6096,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Oboe preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22491",
         "name": "Hoorn vooropleiding",
         "collegeyear": "2007",
@@ -6106,7 +6106,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "French horn preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22492",
         "name": "Klarinet vooropleiding",
         "collegeyear": "2007",
@@ -6116,7 +6116,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Clarinet preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22493",
         "name": "Basgitaar JP vooropleiding",
         "collegeyear": "2007",
@@ -6126,7 +6126,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bass guitar JP preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22494",
         "name": "Contrabas JP vooropleiding",
         "collegeyear": "2007",
@@ -6136,7 +6136,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass JP preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22495",
         "name": "Drums JP vooropleiding",
         "collegeyear": "2007",
@@ -6146,7 +6146,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Drums preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22496",
         "name": "Gitaar JP vooropleiding",
         "collegeyear": "2007",
@@ -6156,7 +6156,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Guitar JP preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22497",
         "name": "Piano JP vooropleiding",
         "collegeyear": "2007",
@@ -6166,7 +6166,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano JP preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22498",
         "name": "Saxofoon JP vooropleiding",
         "collegeyear": "2007",
@@ -6176,7 +6176,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone JP preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22499",
         "name": "Trombone JP vooropleiding",
         "collegeyear": "2007",
@@ -6186,7 +6186,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trombone JP preparatory year"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22500",
         "name": "Trompet JP vooropleiding",
         "collegeyear": "2007",
@@ -6196,7 +6196,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet JP preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22501",
         "name": "Zang JP vooropleiding",
         "collegeyear": "2007",
@@ -6206,7 +6206,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice JP preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22502",
         "name": "Orgel vooropleiding",
         "collegeyear": "2007",
@@ -6216,7 +6216,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Organ preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22503",
         "name": "Piano vooropleiding",
         "collegeyear": "2007",
@@ -6226,7 +6226,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22504",
         "name": "Groepsles zang vooropleiding",
         "collegeyear": "2007",
@@ -6236,7 +6236,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22505",
         "name": "Steunvak piano vooropleiding",
         "collegeyear": "2007",
@@ -6246,7 +6246,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22506",
         "name": "Sw solo\/setup vooropleiding",
         "collegeyear": "2007",
@@ -6256,7 +6256,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Perc. solo\/set up preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22507",
         "name": "Sw orkestliteratuur vooropleiding",
         "collegeyear": "2007",
@@ -6266,7 +6266,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Perc. orch. lit. preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22508",
         "name": "Sw pauken vooropleiding",
         "collegeyear": "2007",
@@ -6276,7 +6276,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Perc. timp. preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22509",
         "name": "Saxofoon vooropleiding",
         "collegeyear": "2007",
@@ -6286,7 +6286,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22510",
         "name": "Trombone vooropleiding",
         "collegeyear": "2007",
@@ -6296,7 +6296,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trombone preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22511",
         "name": "Trompet vooropleiding",
         "collegeyear": "2007",
@@ -6306,7 +6306,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22512",
         "name": "Tuba vooropleiding",
         "collegeyear": "2007",
@@ -6316,7 +6316,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Tuba preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22513",
         "name": "Traverso vooropleiding",
         "collegeyear": "2007",
@@ -6326,7 +6326,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Traverso preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22514",
         "name": "Cello vooropleiding",
         "collegeyear": "2007",
@@ -6336,7 +6336,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Cello preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22515",
         "name": "Viool vooropleiding",
         "collegeyear": "2007",
@@ -6346,7 +6346,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Violin preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22516",
         "name": "Zang vooropleiding",
         "collegeyear": "2007",
@@ -6356,7 +6356,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice preparatory class"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22517",
         "name": "Altviool master",
         "collegeyear": "2007",
@@ -6366,7 +6366,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Viola master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22518",
         "name": "Correpetitie master",
         "collegeyear": "2007",
@@ -6376,7 +6376,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Accompaniment master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22519",
         "name": "Beiaard master",
         "collegeyear": "2007",
@@ -6386,7 +6386,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Carillon master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22520",
         "name": "Blokfluit master",
         "collegeyear": "2007",
@@ -6396,7 +6396,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Recorder master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22521",
         "name": "Barokhobo master",
         "collegeyear": "2007",
@@ -6406,7 +6406,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque oboe master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22522",
         "name": "Barokcello master",
         "collegeyear": "2007",
@@ -6416,7 +6416,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque cello master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22523",
         "name": "Barokviool master",
         "collegeyear": "2007",
@@ -6426,7 +6426,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Baroque violin master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22524",
         "name": "Contrabas master",
         "collegeyear": "2007",
@@ -6436,7 +6436,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22525",
         "name": "Clavecimbel master",
         "collegeyear": "2007",
@@ -6446,7 +6446,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harpsichord master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22526",
         "name": "Continuospel master",
         "collegeyear": "2007",
@@ -6456,7 +6456,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Basso continuo master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22527",
         "name": "Compositie master",
         "collegeyear": "2007",
@@ -6466,7 +6466,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Composition master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22528",
         "name": "Fagot master",
         "collegeyear": "2007",
@@ -6476,7 +6476,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bassoon master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22529",
         "name": "Fluit master",
         "collegeyear": "2007",
@@ -6486,7 +6486,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Flute master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22530",
         "name": "Gamba master",
         "collegeyear": "2007",
@@ -6496,7 +6496,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Gamba master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22531",
         "name": "Harp master",
         "collegeyear": "2007",
@@ -6506,7 +6506,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Harp master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22532",
         "name": "Hobo master",
         "collegeyear": "2007",
@@ -6516,7 +6516,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Oboe master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22533",
         "name": "Hoorn master",
         "collegeyear": "2007",
@@ -6526,7 +6526,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "French horn master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22534",
         "name": "Koordirectie master",
         "collegeyear": "2007",
@@ -6536,7 +6536,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Choir conducting master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22535",
         "name": "Klarinet master",
         "collegeyear": "2007",
@@ -6546,7 +6546,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Clarinet master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22536",
         "name": "Basgitaar JP master",
         "collegeyear": "2007",
@@ -6556,7 +6556,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Bass guitar JP master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22537",
         "name": "Contrabas JP master",
         "collegeyear": "2007",
@@ -6566,7 +6566,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Double bass JP master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22538",
         "name": "Drums JP master",
         "collegeyear": "2007",
@@ -6576,7 +6576,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Drums JP master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22539",
         "name": "Gitaar JP master",
         "collegeyear": "2007",
@@ -6586,7 +6586,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Guitar JP master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22540",
         "name": "Piano JP master",
         "collegeyear": "2007",
@@ -6596,7 +6596,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano JP master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22541",
         "name": "Saxofoon JP master",
         "collegeyear": "2007",
@@ -6606,7 +6606,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone JP master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22542",
         "name": "Trombone JP master",
         "collegeyear": "2007",
@@ -6616,7 +6616,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trombone JP master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22543",
         "name": "Trompet JP master",
         "collegeyear": "2007",
@@ -6626,7 +6626,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet JP master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22544",
         "name": "Zang JP master",
         "collegeyear": "2007",
@@ -6636,7 +6636,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice JP master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22545",
         "name": "Orgel master",
         "collegeyear": "2007",
@@ -6646,7 +6646,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Organ master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22546",
         "name": "Piano master",
         "collegeyear": "2007",
@@ -6656,7 +6656,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Piano master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22547",
         "name": "Sw solo\/setup master",
         "collegeyear": "2007",
@@ -6666,7 +6666,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Perc. solo\/setup master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22548",
         "name": "Sw orkestliteratuur master",
         "collegeyear": "2007",
@@ -6676,7 +6676,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Perc. orch. instruments master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22549",
         "name": "Sw pauken master",
         "collegeyear": "2007",
@@ -6686,7 +6686,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Perc. timpani master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22550",
         "name": "Saxofoon master",
         "collegeyear": "2007",
@@ -6696,7 +6696,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22551",
         "name": "Trombone master",
         "collegeyear": "2007",
@@ -6706,7 +6706,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trombone master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22552",
         "name": "Trompet master",
         "collegeyear": "2007",
@@ -6716,7 +6716,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Trumpet master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22553",
         "name": "Tuba master",
         "collegeyear": "2007",
@@ -6726,7 +6726,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Tuba master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22554",
         "name": "Traverso master",
         "collegeyear": "2007",
@@ -6736,7 +6736,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Traverso master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22555",
         "name": "Cello master",
         "collegeyear": "2007",
@@ -6746,7 +6746,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Cello master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22556",
         "name": "Viool master",
         "collegeyear": "2007",
@@ -6756,7 +6756,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Violin master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22557",
         "name": "Zang master",
         "collegeyear": "2007",
@@ -6766,7 +6766,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice master"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22558",
         "name": "Keuze-instrument bij ODM",
         "collegeyear": "2007",
@@ -6776,7 +6776,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": ""
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22559",
         "name": "Blokfluit uitwisseling",
         "collegeyear": "2007",
@@ -6786,7 +6786,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Recorder exchange"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22560",
         "name": "Saxofoon uitwisseling",
         "collegeyear": "2007",
@@ -6796,7 +6796,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Saxophone exchange"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22561",
         "name": "Cello uitwisseling",
         "collegeyear": "2007",
@@ -6806,7 +6806,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Cello exchange"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22562",
         "name": "Hobo uitwisseling",
         "collegeyear": "2007",
@@ -6816,7 +6816,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Oboe exchange"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22563",
         "name": "Zang jazz en pop",
         "collegeyear": "2007",
@@ -6826,7 +6826,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Voice jazz and pop"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22564",
         "name": "Close harmony",
         "collegeyear": "2007",
@@ -6836,7 +6836,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Close harmony"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22565",
         "name": "Close harmony",
         "collegeyear": "2007",
@@ -6846,7 +6846,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Close harmony"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22566",
         "name": "Close harmony",
         "collegeyear": "2007",
@@ -6856,7 +6856,7 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "name_english": "Close harmony"
     },
     {
-        "type": "Module",
+        "type": "Subject",
         "id": "22567",
         "name": "Close harmony",
         "collegeyear": "2007",

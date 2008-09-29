@@ -41,37 +41,43 @@ AdmissionExam.FIXTURES = AdmissionExam.FIXTURES.concat([
   // }
     {
         guid : 1,
-        name : 'Informatie over student',
+        name : '_information_about_candidate',
         view : 'ae_candidate_information_student_information',
         type : 'AEMenuItem'
     }, 
     {
         guid : 2,
-        name : 'Informatie over commissie',
+        name : '_information_about_commission',
         view : 'ae_candidate_information_commission_information',
         type : 'AEMenuItem'
     },   
     {
         guid : 3,
-        name : 'Bevindingen van commissie',
-        view : 'ae_candidate_information_evaluation',
+        name : '_candidate_background',
+        view : 'ae_candidate_information_candidate_background',
         type : 'AEMenuItem'
     },     
     {
         guid : 4,
-        name : 'Performance-informatie',
+        name : '_commission_evaluation',
+        view : 'ae_candidate_information_evaluation',
+        type : 'AEMenuItem'
+    },     
+    {
+        guid : 5,
+        name : '_candidate_performance_information',
         view : 'ae_candidate_information_performance_information',
         type : 'AEMenuItem'
     },     
     {
         guid : 6,
-        name : 'Overzicht',
+        name : '_candidate_information_overview',
         view : 'ae_candidate_information_overview',
         type : 'AEMenuItem'
     },    
     {
         guid : 5,
-        name : 'Invoer Toelatingstoets',
+        name : '_input_admission_test',
         view : 'ae_candidate_information_admission_test',
         type : 'AEMenuItem'
     } 

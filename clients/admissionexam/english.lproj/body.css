@@ -14,8 +14,6 @@
   width: 900px;
 }
 
-
-
 #ae_candidate_information {
   position: absolute;
   top: 80px;
@@ -30,7 +28,7 @@
 
 #ae_candidate_information_views {
   position: absolute;
-  left: 210px;
+  left: 260px;
   top: 0px;
   height: 500px;
   width: 600px; 
@@ -54,6 +52,14 @@
   top: 0px;
   height: 500px;
   width: 600px;
+}
+
+#ae_candidate_information_candidate_background {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 500px;
+  width: 600px; 
 }
 
 #ae_candidate_information_evaluation {

@@ -1,0 +1,44 @@
+<% view :ae_candidate_information_candidate_background do %>
+  <%= label_view :ae_ci_cb_years_self_study_lv, :tag => 'h4', :value => loc('_ae_ci_cb_years_self_study') %>
+  <%= text_field_view :ae_ci_cb_years_self_study_tfv,
+        :bind => {
+            :value => 'AdmissionExam.currentExamController.yearsSelfStudy',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+   %>
+  <%= label_view :ae_ci_cb_years_lessons_lv, :tag => 'h4', :value => loc('_ae_ci_cb_years_lessons') %>
+  <%= text_field_view :ae_ci_cb_years_lessons_tfv,
+        :bind => {
+            :value => 'AdmissionExam.currentExamController.yearsLessons',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+   %>
+  <%= label_view :ae_ci_cb_interest_in_preparation_course_label, :tag => 'h4', 
+         :value => loc('_ae_ci_cb_interest_in_preparation_course') %>
+ 
+ <%= radio_group_view :ae_ci_cb_interest_in_preparation_course_rg, 
+      :values => [[true, loc('_yes')], [false, loc('_no')]], 
+      :layout => :horizontal, 
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.interestInPreparationCourse' 
+      } %>
+   
+  <%= label_view :ae_ci_cb_desired_course_lv, :tag => 'h4', :value => loc('_ae_ci_cb_desired_course') %>
+  <% scroll_view :ae_ci_cb_desired_course_sv do %>
+        <%= list_view :ae_ci_cb_desired_course_listview,           
+            :example_view => 'SC.ListItemView',
+            :row_height => 20,
+            :height => 250,
+            :is_editable => false,
+            :content_value_key => 'name',
+            :can_order_content => false,
+            :can_reorder_content => false,
+            :bind => {
+                :content => 'AdmissionExam.desiredCourseListController.arrangedObjects',
+                :selection => 'AdmissionExam.desiredCourseListController.selection',
+                :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+            }
+            %>
+    <% end %>
+
+<% end %>

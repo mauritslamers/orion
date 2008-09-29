@@ -20,14 +20,6 @@ function main() {
   // TODO: refresh() any collections you have created to get their records.
   // ex: Admissionexam.contacts.refresh() ;
 
-  // Step 2: Instantiate Your Views
-  // The default code just activates all the views you have on the page. If
-  // your app gets any level of complexity, you should just get the views you
-  // need to show the app in the first place, to speed things up.
-  SC.page.awake() ;
-
-  // Step 3. Set the content property on your primary controller.
-  // This will make your app come alive!
   var tmpMenuItems = SC.Store.findRecords(AdmissionExam.AEMenuItem);
   AdmissionExam.candidateInformationSourceListViewController.set('content',tmpMenuItems);
   // TODO: Set the content property on your primary controller
@@ -47,4 +39,18 @@ function main() {
   
   var exams = AdmissionExam.AEExam.collection();
   AdmissionExam.currentExamController.set('content',exams);
+  
+  var courses = OrionFw.Course.collection();
+  courses.set('orderBy', ['name ASC']);
+  AdmissionExam.desiredCourseListController.set('content',courses);
+
+  // Step 2: Instantiate Your Views
+  // The default code just activates all the views you have on the page. If
+  // your app gets any level of complexity, you should just get the views you
+  // need to show the app in the first place, to speed things up.
+  SC.page.awake() ;
+
+  // Step 3. Set the content property on your primary controller.
+  // This will make your app come alive!
+
 } ;

@@ -13,7 +13,7 @@ require('orion_fw');
   @author    AuthorName  
   @version 0.1
 */  
-OrionFw.Education = SC.Record.extend(
+OrionFw.Course = SC.Record.extend(
 /** @scope Education.prototype */ {
   
   // TODO: Add your own code here.
