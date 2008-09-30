@@ -47,6 +47,9 @@ function main() {
   var conclusions = AdmissionExam.AEConclusion.collection();
   AdmissionExam.conclusionListController.set('content',conclusions);
 
+  var advice = AdmissionExam.AEAdvice.collection();
+  AdmissionExam.adviceListController.set('content',advice);
+  
   // Step 2: Instantiate Your Views
   // The default code just activates all the views you have on the page. If
   // your app gets any level of complexity, you should just get the views you

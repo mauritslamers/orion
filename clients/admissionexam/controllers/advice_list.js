@@ -1,21 +1,21 @@
 // ==========================================================================
-// Admissionexam.AEAdvice
+// Admissionexam.AdviceListController
 // ==========================================================================
 
 require('core');
 
 /** @class
 
-  (Document your class here)
+  (Document Your View Here)
 
-  @extends SC.Record
+  @extends SC.Object
   @author AuthorName
   @version 0.1
+  @static
 */
-AdmissionExam.AEAdvice = SC.Record.extend(
-/** @scope Admissionexam.AEAdvice.prototype */ {
+AdmissionExam.adviceListController = SC.CollectionController.create(
+/** @scope Admissionexam.adviceListController */ {
 
   // TODO: Add your own code here.
-  properties: ['id','name','year','groupname']
-  
+
 }) ;

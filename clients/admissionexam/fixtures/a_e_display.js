@@ -59,30 +59,36 @@ AdmissionExam.FIXTURES = AdmissionExam.FIXTURES.concat([
     },     
     {
         guid : 4,
-        name : '_commission_evaluation',
-        view : 'ae_candidate_information_evaluation',
-        type : 'AEMenuItem'
-    },     
-    {
-        guid : 5,
-        name : '_candidate_conclusion',
-        view : 'ae_candidate_conclusion',
-        type : 'AEMenuItem'
-    },     
-    {
-        guid : 6,
         name : '_candidate_performance_information',
         view : 'ae_candidate_information_performance_information',
         type : 'AEMenuItem'
     },        
     {
-        guid : 7,
+        guid : 5,
         name : '_input_admission_test',
         view : 'ae_candidate_information_admission_test',
         type : 'AEMenuItem'
     },
-        {
+    {
+        guid : 6,
+        name : '_commission_evaluation',
+        view : 'ae_candidate_information_evaluation',
+        type : 'AEMenuItem'
+    },     
+    {
+        guid : 7,
+        name : '_candidate_advice',
+        view : 'ae_candidate_advice',
+        type : 'AEMenuItem'
+    },   
+    {
         guid : 8,
+        name : '_candidate_conclusion',
+        view : 'ae_candidate_conclusion',
+        type : 'AEMenuItem'
+    },    
+    {
+        guid : 9,
         name : '_candidate_information_overview',
         view : 'ae_candidate_information_overview',
         type : 'AEMenuItem'

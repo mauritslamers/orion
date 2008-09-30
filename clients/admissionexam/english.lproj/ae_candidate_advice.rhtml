@@ -1,0 +1,21 @@
+<% view :ae_candidate_advice do %>
+  <%= label_view :ae_ci_advice_advice_label, :tag => 'h4', 
+      :value => loc('_ae_ci_advice_advice_label') %>
+      
+  <% scroll_view :ae_ci_advice_advice_sv do %>
+        <%= list_view :ae_ci_advice_advice_list,           
+            :example_view => 'SC.ListItemView',
+            :row_height => 20,
+            :height => 300,
+            :is_editable => false,
+            :content_value_key => 'name',
+            :can_order_content => false,
+            :can_reorder_content => false,
+            :bind => {
+                :content => 'AdmissionExam.adviceListController.arrangedObjects',
+                :selection => 'AdmissionExam.adviceListController.selection'
+            }
+            %>
+    <% end %> 
+
+<% end %>

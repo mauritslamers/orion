@@ -64,5 +64,7 @@ Object.extend(String.English,{
   "_ae_ci_pi_prima_vista_reading" : 'Prima vista reading',
   "_ae_ci_pi_improvising" : 'Improvising',
   "_ae_ci_pi_playing_together" : 'Playing together',
-  "_ae_ci_pi_qualified_for_performance" : 'Qualified for performance' 
+  "_ae_ci_pi_qualified_for_performance" : 'Qualified for performance',
+  "_candidate_advice" : 'Advice to the candidate',
+  "_ae_ci_advice_advice_label" : "Advice"
 }) ;
