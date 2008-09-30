@@ -25,6 +25,7 @@ AdmissionExam.examListOfChosenCandidateController = SC.CollectionController.crea
          var newList = [];
          value.each(function(s){ 
                // assemble the items to show
+               
                newList.push(s.get('teacherId')); 
                });
          this.set('_arrangedObjects',newList);

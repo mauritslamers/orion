@@ -14,7 +14,7 @@ require('core');
 */
 AdmissionExam.AEExam = SC.Record.extend(
 /** @scope Admissionexam.AEExam.prototype */ {
-
+  
   // TODO: Add your own code here.
   properties: [
     'id',

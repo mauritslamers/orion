@@ -1,4 +1,168 @@
 <% view :ae_candidate_information_evaluation do %>
 
-    Evaluation
+  <%= label_view :ae_ci_ev_realistic_image_label, :tag => 'h4', 
+         :value => loc('_ae_ci_ev_realistic_image') %> 
+  <%= slider_view :ae_ci_ev_realistic_image_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1, 
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.realisticImage' 
+      } 
+   %>
+   <%= label_view :ae_ci_ev_realistic_image_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.realisticImage'  
+      }
+   %>    
+
+
+
+  <%= label_view :ae_ci_ev_drive_ambition_label, :tag => 'h4', 
+         :value => loc('_ae_ci_ev_drive_ambition') %>
+  <%= slider_view :ae_ci_ev_drive_ambition_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1,
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.driveAmbition' 
+      } 
+  %>
+   <%= label_view :ae_ci_ev_drive_ambition_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.driveAmbition'  
+      }
+   %> 
+
+
+      
+  <%= label_view :ae_ci_ev_credibility_label, :tag => 'h4', 
+         :value => loc('_ae_ci_ev_credibility') %> 
+  <%= slider_view :ae_ci_ev_credibility_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1,
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.credibility' 
+      }
+  %>   
+  <%= label_view :ae_ci_ev_credibility_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.credibility'  
+      }
+   %> 
+
+
+  
+  <%= label_view :ae_ci_ev_musical_experience_label, :tag => 'h4', 
+         :value => loc('_ae_ci_ev_musical_experience') %>
+  <%= slider_view :ae_ci_ev_musical_experience_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1,
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.musicalExperience' 
+      }
+  %> 
+   <%= label_view :ae_ci_ev_musical_experience_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.musicalExperience'  
+      }
+   %> 
+
+  
+  <%= label_view :ae_ci_ev_technological_experience_label, :tag => 'h4', 
+         :value => loc('_ae_ci_ev_technological_experience') %> 
+  <%= slider_view :ae_ci_ev_technological_experience_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1,
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.technologicalExperience' 
+      }
+  %>     
+   <%= label_view :ae_ci_ev_technological_experience_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.technologicalExperience'  
+      }
+   %> 
+   
+
+  
+  <%= label_view :ae_ci_ev_productional_experience_label, :tag => 'h4', 
+         :value => loc('_ae_ci_ev_productional_experience') %>
+  <%= slider_view :ae_ci_ev_productional_experience_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1,
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.productionalExperience' 
+      }
+  %>
+   <%= label_view :ae_ci_ev_productional_experience_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.productionalExperience'  
+      }
+   %> 
+
+
+
+  <%= label_view :ae_ci_ev_musicality_label, :tag => 'h4', 
+         :value => loc('_ae_ci_ev_musicality') %>
+ 
+  <%= slider_view :ae_ci_ev_musicality_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1,
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.musicality' 
+      }
+  %> 
+   <%= label_view :ae_ci_ev_musicality_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.musicality'  
+      }
+   %>  
+    
+  
+  <%= label_view :ae_ci_ev_production_level_label, :tag => 'h4', 
+         :value => loc('_ae_ci_ev_production_level') %> 
+  <%= slider_view :ae_ci_ev_production_level_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1,
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.productionLevel' 
+      }
+  %>   
+   <%= label_view :ae_ci_ev_production_level_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.productionLevel'  
+      }
+   %> 
+   
+     
+  
+  
+  <%= label_view :ae_ci_ev_technology_level_label, :tag => 'h4', 
+         :value => loc('_ae_ci_ev_technology_level') %> 
+  <%= slider_view :ae_ci_ev_technology_level_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1,
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.technologyLevel' 
+      }
+  %> 
+  <%= label_view :ae_ci_ev_technology_level_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.technologyLevel'  
+      }
+   %> 
+   
+       
+ 
+
+ 
+  
 <% end %> 

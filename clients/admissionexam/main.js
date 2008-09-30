@@ -43,6 +43,9 @@ function main() {
   var courses = OrionFw.Course.collection();
   courses.set('orderBy', ['name ASC']);
   AdmissionExam.desiredCourseListController.set('content',courses);
+  
+  var conclusions = AdmissionExam.AEConclusion.collection();
+  AdmissionExam.conclusionListController.set('content',conclusions);
 
   // Step 2: Instantiate Your Views
   // The default code just activates all the views you have on the page. If

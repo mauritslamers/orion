@@ -39,7 +39,7 @@ AdmissionExam.FIXTURES = AdmissionExam.FIXTURES.concat([
   //   firstName: "Ryan",
   //   lastName: "Howard"
   // }
-  { guid: 100,
+  { guid: 1,
     type: 'AECandidate',
     firstname: 'Maurits',
     inbetween: '',

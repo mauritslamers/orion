@@ -30,10 +30,8 @@ AdmissionExam.admissionExamApplicationController = SC.Object.create(
       var selectedCandidate = AdmissionExam.selectedCandidateController.get('content');
       if(selectedCandidate){
          var candidateGuid = selectedCandidate.get('guid');
-         var currentDate = new Date();
-         var t = AdmissionExam.AEExam.newRecord({ 'date': currentDate, 'candidateId': candidateGuid});
-         this.set('_testGuid',t);
-         this.set('_currentDate',currentDate);
+         AdmissionExam.AEExam.newRecord({'candidateId': candidateGuid});
+         //this.set('_currentDate',currentDate);
          this.set('_currentCandidate',selectedCandidate);
       }
       AdmissionExam.chooseCandidatePaneController.hide();
