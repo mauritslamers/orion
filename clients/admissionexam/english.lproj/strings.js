@@ -58,5 +58,11 @@ Object.extend(String.English,{
   "_ae_ci_at_interval_notation": 'Interval notation',
   "_ae_ci_at_chord_notation": 'Chord notation',
   "_ae_ci_at_music_theory": 'Music theory',
-  
+  "_ae_ci_pi_performance_experience" : 'Performance experience',
+  "_ae_ci_pi_playing_level" : 'Playing level',
+  "_ae_ci_pi_ensemble_experience" : 'Ensemble experience',
+  "_ae_ci_pi_prima_vista_reading" : 'Prima vista reading',
+  "_ae_ci_pi_improvising" : 'Improvising',
+  "_ae_ci_pi_playing_together" : 'Playing together',
+  "_ae_ci_pi_qualified_for_performance" : 'Qualified for performance' 
 }) ;

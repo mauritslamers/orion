@@ -1,4 +1,129 @@
 <% view :ae_candidate_information_performance_information do %>
 
+  <%= label_view :ae_ci_pi_performance_experience_label, :tag => 'h4', 
+         :value => loc('_ae_ci_pi_performance_experience') %> 
+  <%= slider_view :ae_ci_pi_performance_experience_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1, 
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.performanceExperience' 
+      } 
+   %>
+   <%= label_view :ae_ci_pi_performance_experience_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.performanceExperience'  
+      }
+   %>    
+
+
+
+  <%= label_view :ae_ci_pi_playing_level_label, :tag => 'h4', 
+         :value => loc('_ae_ci_pi_playing_level') %>
+  <%= slider_view :ae_ci_pi_playing_level_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1,
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.playingLevel' 
+      } 
+  %>
+   <%= label_view :ae_ci_pi_playing_level_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.playingLevel'  
+      }
+   %> 
+
+
+      
+  <%= label_view :ae_ci_pi_ensemble_experience_label, :tag => 'h4', 
+         :value => loc('_ae_ci_pi_ensemble_experience') %> 
+  <%= slider_view :ae_ci_pi_ensemble_experience_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1,
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.ensembleExperience' 
+      }
+  %>   
+  <%= label_view :ae_ci_pi_ensemble_experience_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.ensembleExperience'  
+      }
+   %> 
+
+
+  
+  <%= label_view :ae_ci_pi_prima_vista_reading_label, :tag => 'h4', 
+         :value => loc('_ae_ci_pi_prima_vista_reading') %>
+  <%= slider_view :ae_ci_pi_prima_vista_reading_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1,
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.primaVistaReading' 
+      }
+  %> 
+   <%= label_view :ae_ci_pi_prima_vista_reading_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.primaVistaReading'  
+      }
+   %> 
+
+  
+  <%= label_view :ae_ci_pi_improvising_label, :tag => 'h4', 
+         :value => loc('_ae_ci_pi_improvising') %> 
+  <%= slider_view :ae_ci_pi_improvising_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1,
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.improvising' 
+      }
+  %>     
+   <%= label_view :ae_ci_pi_improvising_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.improvising'  
+      }
+   %> 
+   
+
+  
+  <%= label_view :ae_ci_pi_playing_together_label, :tag => 'h4', 
+         :value => loc('_ae_ci_pi_playing_together') %>
+  <%= slider_view :ae_ci_pi_playing_together_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1,
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.playingTogether' 
+      }
+  %>
+   <%= label_view :ae_ci_pi_playing_together_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.playingTogether'  
+      }
+   %> 
+
+
+
+  <%= label_view :ae_ci_pi_qualified_for_performance_label, :tag => 'h4', 
+         :value => loc('_ae_ci_pi_qualified_for_performance') %>
+ 
+  <%= slider_view :ae_ci_pi_qualified_for_performance_rg, 
+      :minimum => 1,
+      :maximum => 5,
+      :step => 1,
+      :bind => {
+           :value => 'AdmissionExam.currentExamController.qualifiedForPerformance' 
+      }
+  %> 
+   <%= label_view :ae_ci_pi_qualified_for_performance_value, :tag => 'h4',
+      :bind => {
+         :value => 'AdmissionExam.currentExamController.qualifiedForPerformance'  
+      }
+   %>  
+    
+ 
 
 <% end %>        
