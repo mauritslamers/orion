@@ -86,6 +86,22 @@
   width: 600px; 
 }
 
+#ae_candidate_conclusion {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 500px;
+  width: 600px;
+}
+
+#ae_candidate_advice {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 500px;
+  width: 600px;
+}
+
 #ae_candidate_information_admission_test {
   position: absolute;
   left: 0px;

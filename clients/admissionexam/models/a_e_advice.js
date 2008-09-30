@@ -16,6 +16,6 @@ AdmissionExam.AEAdvice = SC.Record.extend(
 /** @scope Admissionexam.AEAdvice.prototype */ {
 
   // TODO: Add your own code here.
-  properties: ['id','name','year','groupname']
+  properties: ['id','name','year','group']
   
 }) ;

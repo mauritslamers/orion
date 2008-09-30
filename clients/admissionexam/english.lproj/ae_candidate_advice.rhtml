@@ -3,17 +3,21 @@
       :value => loc('_ae_ci_advice_advice_label') %>
       
   <% scroll_view :ae_ci_advice_advice_sv do %>
-        <%= list_view :ae_ci_advice_advice_list,           
-            :example_view => 'SC.ListItemView',
+        <%= source_list_view :ae_ci_cb_advice_advice_listview,           
+            :example_view => 'AdmissionExam.CheckBoxListView',
             :row_height => 20,
-            :height => 300,
+            :height => 400,
+            :group => :group,
             :is_editable => false,
-            :content_value_key => 'name',
+            :title => 'name',
             :can_order_content => false,
             :can_reorder_content => false,
+            :content_icon_key => 'iconClassName',
+            :group_visible_key => true,
             :bind => {
                 :content => 'AdmissionExam.adviceListController.arrangedObjects',
-                :selection => 'AdmissionExam.adviceListController.selection'
+                :selection => 'AdmissionExam.adviceListController.selection',
+                :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
             }
             %>
     <% end %> 
