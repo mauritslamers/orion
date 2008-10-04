@@ -43,7 +43,7 @@ OrionFw.Student = SC.Record.extend(
   	var firstname = this.get('firstname');
   	var inbetween = this.get('inbetween');
   	var lastname = this.get('lastname');
-  	if(inbetween == ""){
+  	if(!inbetween){
   		var reversename = lastname + ", " + firstname;	
   	} else {
   		var reversename = lastname + ", " + firstname + "(" + inbetween + ")";
@@ -55,7 +55,7 @@ OrionFw.Student = SC.Record.extend(
        	var firstname = this.get('firstname');
   	var inbetween = this.get('inbetween');
   	var lastname = this.get('lastname');
-  	if(inbetween == ""){
+  	if(!inbetween){
   		var reversename = firstname + " " + lastname;	
   	} else {
   		var reversename = firstname + " " + inbetween + " " + lastname;

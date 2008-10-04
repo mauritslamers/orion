@@ -23,14 +23,31 @@ AdmissionExam.CheckBoxListView = SC.CheckboxView.extend(
       var name = content.get('name');
       if(name){
         this.set('title',name);
-        // setup other things?
-        // yes! Set up the controller the value observer should post the changes to
-        var owner = this.get('owner');
-          
+        // setup other things? not at the moment
       }
     }
     
-  }.observes('content')
+  }.observes('content'),
+  
+  _valueObserver: function(){
+      var curValue = this.get('value');
+      var curContent = this.get('content');
+      var curSelection = this.get('parentNode').get('parentNode').get('selection');
+      if(curValue){
+         // add to selection
+         curSelection.push(curContent);
+      } 
+      else {
+         var newSelection = [];
+         curSelection.each(function(s){
+            if(s !== curContent){
+              newSelection.push(s);  
+            }
+         });
+         this.get('parentNode').get('parentNode').set('selection',newSelection);
+      }
+      //console.log(this.get('parentNode').get('parentNode'));
+  }.observes('value')
     
 /*
     contentValueKey: null,
