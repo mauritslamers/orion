@@ -16,6 +16,6 @@ require('core');
 AdmissionExam.allExamsController = SC.CollectionController.create(
 /** @scope Admissionexam.allExamsController */ {
 
-  // TODO: Add your own code here.
+
 
 }) ;

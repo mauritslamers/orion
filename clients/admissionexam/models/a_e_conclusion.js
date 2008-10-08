@@ -15,7 +15,7 @@ require('core');
 AdmissionExam.AEConclusion = SC.Record.extend(
 /** @scope Admissionexam.AEConclusion.prototype */ {
   //dataSource: OrionFw.server,
-  resourceURL: [OrionFw.standardResource + 'aeconclusion'],
+  resourceURL: [OrionFw.standardResource + 'AEConclusion'],
   // TODO: Add your own code here.
   properties: ['id','name','year']
 }) ;

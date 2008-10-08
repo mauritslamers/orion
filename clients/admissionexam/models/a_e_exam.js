@@ -16,7 +16,7 @@ AdmissionExam.AEExam = SC.Record.extend(
 /** @scope Admissionexam.AEExam.prototype */ {
   //dataSource: 'AdmissionExam.server',
   
-  resourceURL: [OrionFw.standardResource + 'aeexam'],
+  resourceURL: [OrionFw.standardResource + 'AEExam'],
   
   // TODO: Add your own code here.
   properties: [
@@ -52,5 +52,10 @@ AdmissionExam.AEExam = SC.Record.extend(
     'instrumentDictation',
     'intervalNotation',
     'chordNotation',
-    'musicTheory']
+    'musicTheory'],
+    
+    conclusionIdType: 'AdmissionExam.AEConclusion',
+    candidateIdType: 'AdmissionExam.AECandidate'
+    
+    
 }) ;

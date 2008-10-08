@@ -76,7 +76,7 @@ toegelaten tot hogere jaar Muziek
 Toegelaten tot hogere jaar Kunst&Techniek
 Mogelijke kandidaat
     */
-
+/*
   { guid: 1,
     type: 'AEConclusion',
     name: 'Niet toegelaten',
@@ -152,5 +152,5 @@ Mogelijke kandidaat
     name: 'Prop CEM voorwaardelijk',
     year: '2008'
   }
-      
+      */
 ]);

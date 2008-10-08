@@ -39,6 +39,7 @@ AdmissionExam.FIXTURES = AdmissionExam.FIXTURES.concat([
   //   firstName: "Ryan",
   //   lastName: "Howard"
   // }
+/*
   { guid: 1,
     type: 'AECandidate',
     firstname: 'Maurits',
@@ -48,5 +49,5 @@ AdmissionExam.FIXTURES = AdmissionExam.FIXTURES.concat([
     postcode: '5275AR',
     city: 'Den Dungen'
   }
-  
+  */
 ]);

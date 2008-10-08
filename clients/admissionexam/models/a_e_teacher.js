@@ -12,10 +12,10 @@ require('core');
   @author AuthorName
   @version 0.1
 */
-AdmissionExam.AETeacher = SC.Record.extend(
+AdmissionExam.AETeacher = OrionFw.Teacher.extend(
 /** @scope Admissionexam.AETeacher.prototype */ {
   //dataSource: 'OrionFw.server',
-  resourceURL: [OrionFw.standardResource + 'aeteacher'],
+  resourceURL: [OrionFw.standardResource + 'AETeacher'],
   // TODO: Add your own code here.
   
   properties: ['id','username','firstname','inbetween','lastname','email','orionUserId']

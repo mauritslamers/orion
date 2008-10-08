@@ -16,7 +16,7 @@ function main() {
   // Comment out the preload line and add something to refresh from the server
   // when you are ready to pull data from your server.
   AdmissionExam.server.preload(AdmissionExam.FIXTURES) ;
-  OrionFw.server.preload(OrionFw.FIXTURES);
+  //OrionFw.server.preload(OrionFw.FIXTURES);
   // TODO: refresh() any collections you have created to get their records.
   // ex: Admissionexam.contacts.refresh() ;
 
@@ -24,16 +24,19 @@ function main() {
   AdmissionExam.candidateInformationSourceListViewController.set('content',tmpMenuItems);
   // TODO: Set the content property on your primary controller
   // ex: Admissionexam.contactsController.set('content',Admissionexam.contacts);
+  AdmissionExam.server.listFor({recordType: AdmissionExam.AECandidate});
   var students = AdmissionExam.AECandidate.collection();
   students.set('orderBy',['lastname ASC']);
   AdmissionExam.candidateChoiceController.set('content',students);
   students.refresh();
   
-  var teachers = OrionFw.Teacher.collection();
+  AdmissionExam.server.listFor({recordType: AdmissionExam.AETeacher});
+  var teachers = AdmissionExam.AETeacher.collection();
   teachers.set('orderBy',['lastname ASC']);
   AdmissionExam.possibleCommissionMembersController.set('content',teachers);
   teachers.refresh();
   
+  AdmissionExam.server.listFor({recordType: AdmissionExam.AEExamTeacher});
   var examMembers = AdmissionExam.AEExamTeacher.collection();
   examMembers.set('orderBy',['lastname ASC']);
   //examMembers.set('conditions', {'examId' : ['1']});
@@ -47,16 +50,19 @@ function main() {
   AdmissionExam.desiredCourseListController.set('content',courses);
   courses.refresh();
   
+  AdmissionExam.server.listFor({recordType: AdmissionExam.AEConclusion});
   var conclusions = AdmissionExam.AEConclusion.collection();
   AdmissionExam.conclusionListController.set('content',conclusions);
   conclusions.refresh();
 
+  AdmissionExam.server.listFor({recordType: AdmissionExam.AEAdvice});
   var advice = AdmissionExam.AEAdvice.collection();
   AdmissionExam.adviceListController.set('content',advice);
   advice.refresh();
   
+  AdmissionExam.server.listFor({recordType: AdmissionExam.AEExam});
   var exams = AdmissionExam.AEExam.collection();
-  AdmissionExam.allExamsController.set('content',exams);
+  AdmissionExam.examListOfChosenCandidateController.set('content',exams);
   
   // Step 2: Instantiate Your Views
   // The default code just activates all the views you have on the page. If

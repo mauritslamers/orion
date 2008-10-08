@@ -16,7 +16,7 @@ AdmissionExam.AEAdvice = SC.Record.extend(
 /** @scope Admissionexam.AEAdvice.prototype */ {
 
   //dataSource: OrionFw.server,
-  resourceURL: [OrionFw.standardResource + 'aeadvice'],
+  resourceURL: [OrionFw.standardResource + 'AEAdvice'],
   // TODO: Add your own code here.
   properties: ['id','name','year','group']
   

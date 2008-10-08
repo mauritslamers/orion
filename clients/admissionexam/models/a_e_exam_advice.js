@@ -15,7 +15,7 @@ require('core');
 AdmissionExam.AEExamAdvice = SC.Record.extend(
 /** @scope Admissionexam.AEExamAdvice.prototype */ {
   //dataSource: OrionFw.server,
-  resourceURL: [OrionFw.standardResource + 'aeexamadvice'],
+  resourceURL: [OrionFw.standardResource + 'AEExamAdvice'],
   // TODO: Add your own code here.
   properties: ['id','examId','adviceId']
 }) ;

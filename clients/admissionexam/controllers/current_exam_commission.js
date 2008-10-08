@@ -16,6 +16,8 @@ require('core');
 AdmissionExam.currentExamCommissionController = SC.CollectionController.create(
 /** @scope Admissionexam.currentExamCommissionController */ {
   
+  canEditCollection: true,
+  
   _arrangedObjects: [],
   
   arrangedObjects: function( key, value ) { 
