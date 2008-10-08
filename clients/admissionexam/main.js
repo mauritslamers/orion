@@ -27,28 +27,36 @@ function main() {
   var students = AdmissionExam.AECandidate.collection();
   students.set('orderBy',['lastname ASC']);
   AdmissionExam.candidateChoiceController.set('content',students);
+  students.refresh();
   
   var teachers = OrionFw.Teacher.collection();
   teachers.set('orderBy',['lastname ASC']);
   AdmissionExam.possibleCommissionMembersController.set('content',teachers);
+  teachers.refresh();
   
   var examMembers = AdmissionExam.AEExamTeacher.collection();
   examMembers.set('orderBy',['lastname ASC']);
   //examMembers.set('conditions', {'examId' : ['1']});
   AdmissionExam.currentExamCommissionController.set('content',examMembers);
   
-  var exams = AdmissionExam.AEExam.collection();
-  AdmissionExam.currentExamController.set('content',exams);
+  //var exams = AdmissionExam.AEExam.collection();
+  //AdmissionExam.currentExamController.set('content',exams);
   
   var courses = OrionFw.Course.collection();
   courses.set('orderBy', ['name ASC']);
   AdmissionExam.desiredCourseListController.set('content',courses);
+  courses.refresh();
   
   var conclusions = AdmissionExam.AEConclusion.collection();
   AdmissionExam.conclusionListController.set('content',conclusions);
+  conclusions.refresh();
 
   var advice = AdmissionExam.AEAdvice.collection();
   AdmissionExam.adviceListController.set('content',advice);
+  advice.refresh();
+  
+  var exams = AdmissionExam.AEExam.collection();
+  AdmissionExam.allExamsController.set('content',exams);
   
   // Step 2: Instantiate Your Views
   // The default code just activates all the views you have on the page. If

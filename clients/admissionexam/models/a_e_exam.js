@@ -14,6 +14,9 @@ require('core');
 */
 AdmissionExam.AEExam = SC.Record.extend(
 /** @scope Admissionexam.AEExam.prototype */ {
+  //dataSource: 'AdmissionExam.server',
+  
+  resourceURL: [OrionFw.standardResource + 'aeexam'],
   
   // TODO: Add your own code here.
   properties: [
@@ -42,12 +45,12 @@ AdmissionExam.AEExam = SC.Record.extend(
     'improvising',
     'playingTogether',
     'qualifiedForPerformance',
-    'intervallenDictee',
-    'ritmeDictee',
-    'melodischDictee',
-    'accoordenDictee',
-    'instrumentenDictee',
-    'intervalNotatie',
-    'accoordNotatie',
-    'algemeneMuziekleer']
+    'intervalDictation',
+    'rhythmDictation',
+    'melodicDictation',
+    'chordDictation',
+    'instrumentDictation',
+    'intervalNotation',
+    'chordNotation',
+    'musicTheory']
 }) ;

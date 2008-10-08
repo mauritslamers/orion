@@ -1,4 +1,12 @@
 <% view :ae_candidate_information_overview do %>
-overview
+  <% scroll_view :ae_ci_overview_scroll do %>
+      <%= table_view :ae_ci_overview_tableview,
+         :content_value_key => 'properties',
+         :bind => {
+            :content => 'AdmissionExam.allExamsController.arrangedObjects'  
+         }
+      %>
+  <% end %>
+
 
 <% end %>
