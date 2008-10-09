@@ -56,7 +56,8 @@ function main() {
   conclusions.refresh();
 
   AdmissionExam.server.listFor({recordType: AdmissionExam.AEAdvice});
-  var advice = AdmissionExam.AEAdvice.collection();
+  //var advice = AdmissionExam.AEAdvice.collection();
+  var advice = SC.Store.findRecords(Admission.AEAdvice);
   AdmissionExam.adviceListController.set('content',advice);
   advice.refresh();
   

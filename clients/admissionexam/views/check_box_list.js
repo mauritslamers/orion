@@ -20,9 +20,10 @@ AdmissionExam.CheckBoxListView = SC.CheckboxView.extend(
     // read the name from the content and set up the rest
     var content = this.get('content');
     if(content){
-      var name = content.get('name');
-      if(name){
-        this.set('title',name);
+      var tmpName = content.get('name');
+      //console.log(tmpName);
+      if(tmpName){
+        this.set('title',tmpName);
         // setup other things? not at the moment
       }
     }
