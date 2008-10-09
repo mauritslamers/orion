@@ -14,7 +14,8 @@ require('orion_fw');
 */
 AdmissionExam.AECandidate = OrionFw.Student.extend(
 /** @scope Admissionexam.AECandidate.prototype */ {
-  //dataSource: OrionFw.server,
+  
+  dataSource: AdmissionExam.server,
   resourceURL: [OrionFw.standardResource + 'AECandidate'],
   // TODO: Add your own code here.
   properties: ['id','firstname','inbetween','lastname','address','postcode','city']

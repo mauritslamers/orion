@@ -14,7 +14,8 @@ require('core');
 */
 AdmissionExam.AETeacher = OrionFw.Teacher.extend(
 /** @scope Admissionexam.AETeacher.prototype */ {
-  //dataSource: 'OrionFw.server',
+
+  dataSource: AdmissionExam.server,
   resourceURL: [OrionFw.standardResource + 'AETeacher'],
   // TODO: Add your own code here.
   

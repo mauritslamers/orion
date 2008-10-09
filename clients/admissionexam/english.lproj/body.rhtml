@@ -80,11 +80,17 @@
         
         <%= button_view :ae_new_exam_with_candidate,
             :title => loc('_ae_new_exam_with_candidate_button'),
-            :action => 'AdmissionExam.admissionExamApplicationController.createNewExam'
+            :action => 'AdmissionExam.admissionExamApplicationController.createNewExam',
+            :bind => {
+               :enabled => 'AdmissionExam.candidateChoiceController.hasSelection'
+            }
             %>
         <%= button_view :ae_review_exam_with_candidate,
             :title => loc('_ae_review_exam_with_candidate_button'),
-            :action => 'AdmissionExam.admissionExamApplicationController.reviewExam'
+            :action => 'AdmissionExam.admissionExamApplicationController.reviewExam',
+            :bind => {
+               :enabled => 'AdmissionExam.examListOfChosenCandidateController.hasSelection'
+            }
             %>
             
             

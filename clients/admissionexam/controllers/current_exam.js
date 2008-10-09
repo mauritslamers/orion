@@ -26,5 +26,17 @@ AdmissionExam.currentExamController = SC.ObjectController.create(
          var conclusion = conclusionAry.first();
          this.set('conclusionId',conclusion);
       }
-  }.observes('_conclusion')
+  }.observes('_conclusion'),
+  
+  _contentObserver: function(){
+    //console.log("Change!");
+    //var hasChanges = this.get('hasChanges'); 
+    var hasChanges = this.get('isDirty');
+    if(hasChanges){
+      var content = this.get('content');
+      if(content){
+         AdmissionExam.server.commitRecords([content]);
+      }
+    }
+  }.observes('hasChanges')
 }) ;

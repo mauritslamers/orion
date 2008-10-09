@@ -14,7 +14,8 @@ require('core');
 */
 AdmissionExam.AEExam = SC.Record.extend(
 /** @scope Admissionexam.AEExam.prototype */ {
-  //dataSource: 'AdmissionExam.server',
+
+  dataSource: AdmissionExam.server,
   
   resourceURL: [OrionFw.standardResource + 'AEExam'],
   
