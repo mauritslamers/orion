@@ -1,5 +1,5 @@
 // ==========================================================================
-// Admissionexam.CommissionCompositionController
+// Admissionexam.CommitteeCompositionController
 // ==========================================================================
 
 require('core');
@@ -13,22 +13,27 @@ require('core');
   @version 0.1
   @static
 */
-AdmissionExam.commissionCompositionController = SC.Object.create(
-/** @scope Admissionexam.commissionCompositionController */ {
+AdmissionExam.committeeCompositionController = SC.Object.create(
+/** @scope Admissionexam.committeeCompositionController */ {
+
+   _examIdBinding : 'AdmissionExam.currentExamController.guid',
 
   // TODO: Add your own code here.
-   addMemberToCurrentCommission: function(){
-      var selection = AdmissionExam.possibleCommissionMembersController.get('selection');
+   addMemberToCurrentCommittee: function(){
+      var selection = AdmissionExam.possibleCommitteeMembersController.get('selection');
       if((selection) && (selection instanceof Array)){
-         var teacherId = selection[0]; // a selection is an array, and we need an object
-         AdmissionExam.AEExamTeacher.newRecord( { 'examId' : 1, 'teacherId': teacherId }); 
+         var teacherId = selection.first(); // a selection is an array, and we need an object
+         var examId = this.get('_examId');
+         if(examId){
+            AdmissionExam.AEExamTeacher.newRecord( { 'examId' : examId, 'teacherId': teacherId }); 
+         }
       }
   },
   
-  removeMemberFromCurrentCommission: function(){
-     var selection = AdmissionExam.currentExamCommissionController.get('selection');
+  removeMemberFromCurrentCommittee: function(){
+     var selection = AdmissionExam.currentExamCommitteeController.get('selection');
      if((selection) && (selection instanceof Array)){
-         var teacher = selection[0]; // a selection is an array, and we need an object
+         var teacher = selection.first(); // a selection is an array, and we need an object
          
      }
   }

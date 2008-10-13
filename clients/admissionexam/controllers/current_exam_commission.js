@@ -13,7 +13,7 @@ require('core');
   @version 0.1
   @static
 */
-AdmissionExam.currentExamCommissionController = SC.CollectionController.create(
+AdmissionExam.currentExamCommitteeController = SC.CollectionController.create(
 /** @scope Admissionexam.currentExamCommissionController */ {
   
   canEditCollection: true,
@@ -32,7 +32,9 @@ AdmissionExam.currentExamCommissionController = SC.CollectionController.create(
       // our model:
       //else return (this._aryToReturn) ? this._aryToReturn: []; 
       else return (this._arrangedObjects) ? this._arrangedObjects: []; 
-  }.property()
+  }.property(),
+  
+  
   
 
 }) ;

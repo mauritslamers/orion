@@ -13,7 +13,7 @@ require('core');
   @version 0.1
   @static
 */
-AdmissionExam.adviceListController = SC.CollectionController.create(
+AdmissionExam.adviceListController = SC.ArrayController.create(
 /** @scope Admissionexam.adviceListController */ {
 
   // TODO: Add your own code here.

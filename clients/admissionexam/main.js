@@ -33,14 +33,14 @@ function main() {
   AdmissionExam.server.listFor({recordType: AdmissionExam.AETeacher});
   var teachers = AdmissionExam.AETeacher.collection();
   teachers.set('orderBy',['lastname ASC']);
-  AdmissionExam.possibleCommissionMembersController.set('content',teachers);
+  AdmissionExam.possibleCommitteeMembersController.set('content',teachers);
   teachers.refresh();
   
   AdmissionExam.server.listFor({recordType: AdmissionExam.AEExamTeacher});
   var examMembers = AdmissionExam.AEExamTeacher.collection();
   examMembers.set('orderBy',['lastname ASC']);
   //examMembers.set('conditions', {'examId' : ['1']});
-  AdmissionExam.currentExamCommissionController.set('content',examMembers);
+  AdmissionExam.currentExamCommitteeController.set('content',examMembers);
   
   //var exams = AdmissionExam.AEExam.collection();
   //AdmissionExam.currentExamController.set('content',exams);
@@ -57,9 +57,9 @@ function main() {
 
   AdmissionExam.server.listFor({recordType: AdmissionExam.AEAdvice});
   //var advice = AdmissionExam.AEAdvice.collection();
-  var advice = SC.Store.findRecords(Admission.AEAdvice);
+  var advice = SC.Store.findRecords(AdmissionExam.AEAdvice);
   AdmissionExam.adviceListController.set('content',advice);
-  advice.refresh();
+  //advice.refresh();
   
   AdmissionExam.server.listFor({recordType: AdmissionExam.AEExam});
   var exams = AdmissionExam.AEExam.collection();

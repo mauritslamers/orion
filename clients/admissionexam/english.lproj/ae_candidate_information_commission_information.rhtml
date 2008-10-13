@@ -1,8 +1,8 @@
-<% view :ae_candidate_information_commission_information do %>
-   <%= label_view :ae_ci_ci_commission_members_label, 
-         :tag => 'h4', :value => loc('_ae_ci_ci_commission_members_label') %>
-   <% scroll_view :ae_ci_ci_commission_members_sv do %>
-        <%= list_view :ae_ci_ci_commission_members_lv,           
+<% view :ae_candidate_information_committee_information do %>
+   <%= label_view :ae_ci_ci_committee_members_label, 
+         :tag => 'h4', :value => loc('_ae_ci_ci_committee_members_label') %>
+   <% scroll_view :ae_ci_ci_committee_members_sv do %>
+        <%= list_view :ae_ci_ci_committee_members_lv,           
             :example_view => 'SC.ListItemView',
             :row_height => 20,
             :height => 300,
@@ -11,25 +11,25 @@
             :can_order_content => false,
             :can_reorder_content => false,
             :bind => {
-                :content => 'AdmissionExam.currentExamCommissionController.arrangedObjects',
-                :selection => 'AdmissionExam.currentExamCommissionController.selection',
+                :content => 'AdmissionExam.currentExamCommitteeController.arrangedObjects',
+                :selection => 'AdmissionExam.currentExamCommitteeController.selection',
                 :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
             }
             %>
     <% end %>
-    <%= button_view :ae_ci_ci_commission_members_remove_selected,
-        :title => loc('_ae_ci_ci_commission_members_remove_selected'),
+    <%= button_view :ae_ci_ci_committee_members_remove_selected,
+        :title => loc('_ae_ci_ci_committee_members_remove_selected'),
         :action => '',
         :bind => {
-          :enabled => 'AdmissionExam.currentExamCommissionController.hasSelection'  
+          :enabled => 'AdmissionExam.currentExamCommitteeController.hasSelection'  
         }
         
     %>
    
-   <%= label_view :ae_ci_ci_possible_commission_members_label, 
-         :tag => 'h4', :value => loc('_ae_ci_ci_possible_commission_members_label') %>
-   <% scroll_view :ae_ci_ci_possible_commission_members_sv do %>
-        <%= list_view :ae_ci_ci_possible_commission_members_lv,           
+   <%= label_view :ae_ci_ci_possible_committee_members_label, 
+         :tag => 'h4', :value => loc('_ae_ci_ci_possible_committee_members_label') %>
+   <% scroll_view :ae_ci_ci_possible_committee_members_sv do %>
+        <%= list_view :ae_ci_ci_possible_committee_members_lv,           
             :example_view => 'SC.ListItemView',
             :row_height => 20,
             :height => 300,
@@ -38,17 +38,17 @@
             :can_order_content => false,
             :can_reorder_content => false,
             :bind => {
-                :content => 'AdmissionExam.possibleCommissionMembersController.arrangedObjects',
-                :selection => 'AdmissionExam.possibleCommissionMembersController.selection',
+                :content => 'AdmissionExam.possibleCommitteeMembersController.arrangedObjects',
+                :selection => 'AdmissionExam.possibleCommitteeMembersController.selection',
                 :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
             }
             %>
     <% end %>    
-    <%= button_view :ae_ci_ci_commission_possible_members_add_selected,
-        :title => loc('_ae_ci_ci_commission_possible_members_add_selected'),
-        :action => 'AdmissionExam.commissionCompositionController.addMemberToCurrentCommission',
+    <%= button_view :ae_ci_ci_committee_possible_members_add_selected,
+        :title => loc('_ae_ci_ci_committee_possible_members_add_selected'),
+        :action => 'AdmissionExam.committeeCompositionController.addMemberToCurrentCommittee',
         :bind => {
-            :enabled => 'AdmissionExam.possibleCommissionMembersController.hasSelection'
+            :enabled => 'AdmissionExam.possibleCommitteeMembersController.hasSelection'
         }
     %>
 <% end %>  

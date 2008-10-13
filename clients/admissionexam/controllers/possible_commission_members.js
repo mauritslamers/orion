@@ -1,5 +1,5 @@
 // ==========================================================================
-// Admissionexam.PossibleCommissionMembersController
+// Admissionexam.PossibleCommitteeMembersController
 // ==========================================================================
 
 require('core');
@@ -13,15 +13,15 @@ require('core');
   @version 0.1
   @static
 */
-AdmissionExam.possibleCommissionMembersController = SC.CollectionController.create(
-/** @scope Admissionexam.possibleCommissionMembersController */ {
+AdmissionExam.possibleCommitteeMembersController = SC.CollectionController.create(
+/** @scope Admissionexam.possibleCommitteeMembersController */ {
 
   // TODO: Add your own code here.
   
-  _assignedCommissionMembersBinding: 'AdmissionExam.currentExamCommissionController.arrangedObjects',
+  _assignedCommitteeMembersBinding: 'AdmissionExam.currentExamCommitteeController.arrangedObjects',
   
-  _assignedCommissionMembersObserver: function(){
-      var assignedMembers = this.get('_assignedCommissionMembers');
+  _assignedCommitteeMembersObserver: function(){
+      var assignedMembers = this.get('_assignedCommitteeMembers');
       if((assignedMembers) && (assignedMembers.length>0) && (this.get('content')) && (this.get('arrangedObjects').length>0)){
          var leaveOut = assignedMembers.get('guid');         
          var allGuids = this.get('content').get('records').get('guid');
@@ -35,6 +35,6 @@ AdmissionExam.possibleCommissionMembersController = SC.CollectionController.crea
          });
          this.get('content').set('conditions',{ 'guid': conditionArray });
       }
-  }.observes('_assignedCommissionMembers')
+  }.observes('_assignedCommitteeMembers')
   
 }) ;
