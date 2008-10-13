@@ -47,8 +47,8 @@ AdmissionExam.FIXTURES = AdmissionExam.FIXTURES.concat([
     }, 
     {
         guid : 2,
-        name : '_information_about_commission',
-        view : 'ae_candidate_information_commission_information',
+        name : '_information_about_committee',
+        view : 'ae_candidate_information_committee_information',
         type : 'AEMenuItem'
     },   
     {
@@ -71,7 +71,7 @@ AdmissionExam.FIXTURES = AdmissionExam.FIXTURES.concat([
     },
     {
         guid : 6,
-        name : '_commission_evaluation',
+        name : '_committee_evaluation',
         view : 'ae_candidate_information_evaluation',
         type : 'AEMenuItem'
     },     
