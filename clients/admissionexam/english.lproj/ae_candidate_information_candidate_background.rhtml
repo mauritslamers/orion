@@ -17,7 +17,7 @@
          :value => loc('_ae_ci_cb_interest_in_preparation_course') %>
  
  <%= radio_group_view :ae_ci_cb_interest_in_preparation_course_rg, 
-      :values => [[true, loc('_yes')], [false, loc('_no')]], 
+      :values => [['y', loc('_yes')], ['n', loc('_no')]], 
       :layout => :horizontal, 
       :bind => {
            :value => 'AdmissionExam.currentExamController.interestInPreparationCourse' 

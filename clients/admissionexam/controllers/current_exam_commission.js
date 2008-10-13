@@ -18,6 +18,19 @@ AdmissionExam.currentExamCommitteeController = SC.CollectionController.create(
   
   canEditCollection: true,
   
+  _examIdBinding: 'AdmissionExam.currentExamController.guid',
+  
+  _examIdObserver: function(){
+    var examId = this.get('_examId');
+    if(examId){
+      var content = this.get('content');
+      if(content){
+         content.set('conditions', {'examId' : [examId]});  
+         content.refresh();
+      } 
+    }
+  }.observes('_examId'),
+  
   _arrangedObjects: [],
   
   arrangedObjects: function( key, value ) { 

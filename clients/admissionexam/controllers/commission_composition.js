@@ -25,7 +25,8 @@ AdmissionExam.committeeCompositionController = SC.Object.create(
          var teacherId = selection.first(); // a selection is an array, and we need an object
          var examId = this.get('_examId');
          if(examId){
-            AdmissionExam.AEExamTeacher.newRecord( { 'examId' : examId, 'teacherId': teacherId }); 
+            var newCommitteeMember = AdmissionExam.AEExamTeacher.newRecord( { 'examId' : examId, 'teacherId': teacherId }); 
+            AdmissionExam.server.createRecords([newCommitteeMember]);
          }
       }
   },
@@ -34,7 +35,11 @@ AdmissionExam.committeeCompositionController = SC.Object.create(
      var selection = AdmissionExam.currentExamCommitteeController.get('selection');
      if((selection) && (selection instanceof Array)){
          var teacher = selection.first(); // a selection is an array, and we need an object
-         
+         var examId = this.get('_examId');
+         var tmpRecord = SC.Store.findRecords({ 'examId': examId, 'teacherId': teacher}, AdmissionExam.AEExamTeacher);
+         if((examId && tmpRecord) && (tmpRecord instanceof Array)){
+            AdmissionExam.server.destroyRecords(tmpRecord);
+         }         
      }
   }
 }) ;

@@ -46,6 +46,7 @@
         :width => 800, 
         :height => 400 do %>
     <% view :ae_choose_candidate do %>
+        <%= label_view :ae_choose_candidate_label, :tag => 'h4', :value => loc('_ae_choose_candidate_label') %>
         <% scroll_view :ae_choose_candidate_sv do %>
             <%= list_view :ae_choose_candidate_lv,           
                 :example_view => 'SC.ListItemView',
@@ -61,6 +62,9 @@
                 }
               %>
         <% end %>
+ 
+        <%= label_view :ae_exam_list_of_chosen_candidate_label, 
+               :tag => 'h4', :value => loc('_ae_exam_list_of_chosen_candidate_label') %>
         <% scroll_view :ae_exam_list_of_chosen_candidate_sv do %>
             <%= list_view :ae_exam_list_of_chosen_candidate_lv,           
                 :example_view => 'SC.ListItemView',

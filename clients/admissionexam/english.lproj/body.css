@@ -112,7 +112,7 @@
 
 #ae_exam_list_of_chosen_candidate_sv {
    position: absolute;
-   top: 10px;
+   top: 30px;
    left: 300px;
    height: 200px;
    width: 250px;
@@ -120,7 +120,7 @@
 
 #ae_choose_candidate_sv {
    position: absolute;
-   top: 10px;
+   top: 30px;
    left: 10px;
    height: 200px;
    width: 250px;
@@ -138,4 +138,18 @@
   position: absolute;
   top: 250px;
   left: 300px;  
+}
+
+#ae_choose_candidate_label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-top: 0px;
+}
+
+#ae_exam_list_of_chosen_candidate_label{
+  position: absolute;
+  top: 10px;
+  left: 300px; 
+  margin-top: 0px;    
 }

@@ -13,6 +13,8 @@ Object.extend(String.English,{
   "_ae_open_choose_candidate_pane_button" : "Select candidate",
   "_ae_new_exam_with_candidate_button" : "New exam",
   "_ae_review_exam_with_candidate_button" : "Review selected exam",  
+  "_ae_choose_candidate_label" : "Choose a candidate:",
+  "_ae_exam_list_of_chosen_candidate_label" : "Choose an existing exam to review:",
   "_ae_ci_si_firstname" : "First name:",
   "_ae_ci_si_inbetween" : "Inbetween:",
   "_ae_ci_si_lastname" : "Lastname:",

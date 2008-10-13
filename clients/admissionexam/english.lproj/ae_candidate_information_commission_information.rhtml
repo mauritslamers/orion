@@ -19,7 +19,7 @@
     <% end %>
     <%= button_view :ae_ci_ci_committee_members_remove_selected,
         :title => loc('_ae_ci_ci_committee_members_remove_selected'),
-        :action => '',
+        :action => 'AdmissionExam.committeeCompositionController.removeMemberFromCurrentCommittee',
         :bind => {
           :enabled => 'AdmissionExam.currentExamCommitteeController.hasSelection'  
         }
