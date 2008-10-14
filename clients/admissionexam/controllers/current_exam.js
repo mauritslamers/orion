@@ -24,19 +24,29 @@ AdmissionExam.currentExamController = SC.ObjectController.create(
       if((conclusionAry) && (conclusionAry instanceof Array)){
          // get the conclusion
          var conclusion = conclusionAry.first();
-         this.set('conclusionId',conclusion);
+         var currentConclusion = this.get('conclusionId');
+         if(conclusion && currentConclusion){
+            if(conclusion.get('guid') != currentConclusion.get('guid')){
+              this.set('conclusionId',conclusion);
+            }
+         }
       }
   }.observes('_conclusion'),
   
   _contentObserver: function(){
     //console.log("Change!");
     //var hasChanges = this.get('hasChanges'); 
-    var hasChanges = this.get('isDirty');
-    if(hasChanges){
-      var content = this.get('content');
-      if(content){
-         AdmissionExam.server.commitRecords([content]);
-      }
+    // if the allowEditing flag on the applicationcontroller is set to false, don't do anything.
+    var editingAllowed = AdmissionExam.admissionExamApplicationController.get('allowEditing');
+    if(editingAllowed){
+       var hasChanges = this.get('isDirty');
+        if(hasChanges){
+          var content = this.get('content');
+          if(content){
+             AdmissionExam.server.commitRecords([content]);
+          }
+        }
     }
   }.observes('hasChanges')
+  
 }) ;

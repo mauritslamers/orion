@@ -11,6 +11,11 @@
             :title => loc('_ae_open_choose_candidate_pane_button'),
             :action => 'AdmissionExam.chooseCandidatePaneController.show'
             %>
+        <%= label_view :ae_current_state_information,
+            :tag => 'h4',
+            :bind => {
+               :value => 'AdmissionExam.admissionExamApplicationController.systemState'
+            } %>
     <% end %>
     <% view :ae_candidate_information, 
       :bind => {
@@ -22,7 +27,6 @@
                <%= source_list_view :ae_candidate_information_menu_slv,
                       :height => 500, 
                       :width => 250,
-                      :can_reorder_content => true,
                       :content_value_key => 'localised_name',
                       :content_value_editable => false,
                       :content_icon_key => 'iconClassName',
@@ -96,7 +100,13 @@
                :enabled => 'AdmissionExam.examListOfChosenCandidateController.hasSelection'
             }
             %>
-            
+        
+        <%= checkbox_view :ae_allow_editing_review_exam, 
+            :label => loc('_allow_editing_in_exam_review'),
+            :bind => {
+               :value => 'AdmissionExam.admissionExamApplicationController.allowEditingFlag',
+               :enabled => 'AdmissionExam.examListOfChosenCandidateController.hasSelection'  
+            } %>   
             
     <% end %>
 

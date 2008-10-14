@@ -23,6 +23,8 @@ AdmissionExam.admissionExamApplicationController = SC.Object.create(
    _currentCandidate: 'AdmissionExam.AECandidate',
    
    _testGuid: '',
+   
+   allowEditingFlag: false,
 
   // TODO: Add your own code here.
    createNewExam: function(){
@@ -38,12 +40,53 @@ AdmissionExam.admissionExamApplicationController = SC.Object.create(
          AdmissionExam.currentExamController.set('content',newExam);
          
          this.set('_currentCandidate',selectedCandidate);
-      }
-      
-      AdmissionExam.chooseCandidatePaneController.hide();
+         //set the system state text
+         this.set('systemState','_new_exam'.loc());
+         AdmissionExam.chooseCandidatePaneController.hide();
+      } 
    },
   
    reviewExam: function(){
+      // reviewing a specific exam
+      // so get the content of the selection made
+      var selectedExam = AdmissionExam.examListOfChosenCandidateController.get('selection');
+      if((selectedExam) && (selectedExam.length == 1)){
+         AdmissionExam.currentExamController.set('content',selectedExam.first());  
+      }
+      var allowEditingFlag = this.get('allowEditingFlag');
+      if(!allowEditingFlag){
+        this.set('allowEditing',false);
+      }
+      // save the current candidate for future reference (like closing the pane without changes)
+      var selectedCandidate = AdmissionExam.selectedCandidateController.get('content').first();
+      this.set('_currentCandidate',selectedCandidate);
+      
+      //set the system state text
+      var text = ['_reviewing_exam_from'.loc(), selectedExam.first().get('date')].join(" ");
+      this.set('systemState',text);
+
+      // close the pane
+      AdmissionExam.chooseCandidatePaneController.hide();
+   },
    
-   }
+   closePaneWithoutChanges: function(){
+      // check if the current selected student in the pane corresponds with the 
+      // selection saved in _currentCandidate
+      var currentCandidate = this.get('_currentCandidate');
+      var selectedCandidate = AdmissionExam.selectedCandidateController.get('content');
+      if(currentCandidate){
+         // no use comparing the current selection, when no candidate is currently in view
+         var currentguid = currentCandidate.get('guid');
+         var selectedguid = selectedCandidate.first().get('guid');
+         if(currentguid != selectedguid){
+           // reset the current candidate to the _currentCandidate
+           AdmissionExam.candidateChoiceController.set('selection',currentCandidate);
+         }  
+      }
+   },
+   
+   systemState: '_please_select_a_candidate'.loc()
+   
+   
+   
 }) ;

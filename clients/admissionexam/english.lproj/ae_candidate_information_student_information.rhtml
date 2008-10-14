@@ -44,13 +44,17 @@
     %> 
     <%= button_view :ae_ci_si_save_changes, 
         :title => loc('_ae_ci_si_save_changes'),
-        :action => '',
-        :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        :action => 'AdmissionExam.selectedCandidateController.saveChanges',
+        :bind => {
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
     %>
     <%= button_view :ae_ci_si_revert_changes, 
         :title => loc('_ae_ci_si_revert_changes'),
-        :action => '',
-        :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
-     %>     
+        :action => 'AdmissionExam.selectedCandidateController.revertChanges',
+        :bind => {
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+    %>     
                         
 <% end %>

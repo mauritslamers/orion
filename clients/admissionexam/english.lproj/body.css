@@ -14,6 +14,14 @@
   width: 900px;
 }
 
+#ae_current_state_information{
+  position: absolute;
+  top: 5px;
+  left: 350px; 
+  width: 400px;
+  margin-top: 0px;
+} 
+
 #ae_candidate_information {
   position: absolute;
   top: 80px;
@@ -153,3 +161,10 @@
   left: 300px; 
   margin-top: 0px;    
 }
+
+#ae_allow_editing_review_exam {
+  position: absolute;
+  top: 250px;
+  left: 500px;      
+}
+

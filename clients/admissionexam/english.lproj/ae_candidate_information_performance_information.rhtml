@@ -7,7 +7,8 @@
       :maximum => 5,
       :step => 1, 
       :bind => {
-           :value => 'AdmissionExam.currentExamController.performanceExperience' 
+           :value => 'AdmissionExam.currentExamController.performanceExperience',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing' 
       } 
    %>
    <%= label_view :ae_ci_pi_performance_experience_value, :tag => 'h4',
@@ -25,7 +26,8 @@
       :maximum => 5,
       :step => 1,
       :bind => {
-           :value => 'AdmissionExam.currentExamController.playingLevel' 
+           :value => 'AdmissionExam.currentExamController.playingLevel',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing' 
       } 
   %>
    <%= label_view :ae_ci_pi_playing_level_value, :tag => 'h4',
@@ -43,7 +45,8 @@
       :maximum => 5,
       :step => 1,
       :bind => {
-           :value => 'AdmissionExam.currentExamController.ensembleExperience' 
+           :value => 'AdmissionExam.currentExamController.ensembleExperience',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing' 
       }
   %>   
   <%= label_view :ae_ci_pi_ensemble_experience_value, :tag => 'h4',
@@ -61,7 +64,8 @@
       :maximum => 5,
       :step => 1,
       :bind => {
-           :value => 'AdmissionExam.currentExamController.primaVistaReading' 
+           :value => 'AdmissionExam.currentExamController.primaVistaReading',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing' 
       }
   %> 
    <%= label_view :ae_ci_pi_prima_vista_reading_value, :tag => 'h4',
@@ -78,7 +82,8 @@
       :maximum => 5,
       :step => 1,
       :bind => {
-           :value => 'AdmissionExam.currentExamController.improvising' 
+           :value => 'AdmissionExam.currentExamController.improvising',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
       }
   %>     
    <%= label_view :ae_ci_pi_improvising_value, :tag => 'h4',
@@ -96,7 +101,8 @@
       :maximum => 5,
       :step => 1,
       :bind => {
-           :value => 'AdmissionExam.currentExamController.playingTogether' 
+           :value => 'AdmissionExam.currentExamController.playingTogether',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing' 
       }
   %>
    <%= label_view :ae_ci_pi_playing_together_value, :tag => 'h4',
@@ -115,7 +121,8 @@
       :maximum => 5,
       :step => 1,
       :bind => {
-           :value => 'AdmissionExam.currentExamController.qualifiedForPerformance' 
+           :value => 'AdmissionExam.currentExamController.qualifiedForPerformance',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing' 
       }
   %> 
    <%= label_view :ae_ci_pi_qualified_for_performance_value, :tag => 'h4',

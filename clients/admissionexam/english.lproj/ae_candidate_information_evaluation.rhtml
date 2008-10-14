@@ -7,7 +7,8 @@
       :maximum => 5,
       :step => 1, 
       :bind => {
-           :value => 'AdmissionExam.currentExamController.realisticImage' 
+           :value => 'AdmissionExam.currentExamController.realisticImage', 
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
       } 
    %>
    <%= label_view :ae_ci_ev_realistic_image_value, :tag => 'h4',
@@ -25,7 +26,8 @@
       :maximum => 5,
       :step => 1,
       :bind => {
-           :value => 'AdmissionExam.currentExamController.driveAmbition' 
+           :value => 'AdmissionExam.currentExamController.driveAmbition',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing' 
       } 
   %>
    <%= label_view :ae_ci_ev_drive_ambition_value, :tag => 'h4',
@@ -43,7 +45,8 @@
       :maximum => 5,
       :step => 1,
       :bind => {
-           :value => 'AdmissionExam.currentExamController.credibility' 
+           :value => 'AdmissionExam.currentExamController.credibility',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing' 
       }
   %>   
   <%= label_view :ae_ci_ev_credibility_value, :tag => 'h4',
@@ -61,7 +64,8 @@
       :maximum => 5,
       :step => 1,
       :bind => {
-           :value => 'AdmissionExam.currentExamController.musicalExperience' 
+           :value => 'AdmissionExam.currentExamController.musicalExperience',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing' 
       }
   %> 
    <%= label_view :ae_ci_ev_musical_experience_value, :tag => 'h4',
@@ -78,7 +82,8 @@
       :maximum => 5,
       :step => 1,
       :bind => {
-           :value => 'AdmissionExam.currentExamController.technologicalExperience' 
+           :value => 'AdmissionExam.currentExamController.technologicalExperience',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing' 
       }
   %>     
    <%= label_view :ae_ci_ev_technological_experience_value, :tag => 'h4',
@@ -96,7 +101,8 @@
       :maximum => 5,
       :step => 1,
       :bind => {
-           :value => 'AdmissionExam.currentExamController.productionalExperience' 
+           :value => 'AdmissionExam.currentExamController.productionalExperience',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing' 
       }
   %>
    <%= label_view :ae_ci_ev_productional_experience_value, :tag => 'h4',
@@ -115,7 +121,8 @@
       :maximum => 5,
       :step => 1,
       :bind => {
-           :value => 'AdmissionExam.currentExamController.musicality' 
+           :value => 'AdmissionExam.currentExamController.musicality',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing' 
       }
   %> 
    <%= label_view :ae_ci_ev_musicality_value, :tag => 'h4',
@@ -132,7 +139,8 @@
       :maximum => 5,
       :step => 1,
       :bind => {
-           :value => 'AdmissionExam.currentExamController.productionLevel' 
+           :value => 'AdmissionExam.currentExamController.productionLevel',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing' 
       }
   %>   
    <%= label_view :ae_ci_ev_production_level_value, :tag => 'h4',
@@ -151,7 +159,8 @@
       :maximum => 5,
       :step => 1,
       :bind => {
-           :value => 'AdmissionExam.currentExamController.technologyLevel' 
+           :value => 'AdmissionExam.currentExamController.technologyLevel',
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing' 
       }
   %> 
   <%= label_view :ae_ci_ev_technology_level_value, :tag => 'h4',
@@ -160,9 +169,5 @@
       }
    %> 
    
-       
- 
-
- 
-  
+        
 <% end %> 

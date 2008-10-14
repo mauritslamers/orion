@@ -18,6 +18,19 @@ AdmissionExam.selectedCandidateController = SC.ObjectController.create(
 
   // TODO: Add your own code here.
   
-  contentBinding: 'AdmissionExam.candidateChoiceController.selection'
+  contentBinding: 'AdmissionExam.candidateChoiceController.selection',
 
+  saveChanges: function(){
+    var content = this.get('content');
+    if(content){
+      AdmissionExam.server.commitRecords(content); 
+    }
+  },
+  
+  revertChanges: function(){
+    var content = this.get('content');
+    if(content){
+       AdmissionExam.server.refreshRecords(content);
+    }
+  }
 }) ;
