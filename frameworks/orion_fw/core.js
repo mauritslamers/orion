@@ -16,13 +16,14 @@ OrionFw = SC.Object.create({
   // framework:
   // CONSTANT_NAME:  'some-value'
 
-  server: SC.RestServer.create({ prefix: ['OrionFw'], urlFormat: "/%@/%@", postFormat: SC.JSON_FORMAT}),
-  //server: SC.Server.create({ prefix: ['OrionFw'] }),
+  server: SC.RestServer.create({ prefix: ['OrionFw'], postFormat: SC.JSON_FORMAT}),
  
-  standardResource: "~maurits/sproutcore_orion/"
+  standardResource: "/~maurits/sproutcore_orion/"
   
 }) ;
 
+
+/*
 OrionFw.getLoginCookie = function(){
 	if(document.cookie.length>0){
 		var cookieName = "OrionLoginCookie";
@@ -46,3 +47,5 @@ OrionFw.setLoginCookie = function(logintype){
 	var endcookie = [typedata,expiry].join("");
 	document.cookie = endcookie;
 }
+
+*/

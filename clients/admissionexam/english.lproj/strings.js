@@ -37,6 +37,7 @@ Object.extend(String.English,{
   "_please_select_a_candidate" : "Please select a candidate",
   "_new_exam" : "New exam",
   "_reviewing_exam_from" : "Reviewing exam from:",
+  "_editing_exam_from" : "Editing exam from:",
   "_information_about_candidate": 'Information about candidate',
   "_information_about_committee" : 'Information about committee',
   "_candidate_background" : 'Background of the candidate',

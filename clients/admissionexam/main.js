@@ -20,6 +20,8 @@ function main() {
   // TODO: refresh() any collections you have created to get their records.
   // ex: Admissionexam.contacts.refresh() ;
 
+  OrionFw.retrieveSystemState();
+
   var tmpMenuItems = SC.Store.findRecords(AdmissionExam.AEMenuItem);
   AdmissionExam.candidateInformationSourceListViewController.set('content',tmpMenuItems);
   // TODO: Set the content property on your primary controller
@@ -39,7 +41,7 @@ function main() {
   AdmissionExam.server.listFor({recordType: AdmissionExam.AEExamTeacher});
   var examMembers = AdmissionExam.AEExamTeacher.collection();
   examMembers.set('orderBy',['lastname ASC']);
-  //examMembers.set('conditions', {'examId' : ['1']});
+  examMembers.set('conditions', {'examId' : ['0']});
   AdmissionExam.currentExamCommitteeController.set('content',examMembers);
   
   //var exams = AdmissionExam.AEExam.collection();

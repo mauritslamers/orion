@@ -30,20 +30,21 @@ OrionFw.LoginData = SC.Record.extend(
        '/ajacom/contact/show/23' (if the record has guid=23 and
         only one record is fetched)
   */
-  resourceURL: [OrionFw.standardResource + 'login'], 
+  resourceURL: [OrionFw.standardResource + 'AuthenticationServer'], 
 
   // this list of properties will be used when talking to the server 
   // backend. If you don't define this only 'guid' will be used. 
-  properties: ['userName','userPassword','userType'],
-  
+  properties: ['userName','passwd','authServerId'],
+
+/*  
   userName : '',
   userPassword : '',
   userType: '',
   
   attributes: function(){
   	un = this.get('userName');
-  	up = this.get('userPassword');
-  	ut = this.get('userType');
+  	up = this.get('passwd');
+  	ut = this.get('authServerId');
   	var tmp = new Object;
   	tmp.userName = un;
   	if(ut == 3){
@@ -53,7 +54,7 @@ OrionFw.LoginData = SC.Record.extend(
   	}
   	tmp.userType = ut;
   	return tmp;	
-  }.property('userName','userPassword','userType')
+  }.property('userName','passwd','authServerId') */
 });
 
 

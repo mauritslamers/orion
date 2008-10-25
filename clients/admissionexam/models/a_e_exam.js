@@ -57,6 +57,7 @@ AdmissionExam.AEExam = SC.Record.extend(
     
     conclusionIdType: 'AdmissionExam.AEConclusion',
     candidateIdType: 'AdmissionExam.AECandidate'
-    
+    //TODO:
+    //desiredCourseType
     
 }) ;

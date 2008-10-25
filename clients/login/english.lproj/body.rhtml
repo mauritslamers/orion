@@ -1,54 +1,39 @@
 <% content_for('body') do %>
-	<div class="Login_EntryPage">
-	<% view do %>
-		<% form_view :outlet => true, :tag => 'table', :class =>'form' do %>
-		  <tr>
-		    <td class="Login_EntryPage_NameLabel"><%= loc(%(label_username)) %></td>
-		    <td class="Login_EntryPage_NameField">
-		    	<%= text_field_view :field => :user_name, 
-		    		:bind => {
-		    			:value => 'Login.loginFormController.userName'	
-		    		} %>
-		    </td>
 
-		    <td rowspan="2" class="Login_EntryPage_UserType"> 
-		    	<%= loc(%(label_usertype)) %>
-		    	<% scroll_view :login_entry_page_user_type_scrollview, :outlet => true do %>
-		    		<%= collection_view :login_entry_page_user_type_collectionview, 
-		    			:outlet => true,
-		    			:example_view => 'SC.ListItemView',
-		    			:is_editable => false,
-		    			:content_value_key => 'name',
-		    			:can_order_content => true,
-		    			:bind => {
-		    				:content => 'Login.authenticationServerCollectionController.arrangedObjects',
-		    				:selection => 'Login.authenticationServerCollectionController.selection'	
-		    			}
-		    		%>
-		    	<% end %>
-		    </td>
-		  </tr>
-	
-		  <tr>
-		    <td class="Login_EntryPage_PasswordLabel"><%= loc(%(label_password)) %></td>
-		    <td class="Login_EntryPage_PasswordField">
-		    	<%= password_field_view :field => :user_password, 
-		    		:bind => {
-		    			:value => 'Login.loginFormController.userPassword'	
-		    		} 
-		    	%>
-		    </td>
-		  </tr>	
+      <%= label_view :login_username_label, :tag => 'h4', :value => loc('_label_username') %>
+    	<%= text_field_view :login_username_fv,
+    		:bind => {
+    			:value => 'Login.loginFormController.userName'	
+    		} %>
 
-		  <tr><td colspan="2" class="separator"></td></tr> 
-		
-		  <tr>
-		    <td colspan="2" class="Login_EntryPage_Buttons">
-		      <%= button_view :outlet => true, :title => loc(%(caption_cancel)), :cancel => true %>
-		      <%= button_view :outlet => true, :title => loc(%(caption_login)), :default => true, :action => 'Login.loginFormController.commitLogin' %>
-		    </td>
-		  </tr>
-		<% end %>
-	<% end %>
-	</div>
+    	<%= label_view :login_usertype_label, :tag => 'h4', :value => loc('_label_login_method') %>
+    	<% scroll_view :login_entry_page_user_type_sv do %>
+    		<%= list_view :login_entry_page_user_type_cv, 
+    			:example_view => 'SC.ListItemView',
+    			:is_editable => false,
+    			:content_value_key => 'name',
+    			:bind => {
+    				:content => 'Login.authenticationServerCollectionController.arrangedObjects',
+    				:selection => 'Login.authenticationServerCollectionController.selection'	
+    			}
+    		%>
+    	<% end %>
+
+      <%= label_view :login_password_label, :tag => 'h4', :value => loc('_label_password') %>
+    	<%= password_field_view :login_passwd_fv,
+    		:bind => {
+    			:value => 'Login.loginFormController.passwd'	
+    		} 
+    	%>
+
+      <%= button_view :login_cancel_button, :title => loc('_caption_cancel'), 
+          :cancel => true %>
+      <%= button_view :login_login_button, :title => loc('_caption_login'), 
+          :default => true, 
+          :action => 'Login.loginFormController.commitLogin',
+          :bind => {
+             :enabled => 'Login.authenticationServerCollectionController.hasSelection' 
+          } %>
+
+
 <% end %>

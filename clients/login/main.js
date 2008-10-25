@@ -17,19 +17,22 @@ function main() {
   // when you are ready to pull data from your server.
   //Login.server.preload(Login.FIXTURES) ;
 
-  Login.authservers = OrionFw.AuthenticationServer.collection();
-  Login.authenticationServerCollectionController.set('content',Login.authservers);
-  Login.authenticationServerCollectionController.set('orderBy','guid');
-  Login.server.listFor(Login.authservers);
-  Login.authservers.refresh();
+  var authservers = OrionFw.AuthenticationServer.collection();
+  authservers.set('orderBy',['guid']);
+  Login.authenticationServerCollectionController.set('content',authservers);
+  OrionFw.server.listFor(authservers);
+  authservers.refresh();
   
   // TODO: refresh() any collections you have created to get their records.
   // ex: Login.contacts.refresh() ;
 	
   // get or store the cookie
 
-
-
+   // just load the system state. It will be set correctly before processing the login
+  //var systemStates = OrionFw.SystemState.collection();
+  //OrionFw.server.listFor(systemStates);
+  OrionFw.retrieveSystemState();
+     
   // Step 2: Instantiate Your Views
   // The default code just activates all the views you have on the page. If
   // your app gets any level of complexity, you should just get the views you
@@ -39,11 +42,15 @@ function main() {
   // Step 3. Set the content property on your primary controller.
   // This will make your app come alive!
 
+   // setting up the system state
+   //var systemState = SC.Store.findRecords({ 'guid': 1}, OrionFw.SystemState);
+   //OrionFw.systemStateController.set('content',systemState);
+
   // TODO: Set the content property on your primary controller
   // ex: Login.contactsController.set('content',Login.contacts);
-  var cookievalue = OrionFw.getLoginCookie();
+/*  var cookievalue = OrionFw.getLoginCookie();
   if(cookievalue != ""){
   	var selectedtype = SC.Store.findRecords({ 'guid' : cookievalue }, OrionFw.AuthenticationServer);
   	Login.authenticationServerCollectionController.set('selection',	selectedtype);
-  }
+  } */
 } ;

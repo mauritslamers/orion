@@ -1,39 +1,52 @@
-.Login_EntryPage {
-	position: relative;
-	left: 35%;
-	width: 30%;
-	margin-top: 10%;
-	border: solid 1px gray;
-	text-align: center;
+#login_username_label {
+  position: absolute;
+  left: 100px;
+  top: 80px; 
+  margin-top: 0px; 
 }
 
-.Login_EntryPage table {
-	margin-left: 10%;
-	text-align: left;	
+#login_username_fv {
+  position: absolute;
+  left: 200px;
+  top: 80px;   
 }
 
-.Login_EntryPage_NameLabel {
-	text-align: right;
+#login_usertype_label {
+  position: absolute;
+  left: 400px;
+  top: 50px; 
+  margin-top: 0px;  
 }
 
-td.Login_EntryPage_PasswordLabel{
-	text-align: right;	
+#login_entry_page_user_type_sv {
+  position: absolute;
+  left: 400px;
+  top: 75px;
+  height: 100px;
+  width: 200px;    
 }
 
-td.Login_EntryPage_Buttons {
-	text-align: center;
+#login_password_label {
+  position: absolute;
+  left: 100px;
+  top: 130px; 
+  margin-top: 0px;  
 }
 
-.login_entry_page_user_type_scrollview {
-	width: 150px;
-	height: 100px;	
+#login_passwd_fv {
+  position: absolute;
+  left: 200px;
+  top: 130px;    
 }
 
-.login_entry_page_user_type_collectionview {
-	width: 100%;
+#login_cancel_button {
+  position: absolute;
+  left: 300px;
+  top: 220px;    
 }
 
-.login_entry_page_user_type_collectionview .sc-collection-item {
-	position: relative;
-	//border: 1px solid red;
+#login_login_button {
+  position: absolute;
+  left: 400px;
+  top: 220px;   
 }

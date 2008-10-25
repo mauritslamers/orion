@@ -30,30 +30,12 @@ OrionFw.SystemState = SC.Record.extend(
        '/ajacom/contact/show/23' (if the record has guid=23 and
         only one record is fetched)
   */
-  resourceURL: [OrionFw.standardResource + 'systemstate'], 
+  resourceURL: [OrionFw.standardResource + 'SystemState'], 
 
   // this list of properties will be used when talking to the server 
   // backend. If you don't define this only 'guid' will be used. 
-  properties: ['id','usertype','loginstatus'],
-  
-  _loginstatusObserver: function(){
-  	var loginstatus = this.get('loginstatus');
-  	switch(loginstatus){
-  		case '': 
-  			// something fishy
-  			break;	
-  		case 'loggedin':
-  			// continue working
-  			break;
-  		case 'loggedout':
-  			// force the user to the login page
-  			break;
-  		default:
-  			// something is going horribly wrong here...
-  			break;
-  		
-  	}	
-  }
+  properties: ['id','userName','passwd','authServerId','loginStatus','preferredClient']
+
    
 });
 

@@ -17,9 +17,9 @@ AdmissionExam.currentExamController = SC.ObjectController.create(
 /** @scope Admissionexam.currentExamController */ {
 
   // TODO: Add your own code here.
-  _conclusionBinding: 'AdmissionExam.conclusionListController.selection',
+  conclusionBinding: 'AdmissionExam.conclusionListController.selection',
   
-  _conclusionObserver: function(){
+  conclusionObserver: function(){
       var conclusionAry = this.get('_conclusion');
       if((conclusionAry) && (conclusionAry instanceof Array)){
          // get the conclusion
@@ -31,9 +31,9 @@ AdmissionExam.currentExamController = SC.ObjectController.create(
             }
          }
       }
-  }.observes('_conclusion'),
+  }.observes('conclusion'),
   
-  _contentObserver: function(){
+  changesObserver: function(){
     //console.log("Change!");
     //var hasChanges = this.get('hasChanges'); 
     // if the allowEditing flag on the applicationcontroller is set to false, don't do anything.

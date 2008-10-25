@@ -20,12 +20,12 @@ config :all do |c|
 
   # This string will be prepended before any URLs that reference JavaScript,
   # CSS or images in your files.
-  c[:resources_at] = 'static'
+  #c[:resources_at] = 'static'
   
   # This string will be prepended before any index.html urls that actually
   # load your clients.  Setting this to an empty string will mount all
   # of your clients at the root URL level.
-  c[:index_at] = ''
+  #c[:index_at] = ''
   
   # If you also need to load external stylesheets not managed by the bundle 
   # system, name the URLs you want to reference here.
@@ -60,6 +60,12 @@ config :all do |c|
   # using this config as well.
   #c[:build_mode] = :production
   
+
+  # In production build mode, you could want to have the files 
+  # reference to another by relative links instead of absolute links
+  # to achieve that, make resources_at empty, and set the 
+  # following parameter:
+  #c[:resources_relative] = true
 end
 
 # Add configurations for specific bundles here as well.  Any options you

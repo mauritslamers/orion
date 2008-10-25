@@ -10,9 +10,9 @@
 //
 Object.extend(String.English,{
   // "_String Key": "Localized String"
-  'label_username' : 'Username',
-  'label_password' : 'Password',
-  'label_usertype' : 'Select a user type',
-  'caption_login' : 'Login',
-  'caption_cancel' : 'Cancel'
+  '_label_username' : 'Username:',
+  '_label_password' : 'Password:',
+  '_label_login_method' : 'Select a login method:',
+  '_caption_login' : 'Login',
+  '_caption_cancel' : 'Cancel'
 }) ;

@@ -17,5 +17,5 @@ Login.authenticationServerCollectionController = SC.CollectionController.create(
 /** @scope Login.authenticationServerCollectioncontrollerController */ {
 
   // TODO: Add your own code here.
-	orderBy: 'servername'
+  
 }) ;

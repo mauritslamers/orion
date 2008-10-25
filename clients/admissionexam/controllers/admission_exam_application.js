@@ -42,6 +42,9 @@ AdmissionExam.admissionExamApplicationController = SC.Object.create(
          this.set('_currentCandidate',selectedCandidate);
          //set the system state text
          this.set('systemState','_new_exam'.loc());
+         
+         // make sure allowEditing is true
+         this.set('allowEditing',true);
          AdmissionExam.chooseCandidatePaneController.hide();
       } 
    },
@@ -62,7 +65,12 @@ AdmissionExam.admissionExamApplicationController = SC.Object.create(
       this.set('_currentCandidate',selectedCandidate);
       
       //set the system state text
-      var text = ['_reviewing_exam_from'.loc(), selectedExam.first().get('date')].join(" ");
+      if(allowEditingFlag){
+         var text = ['_editing_exam_from'.loc(), selectedExam.first().get('date')].join(" ");
+      } 
+      else {
+         var text = ['_reviewing_exam_from'.loc(), selectedExam.first().get('date')].join(" ");
+      }
       this.set('systemState',text);
 
       // close the pane

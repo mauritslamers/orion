@@ -18,7 +18,7 @@ AdmissionExam.candidateInformationSourceListViewController = SC.ArrayController.
 
   // TODO: Add your own code here.
   _selectedguid: '',
-  
+/*  
   _selectionObserver: function(){
     var selection = this.get('selection');
     if((selection) && (selection instanceof Array)){
@@ -81,5 +81,5 @@ AdmissionExam.candidateInformationSourceListViewController = SC.ArrayController.
      } else {
         return false;
      }
-  }.property('_selectedguid')
+  }.property('_selectedguid') */
 }) ;
