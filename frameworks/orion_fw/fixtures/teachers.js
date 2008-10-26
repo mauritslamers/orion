@@ -5,7 +5,7 @@
 require('orion_fw');
 
 OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
-    {
+/*    {
         "type": "Teacher",
         "id": "1",
         "username": "root",
@@ -1456,5 +1456,5 @@ OrionFw.FIXTURES = OrionFw.FIXTURES.concat([
         "email": "",
         "active": "1",
         "maxworkload": "0"
-    }
+    } */
 ]);
