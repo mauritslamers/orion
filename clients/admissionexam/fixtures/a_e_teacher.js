@@ -39,5 +39,17 @@ AdmissionExam.FIXTURES = AdmissionExam.FIXTURES.concat([
   //   firstName: "Ryan",
   //   lastName: "Howard"
   // }
-
+   { guid: 1,
+     type: "AETeacher",
+     firstname: "Gerard",
+     inbetween: "van",
+     lastname: "Wolferen"
+   },
+   { guid: 2,
+     type: "AETeacher",
+     firstname: "Jeroen",
+     inbetween: "van",
+     lastname: "Iterson"
+   }
+   
 ]);

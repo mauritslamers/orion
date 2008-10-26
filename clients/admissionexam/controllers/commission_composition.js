@@ -26,7 +26,7 @@ AdmissionExam.committeeCompositionController = SC.Object.create(
          var examId = this.get('_examId');
          if(examId){
             var newCommitteeMember = AdmissionExam.AEExamTeacher.newRecord( { 'examId' : examId, 'teacherId': teacherId }); 
-            AdmissionExam.server.createRecords([newCommitteeMember]);
+            //AdmissionExam.server.createRecords([newCommitteeMember]);
          }
       }
   },
@@ -38,7 +38,7 @@ AdmissionExam.committeeCompositionController = SC.Object.create(
          var examId = this.get('_examId');
          var tmpRecord = SC.Store.findRecords({ 'examId': examId, 'teacherId': teacher}, AdmissionExam.AEExamTeacher);
          if((examId && tmpRecord) && (tmpRecord instanceof Array)){
-            AdmissionExam.server.destroyRecords(tmpRecord);
+            //AdmissionExam.server.destroyRecords(tmpRecord);
          }         
      }
   }

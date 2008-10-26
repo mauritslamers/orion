@@ -22,15 +22,15 @@ AdmissionExam.examFormController = SC.ObjectController.create(
   viewObserver: function(){
     // update the tree of the view
     var view = this.get('editView');
-/*    if(view){
+    if(view){
        OrionFw.systemStateTimer = SC.Timer.schedule({
        target: 'AdmissionExam.examFormController',
        action: 'startRecache',
        interval: 2000,
        repeats: NO
      }); 
-    } */
-    this.startRecache();
+    } 
+    //this.startRecache();
   }.observes('editView'),
 
   startRecache: function(){
@@ -64,6 +64,7 @@ AdmissionExam.examFormController = SC.ObjectController.create(
                //childNode._rebuildChildNodes();
                //childNode.update();
                //childNode.updateChildren();
+               childNode.recomputeClippingFrame();
             }
          }
          else {
@@ -74,6 +75,7 @@ AdmissionExam.examFormController = SC.ObjectController.create(
             //childNode.resizeWithOldParentSize();
             //var tmpcontent = childNode.get('content');
             //childNode.set('content',tmpcontent);
+            childNode.recomputeClippingFrame();
          }
       }
     }

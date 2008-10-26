@@ -34,7 +34,7 @@ AdmissionExam.admissionExamApplicationController = SC.Object.create(
          //var candidateGuid = selectedCandidate.get('guid');
          var newExam = AdmissionExam.AEExam.newRecord({'candidateId': selectedCandidate});
          // now let's have the record created 
-         AdmissionExam.server.createRecords([newExam]);
+         //AdmissionExam.server.createRecords([newExam]);
          
         
          AdmissionExam.currentExamController.set('content',newExam);

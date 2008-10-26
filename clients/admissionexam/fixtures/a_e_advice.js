@@ -40,7 +40,7 @@ AdmissionExam.FIXTURES = AdmissionExam.FIXTURES.concat([
   //   lastName: "Howard"
   // }
 
-/*
+
   { guid: 1000,
     type: 'AEAdvice',
     name: 'Over de hele linie niet sterk genoeg',
@@ -119,5 +119,5 @@ AdmissionExam.FIXTURES = AdmissionExam.FIXTURES.concat([
     group: 'Toegelaten Propedeuse',
     year: '2008'
   }
-  */
+  
 ]);

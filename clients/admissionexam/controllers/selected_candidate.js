@@ -23,14 +23,14 @@ AdmissionExam.selectedCandidateController = SC.ObjectController.create(
   saveChanges: function(){
     var content = this.get('content');
     if(content){
-      AdmissionExam.server.commitRecords(content); 
+      //AdmissionExam.server.commitRecords(content); 
     }
   },
   
   revertChanges: function(){
     var content = this.get('content');
     if(content){
-       AdmissionExam.server.refreshRecords(content);
+       //AdmissionExam.server.refreshRecords(content);
     }
   }
 }) ;
