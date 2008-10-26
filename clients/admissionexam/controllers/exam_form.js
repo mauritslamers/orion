@@ -51,17 +51,25 @@ AdmissionExam.examFormController = SC.ObjectController.create(
       else {
          if(childNode.childNodes){
             if(childNode.childNodes.length > 0){
+               if(childNode.rebuildChildren){
+                  childNode.needsFullUpdate = true;
+                  childNode.recacheFrames();
+                  childNode.recomputeClippingFrame();
+                  childNode.rebuildChildren();
+               }
                AdmissionExam.examFormController.recacheChildren(childNode.childNodes);
             }
             else {
-               childNode.recacheFrames();
+               //childNode.recacheFrames();
                //childNode._rebuildChildNodes();
                //childNode.update();
+               //childNode.updateChildren();
             }
          }
          else {
-            childNode.recacheFrames();
+            //childNode.recacheFrames();
             //childNode.update();
+            //childNode.updateChildren();
             //childNode._rebuildChildNodes();
             //childNode.resizeWithOldParentSize();
             //var tmpcontent = childNode.get('content');
