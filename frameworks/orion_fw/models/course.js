@@ -20,7 +20,7 @@ OrionFw.Course = SC.Record.extend(
   
   //dataSource: SC.Server.create({ prefix: [""], urlFormat: "?%@&%@" }),
   //dataStore: SC.Server.create({ prefix: [""], urlFormat: "?%@&%@" }),
-  dataStore: OrionFw.server, // maybe Contacts.server?
+  //dataStore: OrionFw.server, // maybe Contacts.server?
   dataSource: OrionFw.server,
   
   //modules: SC.Record.hasMany('OrionFw.Module'),
@@ -32,13 +32,13 @@ OrionFw.Course = SC.Record.extend(
        '/ajacom/contact/show/23' (if the record has guid=23 and
         only one record is fetched)
   */
-  resourceURL: [OrionFw.standardResource + 'education'], 
+  resourceURL: [OrionFw.standardResource + 'course'], 
 
   // this list of properties will be used when talking to the server 
   // backend. If you don't define this only 'guid' will be used. 
   properties: ['id','name','code'], 
 
-  educationName: function() { 
+  courseName: function() { 
     return [this.get('name'), this.get('code')].compact().join('-'); 
   }.property('name', 'code'),
   
