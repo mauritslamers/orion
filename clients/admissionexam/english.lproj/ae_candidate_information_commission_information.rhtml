@@ -21,7 +21,8 @@
         :title => loc('_ae_ci_ci_committee_members_remove_selected'),
         :action => 'AdmissionExam.committeeCompositionController.removeMemberFromCurrentCommittee',
         :bind => {
-          :enabled => 'AdmissionExam.currentExamCommitteeController.hasSelection'  
+          :enabled => 'AdmissionExam.currentExamCommitteeController.hasSelection',
+          :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
         }
         
     %>
@@ -48,7 +49,8 @@
         :title => loc('_ae_ci_ci_committee_possible_members_add_selected'),
         :action => 'AdmissionExam.committeeCompositionController.addMemberToCurrentCommittee',
         :bind => {
-            :enabled => 'AdmissionExam.possibleCommitteeMembersController.hasSelection'
+            :enabled => 'AdmissionExam.possibleCommitteeMembersController.hasSelection',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
         }
     %>
 <% end %>  

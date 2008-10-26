@@ -44,6 +44,7 @@ AdmissionExam.currentExamController = SC.ObjectController.create(
           var content = this.get('content');
           if(content){
              AdmissionExam.server.commitRecords([content]);
+             OrionFw.retrieveSystemState();
           }
         }
     }

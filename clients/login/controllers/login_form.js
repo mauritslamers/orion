@@ -47,6 +47,7 @@ Login.loginFormController = SC.ObjectController.create(
       OrionFw.systemStateController.set('userName', un);
       OrionFw.systemStateController.set('passwd',pw);
       OrionFw.systemStateController.set('authServerId',ut);
+      OrionFw.systemStateController.commitChanges();
       
 /*      var login = OrionFw.systemStateController.get('content');
       login.userName = un;

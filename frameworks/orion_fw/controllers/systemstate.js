@@ -38,6 +38,8 @@ OrionFw.systemStateController = SC.ObjectController.create(
                  var newPos = [location.pathname.substr(0,lastSlashPos+1), prefClient].join('');
                  var newURL = [location.protocol, '//',location.host,newPos].join('');
                  location.replace(newURL); 
+                 console.log(newURL);
+                 OrionFw.systemStateTimer.invalidate();
                }
             }
          }          
@@ -55,6 +57,7 @@ OrionFw.systemStateController = SC.ObjectController.create(
              //console.log(newURL);
              OrionFw.systemStateTimer.invalidate();
              location.replace(newURL);
+             //console.log(newURL);
            }
            else {
              //console.log('We are already trying to login :) ');
@@ -108,7 +111,7 @@ OrionFw.retrieveSystemState = function(){
   OrionFw.systemStateTimer = SC.Timer.schedule({
     target: 'OrionFw.systemStateController',
     action: 'process',
-    interval: 1000,
+    interval: 2000,
     repeats: YES
   });
 }
@@ -117,7 +120,7 @@ OrionFw.checkSystemState =  function(){
   OrionFw.systemStateTimer = SC.Timer.schedule({
     target: 'OrionFw.systemStateController',
     action: 'process',
-    interval: 1000,
+    interval: 2000,
     repeats: YES
   });
 }
