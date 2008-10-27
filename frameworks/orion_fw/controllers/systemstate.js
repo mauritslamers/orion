@@ -23,6 +23,7 @@ OrionFw.systemStateController = SC.ObjectController.create(
 
   contentObserver: function(){
     // get the content
+    //debugger;
     var curContent = this.get('content');
     if((curContent) && (curContent instanceof Array) && (curContent.length == 1)){
       var curState = curContent.first();
@@ -34,7 +35,8 @@ OrionFw.systemStateController = SC.ObjectController.create(
                // replace the login with the preferredClient if it exists
                var prefClient = curState.get('preferredClient');
                if(prefClient){
-                 var lastSlashPos = location.pathname.lastIndexOf('/');
+                 var curURL = this.getBareURL();
+                 var lastSlashPos = curURL.lastIndexOf('/');
                  var newPos = [location.pathname.substr(0,lastSlashPos+1), prefClient].join('');
                  var newURL = [location.protocol, '//',location.host,newPos].join('');
                  location.replace(newURL); 
@@ -49,12 +51,12 @@ OrionFw.systemStateController = SC.ObjectController.create(
            if(!window.Login){
              //console.log('Mmm, not logged in and at a different client? Not good');
              // get the current url
-             var curURL = location.pathname;
+             var curURL = this.getBareURL();
              var lastSlashPos = curURL.lastIndexOf('/');
              // remove last part of string from lastSlashPos
              var newPos = [curURL.substr(0,lastSlashPos+1), 'login'].join('');
              var newURL = [location.protocol,'//',location.host,newPos].join('');
-             //console.log(newURL);
+             console.log(newURL);
              OrionFw.systemStateTimer.invalidate();
              location.replace(newURL);
              //console.log(newURL);
@@ -67,6 +69,21 @@ OrionFw.systemStateController = SC.ObjectController.create(
       }      
     }     
   }.observes('content'),
+
+  getBareURL: function(){
+    // function to get correct url, whether in dev mode or in prod mode
+    var curURL = location.pathname;
+    // now find out whether we are in production mode (/path/to/client/en/index.html)
+    // or in dev mode (ending in /)
+    if(curURL.substr(curURL.length - 14) == "/en/index.html"){
+      // prod mode
+      return curURL.substr(0,curURL.length -14); 
+    }
+    else {
+      // dev mode 
+      return curURL;
+    }
+  },
 
   process: function(){
     // set the content
@@ -105,6 +122,7 @@ repeats: YES,
 until: Time.now() + 1000
 }) ;
 */
+
 OrionFw.retrieveSystemState = function(){
   var sysStates = OrionFw.SystemState.collection();
   OrionFw.server.listFor(sysStates);
@@ -114,7 +132,7 @@ OrionFw.retrieveSystemState = function(){
     interval: 2000,
     repeats: YES
   });
-}
+};
 
 OrionFw.checkSystemState =  function(){
   OrionFw.systemStateTimer = SC.Timer.schedule({
@@ -123,4 +141,4 @@ OrionFw.checkSystemState =  function(){
     interval: 2000,
     repeats: YES
   });
-}
+};
