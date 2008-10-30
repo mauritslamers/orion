@@ -23,47 +23,62 @@ AdmissionExam.CheckBoxListView = SC.CheckboxView.extend(
       var tmpName = content.get('name');
       //console.log(tmpName);
       if(tmpName){
-        this.set('title',tmpName);
-        // setup other things? not at the moment
+        this.set('title',tmpName);        
       }
+      // setup other things? yes... the value 
+      var tmpValue = content.get('value');
+      if(tmpValue){
+        debugger;
+        this.set('value',true);  
+      } 
     }
     
   }.observes('content'),
+  
+  // an observer including the current item in the source list view selection when tagged
   
   _valueObserver: function(){
       var curValue = this.get('value');
       var curContent = this.get('content');
       var curSelection = this.get('parentNode').get('parentNode').get('selection');
-      if(curValue){
-         // add to selection
-         curSelection.push(curContent);
-      } 
-      else {
-         var newSelection = [];
-         curSelection.each(function(s){
-            if(s !== curContent){
-              newSelection.push(s);  
+      if((curSelection) && (curSelection instanceof Array)){
+         if(curValue){ // are we tagged?
+            // yes, check whether we are already in the selection and if not add to selection
+            var curGuid=curContent.get('guid');
+            if(curSelection.length > 0){
+               // if there is something in the array, check it
+               var curValueInCurSelection = [];
+               curSelection.each(function(s){
+                 var g = s.get('guid');
+                 if(g){
+                   if(g == curGuid){
+                     curValueInCurSelection.push(g);  
+                   }
+                 }
+               });
+               if(curValueInCurSelection.length<1){
+                  // not in the selection array? Add me...
+                  curSelection.push(curContent);
+               }
             }
-         });
-         this.get('parentNode').get('parentNode').set('selection',newSelection);
+            else {
+              // if there is nothing in the array, always add
+              curSelection.push(curContent);  
+            }
+         } 
+         else {
+            var newSelection = [];
+            curSelection.each(function(s){
+               if(s !== curContent){
+                 newSelection.push(s);  
+               }
+            });
+            this.get('parentNode').get('parentNode').set('selection',newSelection);
+         }
       }
       //console.log(this.get('parentNode').get('parentNode'));
   }.observes('value')
-    
-/*
-    contentValueKey: null,
-    
-    _contentValue: null,
-    
-    _contentValueObserver: function(){
-      var _title = this.get('_title');
-      if(!_title){      
-          var del = this.displayDelegate;
-          var key = this.getDelegateProperty(del, 'contentValue') ;
-          this.set('title',key); 
-      }
-    }.observes('value') */
+  
 
-  // TODO: Add your own code here.
 
 }) ;

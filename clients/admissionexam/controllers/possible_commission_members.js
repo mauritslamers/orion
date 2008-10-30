@@ -23,36 +23,7 @@ AdmissionExam.possibleCommitteeMembersController = SC.CollectionController.creat
   _examIdBinding: 'AdmissionExam.currentExamController.guid',
     
   _assignedCommitteeMembersObserver: function(){
-/*
-      var assignedMembers = this.get('_assignedCommitteeMembers');
-      var content = this.get('content');
-      if((assignedMembers) && (assignedMembers.length>0) && content && (this.get('arrangedObjects').length>0)){
-         var leaveOut = assignedMembers.get('guid');         
-         var allGuids = this.get('content').get('records').get('guid');
-         var conditionArray = [];
-         allGuids.each(function(s){
-            var pos = leaveOut.indexOf(s);
-            if(pos<0){
-               // only returns >=0 if found
-               conditionArray.push(s);
-            }
-         });
-         this.get('content').set('conditions',{ 'guid': conditionArray });
-      }
-      else {
-         // if this fails, check whether assignedMembers happens to be an empty array
-           if(!(assignedMembers) && content){
-              // if yes, set the conditions array to contain every guid available
-              var records = content.get('records');
-              if(records){
-                 var allGuids = records.get('guid');
-                 if(allGuids){
-                    this.get('content').set('conditions',{ 'guid': allGuids });
-                 }
-              }
-           }
-       }  
-    */
+
     // different approach
     var examId = this.get('_examId');
     var allTeachers = SC.Store.findRecords(AdmissionExam.AETeacher);

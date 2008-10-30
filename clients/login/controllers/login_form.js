@@ -25,6 +25,24 @@ Login.loginFormController = SC.ObjectController.create(
   
   userTypeSelectionBinding : 'Login.authenticationServerCollectionController.selection',
   
+  loginButtonEnabled: false,
+  
+  _loginButtonEnabler: function(){
+    var authServer = this.get('userTypeSelection');
+    var userName = this.get('userName');
+    if((authServer) && (authServer instanceof Array) && (authServer.length == 1)){
+      if(userName){
+         this.set('loginButtonEnabled',true);  
+      } 
+      else {
+         this.set('loginButtonEnabled',false);
+      }
+    } 
+    else {
+       this.set('loginButtonEnabled',false);
+    }
+  }.observes('userTypeSelection','userName'),
+  
   commitLogin: function(){
    // reload the system state
    //var systemState = SC.Store.findRecords({ 'guid': 1}, OrionFw.SystemState);

@@ -59,14 +59,16 @@ function main() {
 
   AdmissionExam.server.listFor({recordType: AdmissionExam.AEAdvice});
   //var advice = AdmissionExam.AEAdvice.collection();
-  var advice = SC.Store.findRecords(AdmissionExam.AEAdvice);
-  AdmissionExam.adviceListController.set('content',advice);
+  //var advice = SC.Store.findRecords(AdmissionExam.AEAdvice);
+  //AdmissionExam.adviceListController.set('content',advice);
   //advice.refresh();
   
   AdmissionExam.server.listFor({recordType: AdmissionExam.AEExam});
   var exams = AdmissionExam.AEExam.collection();
   AdmissionExam.examListOfChosenCandidateController.set('content',exams);
-  
+ 
+ 
+  AdmissionExam.server.listFor({recordType: AdmissionExam.AEExamAdvice}); 
   // Step 2: Instantiate Your Views
   // The default code just activates all the views you have on the page. If
   // your app gets any level of complexity, you should just get the views you

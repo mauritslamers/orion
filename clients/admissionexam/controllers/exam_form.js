@@ -55,7 +55,7 @@ AdmissionExam.examFormController = SC.ObjectController.create(
                   //childNode.needsFullUpdate = true;
                   //childNode.recacheFrames();
                   //childNode.recomputeClippingFrame();
-                  childNode.rebuildChildren(YES);
+                  //childNode.rebuildChildren(YES);
                }
                AdmissionExam.examFormController.recacheChildren(childNode.childNodes);
             }
