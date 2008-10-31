@@ -26,9 +26,12 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
   _examIdBinding: 'AdmissionExam.currentExamController.guid',
   
   _lastExamId: -1,
+  
+  _preventUpdatingToDB: true,
  
   _currentExamObserver: function(){
- //    debugger;
+     //debugger;
+     this._preventUpdatingToDB = true;
      var curExamGuid = this.get('_examId');
      var lastExamId = this.get('_lastExamId');
      if((curExamGuid) && (lastExamId != curExamGuid)){
@@ -37,10 +40,38 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
         var examAdvice = AdmissionExam.AEExamAdvice.collection();
         examAdvice.set('conditions', { 'examId':[curExamGuid] }); 
         examAdvice.refresh();
+        //AdmissionExam.adviceListController.set('_preventUpdatingToDB',true);
         //this.set('content',examAdvice);  
         AdmissionExam.adviceListController.set('content',examAdvice);
+        //this.set('_preventUpdatingToDB',false);
+        //AdmissionExam.adviceListController.set('_preventUpdatingToDB',false);
      }
+     this._preventUpdatingToDB = false;
   }.observes('_examId'), 
+ 
+  selectedRecordsObserver: function(){
+    // function to get the current selection, compare it to the data currently in the database
+    // and create or delete the link between the current exam id and the choice
+    var curSelection = this.get('selection');
+    var content = this.get('content');
+    if((curSelection) && (curSelection instanceof Array) && (content) && (content.records)){
+      // look at the difference in length of the content and the selection.
+     
+      // we need to prevent removing records when the view is building for the first view
+      // look at the property _isUpdatingFromDB
+      if(!this._preventUpdatingToDB){
+         if(curSelection.length > content.records().length){
+             // we need to add a record 
+             console.log('Add Record');
+         }
+         else {
+           // we need to remove a record
+             console.log('Remove Record');
+         }
+      }
+    }
+  }.observes('selection'), 
+  
    
   choiceModelName: 'AdmissionExam.AEAdvice',
   
@@ -61,7 +92,7 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
       choiceModel = choiceModel[ary[i]]; 
     }
     var choices = SC.Store.findRecords(choiceModel);
-    //this.set('_choices',choices);
+    this.set('_choices',choices);
     return choices;
   },
   
@@ -69,8 +100,9 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
   _arrangedObjects: [],
   
   arrangedObjects: function( key, value ){
+    //debugger;
     if(value){
-//       debugger;
+       debugger;
        // first get the choices
        var choices  = this._getChoiceList();
        //var choices = this.get('_choices');
@@ -98,6 +130,8 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
   }.property()
   
 }) ;
+
+
 
 
   /*

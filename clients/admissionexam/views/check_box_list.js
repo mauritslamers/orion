@@ -31,8 +31,7 @@ AdmissionExam.CheckBoxListView = SC.CheckboxView.extend(
         debugger;
         this.set('value',true);  
       } 
-    }
-    
+    } 
   }.observes('content'),
   
   // an observer including the current item in the source list view selection when tagged
@@ -41,6 +40,7 @@ AdmissionExam.CheckBoxListView = SC.CheckboxView.extend(
       var curValue = this.get('value');
       var curContent = this.get('content');
       var curSelection = this.get('parentNode').get('parentNode').get('selection');
+      //var curNumSelectedItems = this.get('parentNode').get('parentNode').get('numberOfSelectedItems');
       if((curSelection) && (curSelection instanceof Array)){
          if(curValue){ // are we tagged?
             // yes, check whether we are already in the selection and if not add to selection
@@ -55,15 +55,19 @@ AdmissionExam.CheckBoxListView = SC.CheckboxView.extend(
                      curValueInCurSelection.push(g);  
                    }
                  }
-               });
+               }); // a list with items in the selection with the same guid
                if(curValueInCurSelection.length<1){
                   // not in the selection array? Add me...
-                  curSelection.push(curContent);
+                  var tmpAry = curSelection;
+                  tmpAry.push(curContent);
+                  this.get('parentNode').get('parentNode').set('selection',tmpAry);
                }
             }
             else {
               // if there is nothing in the array, always add
-              curSelection.push(curContent);  
+              var tmpAry = [];
+              tmpAry.push(curContent);  
+              this.get('parentNode').get('parentNode').set('selection',tmpAry);
             }
          } 
          else {
@@ -78,7 +82,5 @@ AdmissionExam.CheckBoxListView = SC.CheckboxView.extend(
       }
       //console.log(this.get('parentNode').get('parentNode'));
   }.observes('value')
-  
-
 
 }) ;
