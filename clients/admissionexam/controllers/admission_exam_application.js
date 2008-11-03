@@ -57,9 +57,8 @@ AdmissionExam.admissionExamApplicationController = SC.Object.create(
          AdmissionExam.currentExamController.set('content',selectedExam.first());  
       }
       var allowEditingFlag = this.get('allowEditingFlag');
-      if(!allowEditingFlag){
-        this.set('allowEditing',false);
-      }
+      this.set('allowEditing',allowEditingFlag);
+      
       // save the current candidate for future reference (like closing the pane without changes)
       var selectedCandidate = AdmissionExam.selectedCandidateController.get('content').first();
       this.set('_currentCandidate',selectedCandidate);

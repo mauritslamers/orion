@@ -25,13 +25,16 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
    // the possibilities can be retrieved from the Store
   _examIdBinding: 'AdmissionExam.currentExamController.guid',
   
+  _allowEditBinding: 'AdmissionExam.admissionExamApplicationController.allowEditing',
+  
   _lastExamId: -1,
   
-  _preventUpdatingToDB: true,
+  recordToRemove: '',
+  
+  recordToAdd: '',
  
   _currentExamObserver: function(){
      //debugger;
-     this._preventUpdatingToDB = true;
      var curExamGuid = this.get('_examId');
      var lastExamId = this.get('_lastExamId');
      if((curExamGuid) && (lastExamId != curExamGuid)){
@@ -46,31 +49,23 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
         //this.set('_preventUpdatingToDB',false);
         //AdmissionExam.adviceListController.set('_preventUpdatingToDB',false);
      }
-     this._preventUpdatingToDB = false;
-  }.observes('_examId'), 
+  }.observes('_examId','_allowEdit'), 
  
-  selectedRecordsObserver: function(){
-    // function to get the current selection, compare it to the data currently in the database
-    // and create or delete the link between the current exam id and the choice
-    var curSelection = this.get('selection');
-    var content = this.get('content');
-    if((curSelection) && (curSelection instanceof Array) && (content) && (content.records)){
-      // look at the difference in length of the content and the selection.
-     
-      // we need to prevent removing records when the view is building for the first view
-      // look at the property _isUpdatingFromDB
-      if(!this._preventUpdatingToDB){
-         if(curSelection.length > content.records().length){
-             // we need to add a record 
-             console.log('Add Record');
-         }
-         else {
-           // we need to remove a record
-             console.log('Remove Record');
-         }
-      }
+  recordToRemoveObserver: function(){
+    var record = this.get('recordToRemove');
+    var allowEditing = this.get('allowEditing');
+    if((record) && (!record.dontCommit) && (allowEditing)){
+      console.log('Delete record from DB'); 
     }
-  }.observes('selection'), 
+  }.observes('recordToRemove'),
+  
+  recordToAddObserver: function(){
+    var record = this.get('recordToAdd');
+    var allowEditing = this.get('allowEditing');    
+    if((record) && (!record.dontCommit) && (allowEditing)){
+      console.log('Delete record from DB'); 
+    }   
+  }.observes('recordToAdd'),  
   
    
   choiceModelName: 'AdmissionExam.AEAdvice',
@@ -105,6 +100,7 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
        debugger;
        // first get the choices
        var choices  = this._getChoiceList();
+       var allowEdit = this.get('_allowEdit');
        //var choices = this.get('_choices');
        var choiceGuidToMatch = this.get('choiceGuidToMatch');
        if((value.length > 0) && (choices.length > 0) && choiceGuidToMatch){
@@ -113,11 +109,18 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
           choices.each(function(s){
             var curGuid = s.get('guid');
             if(choiceGuidsToSet.indexOf(curGuid) != -1){
-              // set the value item 
+              // set the value item to true if it is in the array
               s.set('value',true);  
             }
             else {
                s.set('value',false);
+            }
+            //set the items enabled or disabled according to the _allowEdit setting
+            if(allowEdit){
+              s.set('isEnabled',true);  
+            }
+            else {
+               s.set('isEnabled',false);
             }
             returnAry.push(s);
           });         

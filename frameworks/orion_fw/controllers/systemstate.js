@@ -125,13 +125,13 @@ until: Time.now() + 1000
 
 OrionFw.retrieveSystemState = function(){
   var sysStates = OrionFw.SystemState.collection();
-  OrionFw.server.listFor(sysStates);
+  OrionFw.server.listFor(sysStates,'OrionFw.systemStateController.process');
   OrionFw.systemStateTimer = SC.Timer.schedule({
     target: 'OrionFw.systemStateController',
     action: 'process',
     interval: 2000,
     repeats: YES
-  });
+  }); 
 };
 
 OrionFw.checkSystemState =  function(){
