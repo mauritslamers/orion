@@ -23,9 +23,13 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
    // the real content needs to be the content of the links
    // the relation needs to be set in a few different properties
    // the possibilities can be retrieved from the Store
-  _examIdBinding: 'AdmissionExam.currentExamController.guid',
+  examIdBinding: 'AdmissionExam.currentExamController.guid',
   
-  _allowEditBinding: 'AdmissionExam.admissionExamApplicationController.allowEditing',
+  _lastAllowEdit: null, 
+  
+  __allowEditOnAppControllerBinding: 'AdmissionExam.admissionExamApplicationController.allowEditing',
+
+  allowEdit: null,
   
   _lastExamId: -1,
   
@@ -35,25 +39,29 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
  
   _currentExamObserver: function(){
      //debugger;
-     var curExamGuid = this.get('_examId');
+     var curExamGuid = this.get('examId');
      var lastExamId = this.get('_lastExamId');
-     if((curExamGuid) && (lastExamId != curExamGuid)){
+     var tmpAllowEditing = this.get('__allowEditOnApplicationController');
+     //var allowEditing = this.get('allowEdit');
+     var allowEdit = AdmissionExam.admissionExamApplicationController.get('allowEditing');
+     this.allowEdit = allowEdit;
+     //debugger;
+     if(((curExamGuid) && (lastExamId != curExamGuid)) || ((this._lastAllowEdit != allowEdit) && (curExamGuid))){ 
+        // prevent an endless loop? check needs to be in place to prevent an endless loop for some reason...
+        // but allow to run when the allowEdit value has changed
+        debugger;
         this.set('_lastExamId',curExamGuid);
-        AdmissionExam.server.listFor({recordType: AdmissionExam.AEExamAdvice});
         var examAdvice = AdmissionExam.AEExamAdvice.collection();
         examAdvice.set('conditions', { 'examId':[curExamGuid] }); 
         examAdvice.refresh();
-        //AdmissionExam.adviceListController.set('_preventUpdatingToDB',true);
-        //this.set('content',examAdvice);  
-        AdmissionExam.adviceListController.set('content',examAdvice);
-        //this.set('_preventUpdatingToDB',false);
-        //AdmissionExam.adviceListController.set('_preventUpdatingToDB',false);
+        this.set('content',examAdvice);
+        this._lastAllowEdit = allowEdit;
      }
-  }.observes('_examId','_allowEdit'), 
+  }.observes('examId','__allowEditOnAppController'), 
  
   recordToRemoveObserver: function(){
     var record = this.get('recordToRemove');
-    var allowEditing = this.get('allowEditing');
+    var allowEditing = this.get('allowEdit');
     if((record) && (!record.dontCommit) && (allowEditing)){
       console.log('Delete record from DB'); 
     }
@@ -61,7 +69,7 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
   
   recordToAddObserver: function(){
     var record = this.get('recordToAdd');
-    var allowEditing = this.get('allowEditing');    
+    var allowEditing = this.get('allowEdit');    
     if((record) && (!record.dontCommit) && (allowEditing)){
       console.log('Delete record from DB'); 
     }   
@@ -100,7 +108,7 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
        debugger;
        // first get the choices
        var choices  = this._getChoiceList();
-       var allowEdit = this.get('_allowEdit');
+       var allowEdit = this.get('allowEdit');
        //var choices = this.get('_choices');
        var choiceGuidToMatch = this.get('choiceGuidToMatch');
        if((value.length > 0) && (choices.length > 0) && choiceGuidToMatch){
@@ -115,7 +123,7 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
             else {
                s.set('value',false);
             }
-            //set the items enabled or disabled according to the _allowEdit setting
+            //set the items enabled or disabled according to the allowEdit setting
             if(allowEdit){
               s.set('isEnabled',true);  
             }

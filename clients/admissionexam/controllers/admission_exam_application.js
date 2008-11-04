@@ -13,10 +13,10 @@ require('core');
   @version 0.1
   @static
 */
-AdmissionExam.admissionExamApplicationController = SC.Object.create(
+AdmissionExam.admissionExamApplicationController = SC.Controller.create(
 /** @scope Admissionexam.admissionExamApplicationController */ {
 
-   allowEditing: true,
+   allowEditing: null,
    
    _currentDate: '',
    
@@ -32,11 +32,10 @@ AdmissionExam.admissionExamApplicationController = SC.Object.create(
       var selectedCandidate = AdmissionExam.selectedCandidateController.get('content').first();
       if(selectedCandidate){
          //var candidateGuid = selectedCandidate.get('guid');
+         this.allowEditing = true;
          var newExam = AdmissionExam.AEExam.newRecord({'candidateId': selectedCandidate});
          // now let's have the record created 
          AdmissionExam.server.createRecords([newExam]);
-         
-        
          AdmissionExam.currentExamController.set('content',newExam);
          
          this.set('_currentCandidate',selectedCandidate);
@@ -44,7 +43,6 @@ AdmissionExam.admissionExamApplicationController = SC.Object.create(
          this.set('systemState','_new_exam'.loc());
          
          // make sure allowEditing is true
-         this.set('allowEditing',true);
          AdmissionExam.chooseCandidatePaneController.hide();
       } 
    },
@@ -52,12 +50,16 @@ AdmissionExam.admissionExamApplicationController = SC.Object.create(
    reviewExam: function(){
       // reviewing a specific exam
       // so get the content of the selection made
+      //debugger;
+      //first set the allow editing to ensure all elements have the correct setting
+      var allowEditingFlag = this.get('allowEditingFlag');
+      this.set('allowEditing',allowEditingFlag);
+      
       var selectedExam = AdmissionExam.examListOfChosenCandidateController.get('selection');
       if((selectedExam) && (selectedExam.length == 1)){
          AdmissionExam.currentExamController.set('content',selectedExam.first());  
       }
-      var allowEditingFlag = this.get('allowEditingFlag');
-      this.set('allowEditing',allowEditingFlag);
+
       
       // save the current candidate for future reference (like closing the pane without changes)
       var selectedCandidate = AdmissionExam.selectedCandidateController.get('content').first();
