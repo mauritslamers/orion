@@ -52,6 +52,9 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
         // prevent an endless loop? check needs to be in place to prevent an endless loop for some reason...
         // but allow to run when the allowEdit value has changed
         debugger;
+        this.set('selection',[]); // reset the selection when the content changes
+        this.set('content',null); // reset the content to force a redraw
+        
         this.set('_lastExamId',curExamGuid);
         var examAdvice = AdmissionExam.AEExamAdvice.collection();
         examAdvice.set('conditions', { 'examId':[curExamGuid] }); 
@@ -63,18 +66,40 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
  
   recordToRemoveObserver: function(){
     var record = this.get('recordToRemove');
-    var allowEditing = this.get('allowEdit');
-    if((record) && (!record.dontCommit) && (allowEditing)){
-      console.log('Delete record from DB'); 
+    var allowEditing = this.get('allowEditOnAppController');
+    if(record){
+       var recordGuid = record.guid;
+       var examGuid = this.get('examId');      
+       if(!record.dontCommit && allowEditing && recordGuid && examGuid){
+         console.log('Delete record from DB'); 
+         //var tmpRecord = SC.Store.findRecords({ 'examId': examGuid, 'adviceId': recordGuid}, AdmissionExam.AEExamAdvice);
+         //AdmissionExam.server.destroyRecords(tmpRecord);
+       } else {
+         // adjust the current record to allow committing the next time
+         record.set('dontCommit', false);
+       }
+       this.set('recordToRemove', null);
     }
   }.observes('recordToRemove'),
   
   recordToAddObserver: function(){
     var record = this.get('recordToAdd');
-    var allowEditing = this.get('allowEdit');    
-    if((record) && (!record.dontCommit) && (allowEditing)){
-      console.log('Delete record from DB'); 
-    }   
+    var allowEditing = this.get('allowEditOnAppController');
+    if(record){
+       var recordGuid = record.guid;
+       var examGuid = this.get('examId');
+       if(!record.dontCommit && allowEditing && recordGuid && examGuid){
+         console.log('Add record To DB'); 
+         //var newLink = AdmissionExam.AEExamAdvice.newRecord({'examId': examGuid, 'adviceId': recordGuid});
+         //AdmissionExam.server.createRecords([newLink]);
+       } else {
+         // adjust the current record to allow committing the next time. Every item is set to dontCommit at first 
+         // by the arrangedObjects method. After every fill, the object is also fed into here. So, only user
+         // changes will trigger the database committing process
+         record.set('dontCommit', false);
+       }
+       this.set('recordToAdd', null);
+    }  
   }.observes('recordToAdd'),  
   
    
@@ -107,7 +132,7 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
   arrangedObjects: function( key, value ){
     //debugger;
     if(value){
-       debugger;
+       //debugger;
        // first get the choices
        var choices  = this._getChoiceList();
        var allowEdit = this.get('allowEditOnAppController');
@@ -132,15 +157,29 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
             else {
                s.set('isEnabled',false);
             }*/
-            s.isEnabled = allowEdit;
+            //s.isEnabled = allowEdit;
+            if(s.value){
+               s.dontCommit = true;
+            }
             returnAry.push(s);
           });         
           this.set('_arrangedObjects',returnAry);
           //return returnAry;
        }
-       else return (this._arrangedObjects) ? this._arrangedObjects: []; 
+       else {
+         // if the value length is zero, arrangedObjects should set all choices, but all set to false
+         var list = this._getChoiceList();
+         var newList = [];
+         list.each(function(s){
+             //s.dontCommit = true; // prevent committing at first. this object will be given to the recordToRemove function
+             newList.push(s); // which will set the dontCommit to false, which enables the next change to commit
+         });
+         this.set('_arrangedObjects',newList);  
+       }
     }
-    else return (this._arrangedObjects) ? this._arrangedObjects: []; 
+    else {
+      return (this._arrangedObjects) ? this._arrangedObjects: []; 
+    }
   }.property('arrangedObjects')
   
 }) ;

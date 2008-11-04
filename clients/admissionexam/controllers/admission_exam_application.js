@@ -32,7 +32,7 @@ AdmissionExam.admissionExamApplicationController = SC.Controller.create(
       var selectedCandidate = AdmissionExam.selectedCandidateController.get('content').first();
       if(selectedCandidate){
          //var candidateGuid = selectedCandidate.get('guid');
-         this.allowEditing = true;
+         this.set('allowEditing',true);
          var newExam = AdmissionExam.AEExam.newRecord({'candidateId': selectedCandidate});
          // now let's have the record created 
          AdmissionExam.server.createRecords([newExam]);

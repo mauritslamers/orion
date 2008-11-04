@@ -18,6 +18,6 @@ AdmissionExam.AEAdvice = SC.Record.extend(
   dataSource: AdmissionExam.server,
   resourceURL: [OrionFw.standardResource + 'AEAdvice'],
   // TODO: Add your own code here.
-  properties: ['id','name','year','group','value']
+  properties: ['id','name','year','group','value','isEnabled']
   
 }) ;
