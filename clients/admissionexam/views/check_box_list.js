@@ -20,16 +20,22 @@ AdmissionExam.CheckBoxListView = SC.CheckboxView.extend(
   _contentProcessed: false, // prevent processing of the current content 
   // if the contentObserver has not been able do anything.
   
+  isEnabledBinding: '*content.isEnabled',
+  
+  titleBinding: '*content.name',
+  
   _contentObserver: function(){
     // read the name from the content and set up the rest
+    AdmissionExam.counter++;
     var content = this.get('content');
+    console.log(AdmissionExam.counter + 'setting cblv content');
     if(content){
       //debugger;
-      var tmpName = content.get('name');
-      //console.log(tmpName);
-      if(tmpName){
-        this.set('title',tmpName);        
-      }
+   //   var tmpName = content.get('name');
+   //   console.log(AdmissionExam.counter + "setting name: " + tmpName);
+   //   if(tmpName){
+   //     this.set('title',tmpName);        
+   //   }
       // setup other things? yes... the value 
       var tmpValue = content.get('value');
       if(tmpValue){
@@ -37,8 +43,9 @@ AdmissionExam.CheckBoxListView = SC.CheckboxView.extend(
         this.set('value',true);
       }
       
-      var enabled = content.get('isEnabled');
-      this.set('isEnabled',enabled);
+   //   var enabled = content.get('isEnabled');
+   //   this.set('isEnabled',enabled);
+   //   console.log(AdmissionExam.counter + 'setting enabled: ' + enabled);
       
       this.set('dontCommit', true);
       this.set('_contentProcessed',true);

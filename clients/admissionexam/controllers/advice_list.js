@@ -27,7 +27,9 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
   
   _lastAllowEdit: null, 
   
-  __allowEditOnAppControllerBinding: 'AdmissionExam.admissionExamApplicationController.allowEditing',
+  allowEditOnAppControllerBinding: 'AdmissionExam.admissionExamApplicationController.allowEditing',
+  
+  allowEditOnAppController: true,  
 
   allowEdit: null,
   
@@ -41,12 +43,12 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
      //debugger;
      var curExamGuid = this.get('examId');
      var lastExamId = this.get('_lastExamId');
-     var tmpAllowEditing = this.get('__allowEditOnApplicationController');
-     //var allowEditing = this.get('allowEdit');
-     var allowEdit = AdmissionExam.admissionExamApplicationController.get('allowEditing');
-     this.allowEdit = allowEdit;
+     //var tmpAllowEditing = this.get('allowEditOnApplicationController');
+     var allowEditing = this.get('allowEditOnAppController');
+     //var allowEdit = AdmissionExam.admissionExamApplicationController.get('allowEditing');
+     //this.allowEdit = allowEdit;
      //debugger;
-     if(((curExamGuid) && (lastExamId != curExamGuid)) || ((this._lastAllowEdit != allowEdit) && (curExamGuid))){ 
+     if(((curExamGuid) && (lastExamId != curExamGuid)) || ((this._lastAllowEdit != allowEditing) && (curExamGuid))){ 
         // prevent an endless loop? check needs to be in place to prevent an endless loop for some reason...
         // but allow to run when the allowEdit value has changed
         debugger;
@@ -55,9 +57,9 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
         examAdvice.set('conditions', { 'examId':[curExamGuid] }); 
         examAdvice.refresh();
         this.set('content',examAdvice);
-        this._lastAllowEdit = allowEdit;
+        this._lastAllowEdit = allowEditing;
      }
-  }.observes('examId','__allowEditOnAppController'), 
+  }.observes('examId','allowEditOnAppController'), 
  
   recordToRemoveObserver: function(){
     var record = this.get('recordToRemove');
@@ -108,7 +110,7 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
        debugger;
        // first get the choices
        var choices  = this._getChoiceList();
-       var allowEdit = this.get('allowEdit');
+       var allowEdit = this.get('allowEditOnAppController');
        //var choices = this.get('_choices');
        var choiceGuidToMatch = this.get('choiceGuidToMatch');
        if((value.length > 0) && (choices.length > 0) && choiceGuidToMatch){
@@ -118,18 +120,19 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
             var curGuid = s.get('guid');
             if(choiceGuidsToSet.indexOf(curGuid) != -1){
               // set the value item to true if it is in the array
-              s.set('value',true);  
+              s.value = true;  
             }
             else {
-               s.set('value',false);
+               s.value = false;
             }
             //set the items enabled or disabled according to the allowEdit setting
-            if(allowEdit){
+            /*if(allowEdit){
               s.set('isEnabled',true);  
             }
             else {
                s.set('isEnabled',false);
-            }
+            }*/
+            s.isEnabled = allowEdit;
             returnAry.push(s);
           });         
           this.set('_arrangedObjects',returnAry);
@@ -138,7 +141,7 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
        else return (this._arrangedObjects) ? this._arrangedObjects: []; 
     }
     else return (this._arrangedObjects) ? this._arrangedObjects: []; 
-  }.property()
+  }.property('arrangedObjects')
   
 }) ;
 
