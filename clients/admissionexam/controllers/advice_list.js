@@ -38,6 +38,8 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
   recordToRemove: '',
   
   recordToAdd: '',
+  
+  _returnEmptyArrangedObjects: false,
  
   _currentExamObserver: function(){
      //debugger;
@@ -51,9 +53,12 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
      if(((curExamGuid) && (lastExamId != curExamGuid)) || ((this._lastAllowEdit != allowEditing) && (curExamGuid))){ 
         // prevent an endless loop? check needs to be in place to prevent an endless loop for some reason...
         // but allow to run when the allowEdit value has changed
-        debugger;
+        //debugger;
         this.set('selection',[]); // reset the selection when the content changes
         this.set('content',null); // reset the content to force a redraw
+        // force a reload of all options by setting the arrangedObjects to zero, the choices too
+        
+        //this._returnEmptyArrangedObjects = true; 
         
         this.set('_lastExamId',curExamGuid);
         var examAdvice = AdmissionExam.AEExamAdvice.collection();
@@ -163,7 +168,7 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
             }
             returnAry.push(s);
           });         
-          this.set('_arrangedObjects',returnAry);
+          this._arrangedObjects = returnAry;
           //return returnAry;
        }
        else {
@@ -174,12 +179,25 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
              //s.dontCommit = true; // prevent committing at first. this object will be given to the recordToRemove function
              newList.push(s); // which will set the dontCommit to false, which enables the next change to commit
          });
-         this.set('_arrangedObjects',newList);  
+         this._arrangedObjects = newList;  
        }
     }
     else {
+/*      if(this._returnEmptyArrangedObjects){
+         debugger;
+         this._choices = [];
+         this._arrangedObjects = [];
+         this._returnEmptyArrangedObjects = false;
+         return [];
+      }
+      else */ 
+      SC.page.aeCandidateAdvice.aeCiAdviceAdviceSv.aeCiCbAdviceAdviceListview.set('content',[]);
       return (this._arrangedObjects) ? this._arrangedObjects: []; 
     }
+    // let's do some strange things :)
+    /* if(key != 'arrangedObjects'){
+      debugger; 
+    } */   
   }.property('arrangedObjects')
   
 }) ;

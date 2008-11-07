@@ -36,6 +36,8 @@ AdmissionExam.admissionExamApplicationController = SC.Controller.create(
          var newExam = AdmissionExam.AEExam.newRecord({'candidateId': selectedCandidate});
          // now let's have the record created 
          AdmissionExam.server.createRecords([newExam]);
+         
+         //AdmissionExam.currentExamController.set('content',null);         
          AdmissionExam.currentExamController.set('content',newExam);
          
          this.set('_currentCandidate',selectedCandidate);
@@ -57,6 +59,7 @@ AdmissionExam.admissionExamApplicationController = SC.Controller.create(
       
       var selectedExam = AdmissionExam.examListOfChosenCandidateController.get('selection');
       if((selectedExam) && (selectedExam.length == 1)){
+         //AdmissionExam.currentExamController.set('content',null);
          AdmissionExam.currentExamController.set('content',selectedExam.first());  
       }
 
