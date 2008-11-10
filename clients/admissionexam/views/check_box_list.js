@@ -36,6 +36,8 @@ AdmissionExam.CheckBoxListView = SC.CheckboxView.extend(
   
   //valueBinding: '*content.value',
   
+  needsUpdateBinding: '*content.needsUpdate',
+  
   //_contentChangeCountBinding: '*content.changeCount',
   
   updateObserver: function(){
@@ -58,6 +60,9 @@ AdmissionExam.CheckBoxListView = SC.CheckboxView.extend(
         //debugger;
         this.set('value',true);
       }
+      else {
+        this.set('value',false);
+      }
       
  /*     var enabled = content.get('isEnabled');
       this.set('isEnabled',enabled);
@@ -72,8 +77,14 @@ AdmissionExam.CheckBoxListView = SC.CheckboxView.extend(
       
       //this.set('dontCommit', true);
       //this.set('_contentProcessed',true);
+      content.needsUpdate = false; //don't trigger observers :)
     } 
-  }.observes('content'),
+    else {
+      // if the content is not present, set the current value to false
+      // prevent value observer to do anything? better not :)
+      this.set('value',false); 
+    }
+  }.observes('content','needsUpdate'),
   
   
   // an observer including the current item in the source list view selection when tagged
@@ -84,7 +95,9 @@ AdmissionExam.CheckBoxListView = SC.CheckboxView.extend(
       //debugger;
       var curValue = this.get('value');
       var curContent = this.get('content');
-      var curSelection = this.get('parentNode').get('parentNode').get('selection');
+      if(curContent){
+         var curSelection = this.get('parentNode').get('parentNode').get('selection');
+      }
       //var curNumSelectedItems = this.get('parentNode').get('parentNode').get('numberOfSelectedItems');
       if((curSelection) && (curSelection instanceof Array)){
          if(curValue && (curValue != this._lastValue)){ // are we tagged?

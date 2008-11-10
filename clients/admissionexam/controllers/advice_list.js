@@ -166,6 +166,7 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
             if(s.value){
                s.dontCommit = true;
             }
+            s.set('needsUpdate',true);
             returnAry.push(s);
           });         
           this._arrangedObjects = returnAry;
