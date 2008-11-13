@@ -15,6 +15,7 @@ require('core');
 */
 AdmissionExam.adviceListController = SC.CollectionController.create(
 /** @scope Admissionexam.adviceListController */ {
+  
   canEditCollection: true,
    // the trick: two contents
    // one: the content of possibilities
@@ -56,7 +57,7 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
         //debugger;
         this.set('selection',[]); // reset the selection when the content changes
         this.set('content',null); // reset the content to force a redraw
-        // force a reload of all options by setting the arrangedObjects to zero, the choices too
+        this._getChoiceList(); // reset the choices
         
         //this._returnEmptyArrangedObjects = true; 
         
@@ -78,10 +79,12 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
        if(!record.dontCommit && allowEditing && recordGuid && examGuid){
          console.log('Delete record from DB'); 
          //var tmpRecord = SC.Store.findRecords({ 'examId': examGuid, 'adviceId': recordGuid}, AdmissionExam.AEExamAdvice);
-         //AdmissionExam.server.destroyRecords(tmpRecord);
+         //if(tmpRecord){
+           // AdmissionExam.server.destroyRecords(tmpRecord);
+         //}
        } else {
          // adjust the current record to allow committing the next time
-         record.set('dontCommit', false);
+         //record.set('dontCommit', false);
        }
        this.set('recordToRemove', null);
     }
@@ -124,14 +127,16 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
     // now get to object;
     var choiceModel = window;
     for(i=0;i<ary.length;i++){
-      choiceModel = choiceModel[ary[i]]; 
+      choiceModel = choiceModel[ary[i]]; // use the subscript notation to descend into the object tree
     }
     var choices = SC.Store.findRecords(choiceModel);
-    this.set('_choices',choices);
-    return choices;
+    // setting all to false as a default value
+    var newChoices = [];
+    choices.each(function(s){ s.value = false; s.dontCommit = true; newChoices.push(s); });
+    this.set('_choices',newChoices);
+    //return newChoices;
   },
   
-
   _arrangedObjects: [],
   
   arrangedObjects: function( key, value ){
@@ -139,9 +144,9 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
     if(value){
        //debugger;
        // first get the choices
-       var choices  = this._getChoiceList();
+       //var choices  = this._getChoiceList();
        var allowEdit = this.get('allowEditOnAppController');
-       //var choices = this.get('_choices');
+       var choices = this.get('_choices');
        var choiceGuidToMatch = this.get('choiceGuidToMatch');
        if((value.length > 0) && (choices.length > 0) && choiceGuidToMatch){
           var choiceGuidsToSet = value.get(choiceGuidToMatch);          
@@ -163,23 +168,32 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
                s.set('isEnabled',false);
             }*/
             //s.isEnabled = allowEdit;
-            if(s.value){
+            //if(s.value){
                s.dontCommit = true;
-            }
+            //}
             returnAry.push(s);
           });         
           this._arrangedObjects = returnAry;
           //return returnAry;
        }
        else {
-         // if the value length is zero, arrangedObjects should set all choices, but all set to false
-         var list = this._getChoiceList();
-         var newList = [];
-         list.each(function(s){
-             //s.dontCommit = true; // prevent committing at first. this object will be given to the recordToRemove function
-             newList.push(s); // which will set the dontCommit to false, which enables the next change to commit
-         });
-         this._arrangedObjects = newList;  
+         // it seems to be the case that arrangedObjects can be called with an empty [] as value,
+         // while the content of this collection controller, the collection DOES contain records...
+         // so before doing anything, let's check if there are records, and if there are records
+         // and value is an empty record, don't touch the _arrangedObjects cache,but just return it
+          
+         var curContent = this.get('content');
+         if((curContent) && (curContent.records().length == 0) && (value.length == 0)){
+
+            // if the value length is zero, arrangedObjects should set all choices, but all set to false
+            var list = this._choices;
+            var newList = [];
+            list.each(function(s){
+               s.dontCommit = true; // prevent committing at first. 
+               newList.push(s); // which will set the dontCommit to false, which enables the next change to commit
+            });
+            this._arrangedObjects = newList;  
+         }
        }
     }
     else {
@@ -198,7 +212,26 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
     /* if(key != 'arrangedObjects'){
       debugger; 
     } */   
-  }.property('arrangedObjects')
+  }.property('arrangedObjects'),
+  
+  // trying to fix the stupid selection bug... 
+  
+  allowsEmptySelection: YES,
+  allowsMultipleSelection: NO,
+  
+  currentSelectionObserver: function(){
+    var sel = this.get('selection');
+    if((sel) && (sel.length == 1)){
+      var option = sel.first();
+      if(option.value){
+        option.set('value',false);  
+      }
+      else {
+        option.set('value',true);  
+      }
+      this.set('selection', []);
+    }
+  }.observes('selection')
   
 }) ;
 

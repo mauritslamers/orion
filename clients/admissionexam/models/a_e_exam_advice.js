@@ -18,5 +18,7 @@ AdmissionExam.AEExamAdvice = SC.Record.extend(
   dataSource: AdmissionExam.server,
   resourceURL: [OrionFw.standardResource + 'AEExamAdvice'],
   // TODO: Add your own code here.
-  properties: ['id','examId','adviceId']
+  properties: ['id','examId','adviceId','value']
+  
+  // the value is not part of the database record, but is in the model to be able to see the setting easily :)
 }) ;
