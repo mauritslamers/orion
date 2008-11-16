@@ -65,7 +65,7 @@ config :all do |c|
   # reference to another by relative links instead of absolute links
   # to achieve that, make resources_at empty, and set the 
   # following parameter:
-  c[:resources_relative] = true
+  #c[:resources_relative] = true
 end
 
 # Add configurations for specific bundles here as well.  Any options you
