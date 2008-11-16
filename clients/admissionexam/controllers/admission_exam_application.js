@@ -59,6 +59,8 @@ AdmissionExam.admissionExamApplicationController = SC.Controller.create(
       
       var selectedExam = AdmissionExam.examListOfChosenCandidateController.get('selection');
       if((selectedExam) && (selectedExam.length == 1)){
+         // refresh in case someone else has changed stuff
+         AdmissionExam.server.refreshRecords(selectedExam);
          //AdmissionExam.currentExamController.set('content',null);
          AdmissionExam.currentExamController.set('content',selectedExam.first());  
       }

@@ -78,10 +78,10 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
        var examGuid = this.get('examId');      
        if(!record.dontCommit && allowEditing && recordGuid && examGuid){
          console.log('Delete record from DB'); 
-         //var tmpRecord = SC.Store.findRecords({ 'examId': examGuid, 'adviceId': recordGuid}, AdmissionExam.AEExamAdvice);
-         //if(tmpRecord){
-           // AdmissionExam.server.destroyRecords(tmpRecord);
-         //}
+         var tmpRecord = SC.Store.findRecords({ 'examId': examGuid, 'adviceId': recordGuid}, AdmissionExam.AEExamAdvice);
+         if(tmpRecord){
+            AdmissionExam.server.destroyRecords(tmpRecord);
+         }
        } else {
          // adjust the current record to allow committing the next time
          //record.set('dontCommit', false);
@@ -98,8 +98,8 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
        var examGuid = this.get('examId');
        if(!record.dontCommit && allowEditing && recordGuid && examGuid){
          console.log('Add record To DB'); 
-         //var newLink = AdmissionExam.AEExamAdvice.newRecord({'examId': examGuid, 'adviceId': recordGuid});
-         //AdmissionExam.server.createRecords([newLink]);
+         var newLink = AdmissionExam.AEExamAdvice.newRecord({'examId': examGuid, 'adviceId': recordGuid});
+         AdmissionExam.server.createRecords([newLink]);
        } else {
          // adjust the current record to allow committing the next time. Every item is set to dontCommit at first 
          // by the arrangedObjects method. After every fill, the object is also fed into here. So, only user
