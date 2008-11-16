@@ -1,0 +1,170 @@
+#ae_chosen_candidate {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 50px;
+  width: 500px;   
+}
+
+#ae_choose_candidate {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 600px;
+  width: 900px;
+}
+
+#ae_current_state_information{
+  position: absolute;
+  top: 5px;
+  left: 350px; 
+  width: 400px;
+  margin-top: 0px;
+} 
+
+#ae_candidate_information {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  height: 500px;
+  width: 900px;   
+}
+
+#ae_candidate_information_sv {
+  position: absolute;  
+}
+
+#ae_candidate_information_views {
+  position: absolute;
+  left: 260px;
+  top: 0px;
+  height: 500px;
+  width: 600px; 
+  border: solid 1px #AAAAAA;
+  background-color: #E6E3EF;   
+  z-index: 100;
+}
+
+
+#ae_candidate_information_student_information {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 500px;
+  width: 600px; 
+}
+
+#ae_candidate_information_committee_information {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 500px;
+  width: 600px;
+}
+
+#ae_candidate_information_candidate_background {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 500px;
+  width: 600px; 
+}
+
+#ae_candidate_information_evaluation {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 500px;
+  width: 600px; 
+}
+
+#ae_candidate_information_performance_information {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 500px;
+  width: 600px;
+}
+
+#ae_candidate_information_overview {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 500px;
+  width: 600px; 
+}
+
+#ae_candidate_conclusion {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 500px;
+  width: 600px;
+}
+
+#ae_candidate_advice {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 500px;
+  width: 600px;
+}
+
+#ae_candidate_information_admission_test {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 500px;
+  width: 600px;
+}
+
+#ae_exam_list_of_chosen_candidate_sv {
+   position: absolute;
+   top: 30px;
+   left: 300px;
+   height: 200px;
+   width: 250px;
+}
+
+#ae_choose_candidate_sv {
+   position: absolute;
+   top: 30px;
+   left: 10px;
+   height: 200px;
+   width: 250px;
+
+}
+
+#ae_new_exam_with_candidate{
+  position: absolute;
+  top: 250px;
+  left: 10px;  
+}
+
+
+#ae_review_exam_with_candidate{
+  position: absolute;
+  top: 250px;
+  left: 300px;  
+}
+
+#ae_choose_candidate_label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-top: 0px;
+}
+
+#ae_exam_list_of_chosen_candidate_label{
+  position: absolute;
+  top: 10px;
+  left: 300px; 
+  margin-top: 0px;    
+}
+
+#ae_allow_editing_review_exam {
+  position: absolute;
+  top: 250px;
+  left: 500px;      
+}
+

@@ -26,7 +26,7 @@ AdmissionExam.examFormController = SC.ObjectController.create(
        OrionFw.systemStateTimer = SC.Timer.schedule({
        target: 'AdmissionExam.examFormController',
        action: 'startRecache',
-       interval: 1000,
+       interval: 500,
        repeats: NO
      }); 
     } 
@@ -36,7 +36,11 @@ AdmissionExam.examFormController = SC.ObjectController.create(
   startRecache: function(){
     var view = this.get('editView');
     if(view){
-       this.recacheChildren(view);       
+       //this.recacheChildren(view);       
+       AdmissionExam.adviceListController.get('content').refresh();
+       AdmissionExam.conclusionListController.get('content').refresh();
+       AdmissionExam.desiredCourseListController.get('content').refresh();
+       AdmissionExam.currentExamCommitteeController.get('content').refresh();
     }
   },
 

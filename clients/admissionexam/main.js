@@ -65,6 +65,7 @@ function main() {
   
   AdmissionExam.server.listFor({recordType: AdmissionExam.AEExam});
   var exams = AdmissionExam.AEExam.collection();
+  exams.set('orderBy',['date DESC']);
   AdmissionExam.examListOfChosenCandidateController.set('content',exams);
  
  

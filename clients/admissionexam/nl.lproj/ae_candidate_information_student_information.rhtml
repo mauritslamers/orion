@@ -1,0 +1,60 @@
+<% view :ae_candidate_information_student_information do %>
+    
+    <%= label_view :ae_ci_si_firstname_lv, :tag => 'h4', :value => loc('_ae_ci_si_firstname') %>
+    <%= text_field_view :ae_ci_si_firstname_tfv,
+        :bind => {
+            :value => 'AdmissionExam.selectedCandidateController.firstname',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+    %>
+    <%= label_view :ae_ci_si_inbetween_lv, :tag => 'h4', :value => loc('_ae_ci_si_inbetween') %>
+    <%= text_field_view :ae_ci_si_inbetween_tfv,
+        :bind => {
+            :value => 'AdmissionExam.selectedCandidateController.inbetween',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+    %>                
+    <%= label_view :ae_ci_si_lastname_lv, :tag => 'h4', :value => loc('_ae_ci_si_lastname') %>
+    <%= text_field_view :ae_ci_si_lastname_tfv,
+        :bind => {
+            :value => 'AdmissionExam.selectedCandidateController.lastname',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+    %>                
+    <%= label_view :ae_ci_si_address_lv, :tag => 'h4', :value => loc('_ae_ci_si_address') %>
+    <%= text_field_view :ae_ci_si_address_tfv,
+        :bind => {
+            :value => 'AdmissionExam.selectedCandidateController.address',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+    %> 
+    <%= label_view :ae_ci_si_postcode_lv, :tag => 'h4', :value => loc('_ae_ci_si_postcode') %>
+    <%= text_field_view :ae_ci_si_postcode_tfv,
+        :bind => {
+            :value => 'AdmissionExam.selectedCandidateController.postcode',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+    %>                   
+    <%= label_view :ae_ci_si_city_lv, :tag => 'h4', :value => loc('_ae_ci_si_city') %>
+    <%= text_field_view :ae_ci_si_city_tfv,
+        :bind => {
+            :value => 'AdmissionExam.selectedCandidateController.city',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+    %> 
+    <%= button_view :ae_ci_si_save_changes, 
+        :title => loc('_ae_ci_si_save_changes'),
+        :action => 'AdmissionExam.selectedCandidateController.saveChanges',
+        :bind => {
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+    %>
+    <%= button_view :ae_ci_si_revert_changes, 
+        :title => loc('_ae_ci_si_revert_changes'),
+        :action => 'AdmissionExam.selectedCandidateController.revertChanges',
+        :bind => {
+           :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+    %>     
+                        
+<% end %>

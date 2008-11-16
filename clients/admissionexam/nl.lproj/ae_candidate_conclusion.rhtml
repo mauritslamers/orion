@@ -1,0 +1,29 @@
+<% view :ae_candidate_conclusion do %>
+
+  <%= label_view :ae_ci_conclusion_conclusion_label, :tag => 'h4', 
+      :value => loc('_ae_ci_conclusion_conclusion_label') %>
+  <% scroll_view :ae_ci_conclusion_conclusion_sv do %>
+        <%= list_view :ae_ci_cb_conclusion_conclusion_listview,           
+            :example_view => 'SC.ListItemView',
+            :row_height => 20,
+            :height => 300,
+            :content_value_key => 'name',
+            :bind => {
+                :content => 'AdmissionExam.conclusionListController.arrangedObjects',
+                :selection => 'AdmissionExam.conclusionListController.selection',
+                :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+            }
+            %>
+    <% end %> 
+
+  <%= label_view :ae_ci_conclusion_internal_remarks_label, :tag => 'h4', 
+      :value => loc('_ae_ci_conclusion_internal_remarks_label') %>
+  <%= text_area_view :ae_ci_conclusion_internal_remarks_textarea,
+        :bind => {
+            :value => 'AdmissionExam.currentExamController.internalRemarks',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }     
+   %>
+    
+
+<% end %>

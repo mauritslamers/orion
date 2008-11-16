@@ -1,0 +1,77 @@
+// ==========================================================================
+// Admissionexam English Strings
+// ==========================================================================
+
+// Place strings you want to localize here.  In your app, use the key and
+// localize it using "key string".loc().  HINT: For your key names, use the
+// english string with an underscore in front.  This way you can still see
+// how your UI will look and you'll notice right away when something needs a
+// localized string added to this file!
+//
+String.addStringsFor(String.nl,{
+  // "_String Key": "Localized String"
+  "_ae_open_choose_candidate_pane_button" : "Kandidaat selecteren",
+  "_ae_new_exam_with_candidate_button" : "Nieuw examen",
+  "_ae_review_exam_with_candidate_button" : "Bekijk/Herzie",  
+  "_ae_choose_candidate_label" : "Kies een kandidaat:",
+  "_ae_exam_list_of_chosen_candidate_label" : "Kies een bestaand examen on te bekijken of te herzien:",
+  "_ae_ci_si_firstname" : "Voornaam:",
+  "_ae_ci_si_inbetween" : "Tussenvoegsel:",
+  "_ae_ci_si_lastname" : "Achternaam:",
+  "_ae_ci_si_address" : "Adres:",
+  "_ae_ci_si_postcode" : "Postcode:",
+  "_ae_ci_si_city": "Woonplaats:",
+  "_ae_ci_si_save_changes": "Opslaan",
+  "_ae_ci_si_revert_changes": "Herstellen",
+  "_ae_ci_ci_committee_members_label" : "Commissieleden",
+  "_ae_ci_ci_possible_committee_members_label" : "Selecteer de toe te voegen docent",
+  "_ae_ci_ci_committee_members_remove_selected" : "Verwijder de geselecteerde docent",
+  "_ae_ci_ci_committee_possible_members_add_selected" : "Voeg de geselecteerde docent toe",
+  "_ae_ci_cb_years_self_study" : "Jaren zelfstudie",
+  "_ae_ci_cb_years_lessons" : "Jaren les",
+  "_ae_ci_cb_interest_in_preparation_course" : "Interesse in basisopleiding",
+  "_ae_ci_cb_desired_course" : "Gewenste opleiding",
+  "_yes" : "Ja",
+  "_no" : "Nee",
+  "_allow_editing_in_exam_review" : 'Het examen bewerken',
+  "_please_select_a_candidate" : "Selecteer een kandidaat",
+  "_new_exam" : "Nieuw examen",
+  "_reviewing_exam_from" : "Examen inzien van:",
+  "_editing_exam_from" : "Examen bewerken van:",
+  "_information_about_candidate": 'Gegevens van de kandidaat',
+  "_information_about_committee" : 'Commissie-samenstelling',
+  "_candidate_background" : 'Achtergrond van de kandidaat',
+  "_committee_evaluation" : 'Evaluatie van de commissie',
+  "_candidate_performance_information" : 'Gegevens van speltoelating',
+  "_candidate_information_overview" : "Overzicht van kandidaatinformatie",
+  "_input_admission_test" : "Invoer van toelatingstoetsresultaten",
+  "_ae_ci_ev_realistic_image" : 'Realistisch beeld',
+  "_ae_ci_ev_drive_ambition" : 'Drive en ambitie',
+  "_ae_ci_ev_credibility" : 'Geloofwaardigheid',
+  "_ae_ci_ev_musical_experience" : 'Muzikale ervaring',
+  "_ae_ci_ev_technological_experience" : 'Technologische ervaring',
+  "_ae_ci_ev_productional_experience" : 'Productionele ervaring',
+  "_ae_ci_ev_musicality" : 'Muzikaliteit',
+  "_ae_ci_ev_production_level" : 'Productioneel niveau',
+  "_ae_ci_ev_technology_level" : 'Technologisch niveau',
+  "_ae_ci_conclusion_conclusion_label": 'Conclusie',
+  "_ae_ci_conclusion_internal_remarks_label" : "Interne opmerkingen",
+  "_candidate_conclusion": "Conclusie",
+  "_ae_ci_at_interval_dictation" : 'Intervaldictee',
+  "_ae_ci_at_rhythm_dictation": 'Ritmedictee',
+  "_ae_ci_at_melodic_dictation": 'Melodisch dictee',
+  "_ae_ci_at_chord_dictation": 'Accoorddictee',
+  "_ae_ci_at_instrument_dictation": 'Instrumentdictee',
+  "_ae_ci_at_interval_notation": 'Intervalnotatie',
+  "_ae_ci_at_chord_notation": 'Accoordnotatie',
+  "_ae_ci_at_music_theory": 'Muziektheorie',
+  "_ae_ci_pi_performance_experience" : 'Spelervaring',
+  "_ae_ci_pi_playing_level" : 'Spelniveau',
+  "_ae_ci_pi_ensemble_experience" : 'Ensemble-ervaring',
+  "_ae_ci_pi_prima_vista_reading" : 'Prima vista spel',
+  "_ae_ci_pi_improvising" : 'Improviseren',
+  "_ae_ci_pi_playing_together" : 'Samenspel',
+  "_ae_ci_pi_qualified_for_performance" : 'Toelaatbaar voor performance',
+  "_candidate_advice" : 'Advies voor de kandidaat',
+  "_ae_ci_advice_advice_label" : "Advies"
+}) ;

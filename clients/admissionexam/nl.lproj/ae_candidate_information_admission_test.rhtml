@@ -1,0 +1,71 @@
+<% view :ae_candidate_information_admission_test do %>
+  <%= label_view :ae_ci_at_interval_dictation_label, :tag => 'h4', :value => loc('_ae_ci_at_interval_dictation') %>
+  <%= text_field_view :ae_ci_at_interval_dictation_tfv,
+        :validator => :number,
+        :bind => {
+            :value => 'AdmissionExam.currentExamController.intervalDictation',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+   %>
+
+  <%= label_view :ae_ci_at_rhythm_dictation_label, :tag => 'h4', :value => loc('_ae_ci_at_rhythm_dictation') %>
+  <%= text_field_view :ae_ci_at_rhythm_dictation_tfv,
+        :validator => :number,
+        :bind => {
+            :value => 'AdmissionExam.currentExamController.rhythmDictation',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+   %>
+
+  <%= label_view :ae_ci_at_melodic_dictation_label, :tag => 'h4', :value => loc('_ae_ci_at_melodic_dictation') %>
+  <%= text_field_view :ae_ci_at_melodic_dictation_tfv,
+        :validator => :number,
+        :bind => {
+            :value => 'AdmissionExam.currentExamController.melodicDictation',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+   %>
+  <%= label_view :ae_ci_at_chord_dictation_label, :tag => 'h4', :value => loc('_ae_ci_at_chord_dictation') %>
+  <%= text_field_view :ae_ci_at_chord_dictation_tfv,
+        :validator => :number,
+        :bind => {
+            :value => 'AdmissionExam.currentExamController.chordDictation',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+   %>   
+  <%= label_view :ae_ci_at_instrument_dictation_label, :tag => 'h4', :value => loc('_ae_ci_at_instrument_dictation') %>
+  <%= text_field_view :ae_ci_at_instrument_dictation_tfv,
+        :validator => :number,
+        :bind => {
+            :value => 'AdmissionExam.currentExamController.instrumentDictation',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+   %>    
+  <%= label_view :ae_ci_at_interval_notation_label, :tag => 'h4', :value => loc('_ae_ci_at_interval_notation') %>
+  <%= text_field_view :ae_ci_at_interval_notation_tfv,
+        :validator => :number,
+        :bind => {
+            :value => 'AdmissionExam.currentExamController.intervalNotation',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+   %> 
+  <%= label_view :ae_ci_at_chord_notation_label, :tag => 'h4', :value => loc('_ae_ci_at_chord_notation') %>
+  <%= text_field_view :ae_ci_at_chord_notation_tfv,
+        :validator => :number,
+        :bind => {
+            :value => 'AdmissionExam.currentExamController.chordNotation',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+   %>  
+  <%= label_view :ae_ci_at_music_theory_label, :tag => 'h4', :value => loc('_ae_ci_at_music_theory') %>
+  <%= text_field_view :ae_ci_at_music_theory_tfv,
+        :validator => :number,
+        :bind => {
+            :value => 'AdmissionExam.currentExamController.musicTheory',
+            :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+        }
+   %>
+   
+   
+
+<% end %>   

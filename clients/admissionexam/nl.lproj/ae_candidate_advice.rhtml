@@ -1,0 +1,28 @@
+<% view :ae_candidate_advice do %>
+  <%= label_view :ae_ci_advice_advice_label, :tag => 'h4', 
+      :value => loc('_ae_ci_advice_advice_label') %>
+      
+  <% scroll_view :ae_ci_advice_advice_sv do %>
+        <%= source_list_view :ae_ci_cb_advice_advice_listview,           
+            :example_view => 'AdmissionExam.CheckBoxListView',
+            :row_height => 20,
+            :height => 400,
+            :group => :group,
+            :content_value_key => 'name',
+            :content_checkbox_key => 'value',
+            :is_editable => false,
+            :is_selectable => false,
+            :can_order_content => false,
+            :can_reorder_content => false,
+            :group_visible_key => false,
+            :bind => {
+                :content => 'AdmissionExam.adviceListController.arrangedObjects',
+                :selection => 'AdmissionExam.adviceListController.selection',
+                :record_to_add => 'AdmissionExam.adviceListController.recordToAdd',
+                :record_to_remove => 'AdmissionExam.adviceListController.recordToRemove',
+                :enabled => 'AdmissionExam.admissionExamApplicationController.allowEditing'
+            }
+            %>
+    <% end %> 
+
+<% end %>
