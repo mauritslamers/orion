@@ -17,10 +17,10 @@ AdmissionExam.currentExamController = SC.ObjectController.create(
 /** @scope Admissionexam.currentExamController */ {
 
   // TODO: Add your own code here.
-  conclusionBinding: 'AdmissionExam.conclusionListController.selection',
-  
+  //conclusionBinding: 'AdmissionExam.conclusionListController.selection',
+  /*
   conclusionObserver: function(){
-      var conclusionAry = this.get('_conclusion');
+      var conclusionAry = this.get('conclusion');
       if((conclusionAry) && (conclusionAry instanceof Array)){
          // get the conclusion
          var conclusion = conclusionAry.first();
@@ -31,7 +31,9 @@ AdmissionExam.currentExamController = SC.ObjectController.create(
             }
          }
       }
-  }.observes('conclusion'),
+  }.observes('conclusion'),  */
+  
+  conclusionIdBinding: 'AdmissionExam.conclusionListController.selectedConclusionId',
   
   changesObserver: function(){
     //console.log("Change!");

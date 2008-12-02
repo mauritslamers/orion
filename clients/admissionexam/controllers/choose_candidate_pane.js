@@ -16,7 +16,6 @@ require('core');
 AdmissionExam.chooseCandidatePaneController = SC.Object.create(
 /** @scope Admissionexam.chooseCandidatePaneController */ {
 
-  // TODO: Add your own code here.
   show: function(){
     SC.page.aeChooseCandidatePane.set('isVisible',true);
 //    var students = AdmissionExam.AECandidate.collection();

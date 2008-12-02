@@ -22,7 +22,6 @@ AdmissionExam.CheckBoxListView = SC.ListItemView.extend(
 
   valueChangeObserver: function(){
     var content = this.get('content');
-    //debugger;
     if(content){
        var curValue = content.get('value');
        var curName = content.get('name');
@@ -46,7 +45,6 @@ AdmissionExam.CheckBoxListView = SC.ListItemView.extend(
   }.observes('contentValue'),
   
   isEnabledObserver: function() {
-    //debugger;
     var disabled = !this.get('isEnabled') ;
     this.setClassName('disabled', disabled);
 
