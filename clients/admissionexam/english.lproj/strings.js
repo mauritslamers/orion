@@ -8,7 +8,7 @@
 // how your UI will look and you'll notice right away when something needs a
 // localized string added to this file!
 //
-Object.extend(String.English,{
+SC.stringsFor('en', {
   // "_String Key": "Localized String"
   "_ae_open_choose_candidate_pane_button" : "Select candidate",
   "_ae_new_exam_with_candidate_button" : "New exam",

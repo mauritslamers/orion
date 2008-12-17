@@ -8,7 +8,7 @@
 // how your UI will look and you'll notice right away when something needs a
 // localized string added to this file!
 //
-String.addStringsFor(String.nl,{
+SC.stringsFor('nl',{
   // "_String Key": "Localized String"
   "_ae_open_choose_candidate_pane_button" : "Kandidaat selecteren",
   "_ae_new_exam_with_candidate_button" : "Nieuw examen",

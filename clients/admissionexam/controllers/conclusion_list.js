@@ -19,7 +19,7 @@ AdmissionExam.conclusionListController = SC.CollectionController.create(
   // TODO: Add your own code here.
   //selectedConclusionId: null,
   
-  conclusionBinding: 'AdmissionExam.currentExamController.conclusionId',
+  //conclusionBinding: 'AdmissionExam.currentExamController.conclusionId',
  /* 
   conclusionObserver: function(){
       var conclusion = this.get('conclusion');
@@ -39,8 +39,9 @@ AdmissionExam.conclusionListController = SC.CollectionController.create(
       }
   }.observes('conclusion')
   */
-  
+ /* 
   selectedConclusionObserver: function(){
+     //debugger;
     var sel = this.get('selection');
     if((sel) && (sel.length == 1)){
       var record = sel.first();
@@ -52,6 +53,6 @@ AdmissionExam.conclusionListController = SC.CollectionController.create(
          //AdmissionExam.currentExamController.set('conclusionId',id);
       }
     }
-  }.observes('selection')
+  }.observes('selection') */
   
 }) ;

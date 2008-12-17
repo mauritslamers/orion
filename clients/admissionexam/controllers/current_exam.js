@@ -33,7 +33,7 @@ AdmissionExam.currentExamController = SC.ObjectController.create(
       }
   }.observes('conclusion'),  */
   
-  conclusionIdBinding: 'AdmissionExam.conclusionListController.selectedConclusionId',
+  //conclusionIdBinding: 'AdmissionExam.conclusionListController.selectedConclusionId',
   
   changesObserver: function(){
     //console.log("Change!");
