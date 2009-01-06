@@ -1,5 +1,5 @@
 // ==========================================================================
-// Login
+// Muzorion
 // ==========================================================================
 
 // This is the function that will start your app running.  The default
@@ -15,24 +15,29 @@ function main() {
   // The default code here will load the fixtures you have defined.
   // Comment out the preload line and add something to refresh from the server
   // when you are ready to pull data from your server.
-  //Login.server.preload(Login.FIXTURES) ;
+  //Muzorion.server.preload(Muzorion.FIXTURES) ;
+  var courses=OrionFw.Course.collection();
+  OrionFw.server.listFor(courses);
+  Muzorion.cmCourseListController.set('content',courses);
+  courses.set('orderBy','name');
+  courses.refresh();
 
-  var authservers = OrionFw.AuthenticationServer.collection();
-  authservers.set('orderBy',['guid']);
-  OrionFw.server.listFor(authservers);
-  Login.authenticationServerCollectionController.set('content',authservers);
-  authservers.refresh();
-  
+  // load subjects  
+  var subjects = OrionFw.Subject.collection();
+  subjects.set('conditions', {'collegeyear' : 2008});
+  OrionFw.server.listFor(subjects);
+  subjects.refresh();
+
+  //load linking table courses_subjects
+  var courses_subjects = OrionFw.CourseSubject.collection();
+  //courses_subjects.dataSource = OrionFw.server;
+  OrionFw.server.listFor(courses_subjects);
+  Muzorion.cmSubjectListController.set('linkingCollection',courses_subjects);
+  Muzorion.cmSubjectListController.set('content',subjects);
+
   // TODO: refresh() any collections you have created to get their records.
-  // ex: Login.contacts.refresh() ;
-	
-  // get or store the cookie
+  // ex: Muzorion.contacts.refresh() ;
 
-   // just load the system state. It will be set correctly before processing the login
-  //var systemStates = OrionFw.SystemState.collection();
-  //OrionFw.server.listFor(systemStates);
-  OrionFw.retrieveSystemState();
-     
   // Step 2: Instantiate Your Views
   // The default code just activates all the views you have on the page. If
   // your app gets any level of complexity, you should just get the views you
@@ -41,16 +46,11 @@ function main() {
 
   // Step 3. Set the content property on your primary controller.
   // This will make your app come alive!
-
-   // setting up the system state
-   //var systemState = SC.Store.findRecords({ 'guid': 1}, OrionFw.SystemState);
-   //OrionFw.systemStateController.set('content',systemState);
-
+  if(subjects.records().length > 0){
+    courses_subjects.set('conditions', { 'subjectId': subjects.records().get('guid')});
+  }
+  courses_subjects.refresh(); 
   // TODO: Set the content property on your primary controller
-  // ex: Login.contactsController.set('content',Login.contacts);
-/*  var cookievalue = OrionFw.getLoginCookie();
-  if(cookievalue != ""){
-  	var selectedtype = SC.Store.findRecords({ 'guid' : cookievalue }, OrionFw.AuthenticationServer);
-  	Login.authenticationServerCollectionController.set('selection',	selectedtype);
-  } */
+  // ex: Muzorion.contactsController.set('content',Muzorion.contacts);
+
 } ;

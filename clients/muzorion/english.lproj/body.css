@@ -1,0 +1,118 @@
+#muz_maintab {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 700px;
+  width: 1000px;  
+}
+
+#muz_curriculum_maintenance_tab {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 680px;
+  width: 1000px;  
+}
+
+div.root {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 680px;
+  width: 1000px;    
+}
+
+#muz_cm_course_list_label {
+   position: absolute;
+   top: 50px;
+   left: 20px;
+   height: 25px;
+   margin: 0px;
+}
+
+#muz_cm_course_list_sv {
+   position: absolute;
+   top: 70px;
+   left: 20px;
+   height: 300px;
+   width: 200px;
+   margin: 0px;  
+}
+
+#muz_cm_course_list_lv {
+   position: absolute;
+   top: 70px;
+   left: 20px;
+   height: 300px;
+   width: 200px;
+   margin: 0px;  
+}
+
+#muz_cm_subject_list_label {
+   position: absolute;
+   top: 50px;
+   left: 240px;
+   height: 25px;
+   margin: 0px;
+}
+
+
+#muz_cm_subject_list_sv {
+   position: absolute;
+   top: 70px;
+   left: 240px;
+   height: 300px;
+   width: 250px;
+   margin: 0px;  
+}
+
+#muz_cm_lessonseries_list_label {
+   position: absolute;
+   top: 50px;
+   left: 510px;
+   height: 25px;
+   margin: 0px;   
+}
+
+#muz_cm_lessonseries_list_sv {
+   position: absolute;
+   top: 70px;
+   left: 510px;
+   height: 300px;
+   width: 200px;
+   margin: 0px;  
+}
+
+#muz_cm_subjects_also_in_course_list_label {
+   position: absolute;
+   top: 50px;
+   left: 730px;
+   height: 25px;
+   margin: 0px;
+}
+
+#muz_cm_subjects_also_in_course_list_sv {
+   position: absolute;
+   top: 70px;
+   left: 730px;
+   height: 130px;
+   width: 200px;
+   margin: 0px;
+}
+
+#muz_cm_lessonseries_also_in_subject_list_label {
+   position: absolute;
+   top: 210px;
+   left: 730px;
+   height: 25px;
+   margin: 0px;
+}
+
+#muz_cm_lessonseries_also_in_subject_list_sv {
+   position: absolute;
+   top: 230px;
+   left: 730px;
+   height: 140px;
+   width: 200px;
+   margin: 0px;
+}

@@ -16,6 +16,7 @@ require('core');
 AdmissionExam.currentExamController = SC.ObjectController.create(
 /** @scope Admissionexam.currentExamController */ {
 
+  guid: null,
   // TODO: Add your own code here.
   //conclusionBinding: 'AdmissionExam.conclusionListController.selection',
   /*

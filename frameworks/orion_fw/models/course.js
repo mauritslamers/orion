@@ -32,7 +32,7 @@ OrionFw.Course = SC.Record.extend(
        '/ajacom/contact/show/23' (if the record has guid=23 and
         only one record is fetched)
   */
-  resourceURL: [OrionFw.standardResource + 'course'], 
+  resourceURL: [OrionFw.standardResource + 'Course'], 
 
   // this list of properties will be used when talking to the server 
   // backend. If you don't define this only 'guid' will be used. 

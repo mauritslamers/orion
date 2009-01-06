@@ -13,7 +13,7 @@ require('core');
   @version 0.1
   @static
 */
-AdmissionExam.chooseCandidatePaneController = SC.Object.create(
+AdmissionExam.chooseCandidatePaneController = SC.Controller.create(
 /** @scope Admissionexam.chooseCandidatePaneController */ {
 
   show: function(){

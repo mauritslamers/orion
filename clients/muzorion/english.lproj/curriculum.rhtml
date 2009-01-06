@@ -1,0 +1,81 @@
+<% view :muz_curriculum_maintenance_tab do %>
+    <%= label_view :muz_cm_course_list_label, :tag => 'h4', :value => loc('_muz_cm_course_list_label') %>
+    <% scroll_view :muz_cm_course_list_sv do %>
+      <%= list_view :muz_cm_course_list_lv,
+        :example_view => 'SC.ListItemView',
+        :row_height => 20,
+        :is_editable => false,
+        :content_value_key => 'name',
+        :can_order_content => false,
+        :can_reorder_content => false,
+        :bind => {
+          :content => 'Muzorion.cmCourseListController.arrangedObjects',
+          :selection => 'Muzorion.cmCourseListController.selection'
+        }
+      %>
+    <% end %>
+    
+    <%= label_view :muz_cm_subject_list_label, :tag => 'h4', :value => loc('_muz_cm_subject_list_label') %>
+    <% scroll_view :muz_cm_subject_list_sv do %>
+      <%= list_view :muz_cm_subject_list_lv,
+        :example_view => 'SC.ListItemView',
+        :row_height => 20,
+        :is_editable => false,
+        :content_value_key => 'subjectName',
+        :can_order_content => false,
+        :can_reorder_content => false,
+        :bind => {
+          :content => 'Muzorion.cmSubjectListController.arrangedObjects',
+          :selection => 'Muzorion.cmSubjectListController.selection'
+        }
+      %>
+    <% end %>   
+    
+    <%= label_view :muz_cm_lessonseries_list_label, :tag => 'h4', :value => loc('_muz_cm_lessonseries_list_label') %>
+    <% scroll_view :muz_cm_lessonseries_list_sv do %>
+      <%= list_view :muz_cm_lessonseries_list_lv,
+        :example_view => 'SC.ListItemView',
+        :row_height => 20,
+        :is_editable => false,
+        :content_value_key => 'name',
+        :can_order_content => false,
+        :can_reorder_content => false,
+        :bind => {
+          :content => 'Muzorion.cmLessonseriesListController.arrangedObjects',
+          :selection => 'Muzorion.cmLessonseriesListController.selection'
+        }
+      %>
+    <% end %>       
+
+    <%= label_view :muz_cm_subjects_also_in_course_list_label, :tag => 'h4', :value => loc('_muz_cm_subjects_also_in_course_list_label') %>
+    <% scroll_view :muz_cm_subjects_also_in_course_list_sv do %>
+      <%= list_view :muz_cm_subjects_also_in_course_list_lv,
+        :example_view => 'SC.ListItemView',
+        :row_height => 20,
+        :is_editable => false,
+        :content_value_key => 'name',
+        :can_order_content => false,
+        :can_reorder_content => false,
+        :bind => {
+          :content => 'Muzorion.cmLessonseriesListController.arrangedObjects',
+          :selection => 'Muzorion.cmLessonseriesListController.selection'
+        }
+      %>
+    <% end %> 
+
+    <%= label_view :muz_cm_lessonseries_also_in_subject_list_label, :tag => 'h4', :value => loc('_muz_cm_lessonseries_also_in_subject_list_label') %>
+    <% scroll_view :muz_cm_lessonseries_also_in_subject_list_sv do %>
+      <%= list_view :muz_cm_lessonseries_also_in_subject_list_lv,
+        :example_view => 'SC.ListItemView',
+        :row_height => 20,
+        :is_editable => false,
+        :content_value_key => 'name',
+        :can_order_content => false,
+        :can_reorder_content => false,
+        :bind => {
+          :content => 'Muzorion.cmLessonseriesListController.arrangedObjects',
+          :selection => 'Muzorion.cmLessonseriesListController.selection'
+        }
+      %>
+    <% end %>      
+<% end %>

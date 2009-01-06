@@ -13,7 +13,7 @@ require('orion_fw');
   @author    AuthorName  
   @version 0.1
 */  
-OrionFw.Subject = SC.Record.extend(
+OrionFw.Module = SC.Record.extend(
 /** @scope Module.prototype */ {
   
   // TODO: Add your own code here.

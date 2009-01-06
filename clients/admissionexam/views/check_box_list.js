@@ -42,7 +42,7 @@ AdmissionExam.CheckBoxListView = SC.ListItemView.extend(
          content.set('dontCommit', false); 
        }
     }
-  }.observes('contentValue'),
+  }.observes('content'),
   
   isEnabledObserver: function() {
     var disabled = !this.get('isEnabled') ;
@@ -52,6 +52,6 @@ AdmissionExam.CheckBoxListView = SC.ListItemView.extend(
     if (this.rootElement && (this.rootElement.disabled !== undefined) && (this.rootElement.disabled != disabled)) {
       this.rootElement.disabled = disabled ;
     }
-  }.observes('isEnabled'),
+  }.observes('isEnabled')
   
 }) ;

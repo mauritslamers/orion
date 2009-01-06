@@ -13,10 +13,85 @@ require('core');
   @version 0.1
   @static
 */
-AdmissionExam.adviceListController = SC.CollectionController.create(
+//AdmissionExam.adviceListController = SC.CollectionController.create(
+AdmissionExam.adviceListController = OrionFw.LinkingCollectionController.create(
+
 /** @scope Admissionexam.adviceListController */ {
+
+/*
+ orderBy: 'subjectName',
+
+  linkingElement: 'subjectId',
   
-  canEditCollection: true,
+  externalLinkingElement: 'courseId',
+  
+  // TODO: Add your own code here.
+  selectedCourseBinding: "Muzorion.cmCourseListController.selection",
+
+  selectedCourseObserver: function(){
+    var selCourse = this.get('selectedCourse');
+    if((selCourse) && (selCourse instanceof Array) && (selCourse.length == 1)){
+      var courseId = selCourse.first().get('guid');
+      this.set('linkingValue',courseId);
+    } 
+  }.observes('selectedCourse')
+*/
+ examIdBinding: 'AdmissionExam.currentExamController.guid',
+ 
+ // if examId changes, update the current linkingValue:
+ _examIdObserver: function(){
+   var examId = this.get('examId');
+   if(examId){
+     this.set('linkingValue',examId);
+   }
+ }.observes('examId'),
+
+ linkingElement: 'adviceId',
+ 
+ externalLinkingElement: 'examId',
+ 
+ //the original linkingObserver sets the content of this controller
+ // and we only want it to set the current selection to the output of the link
+   _linkingObserver: function(){
+    var linkIdValue = parseInt(this.get('linkingValue'));
+    if(linkIdValue){
+      //debugger;
+      // get all valid records from the linkingCollection
+      if(this._linkingCollection && this.linkingElement && this.externalLinkingElement){
+        this._linkingCollection.refresh();
+        
+        var linkElement = this.linkingElement.toString();  
+        var exLinkElement = this.externalLinkingElement.toString();
+        //debugger;
+        // first set the conditions on the _linkingCollection
+        // and leave the original conditions intact
+        var curLinkingConditions = this._linkingCollection.get('conditions');
+        curLinkingConditions[exLinkElement] = linkIdValue;
+        this._linkingCollection.refresh(); // just to be sure
+        // next get the records
+        var validRecords = this._linkingCollection.records();
+        if((validRecords) && (validRecords.length > 0)){
+            this.set('selection',validRecords);
+        }  
+       
+      }
+    }
+  }.observes('linkingValue','_linkingCollection')
+
+  
+
+
+}) ;
+
+
+
+
+
+
+/*  
+
+//old code
+
    // the trick: two contents
    // one: the content of possibilities
    // two: the content of the links
@@ -136,8 +211,8 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
     this.set('_choices',newChoices);
     //return newChoices;
   },
-  
-  _arrangedObjects: [],
+  */
+  /*_arrangedObjects: [],
   
   arrangedObjects: function( key, value ){
     //debugger;
@@ -161,12 +236,12 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
                s.value = false;
             }
             //set the items enabled or disabled according to the allowEdit setting
-            /*if(allowEdit){
-              s.set('isEnabled',true);  
-            }
-            else {
-               s.set('isEnabled',false);
-            }*/
+            //if(allowEdit){
+            //  s.set('isEnabled',true);  
+           // }
+            //else {
+             //  s.set('isEnabled',false);
+            //}
             //s.isEnabled = allowEdit;
             //if(s.value){
                s.dontCommit = true;
@@ -197,44 +272,42 @@ AdmissionExam.adviceListController = SC.CollectionController.create(
        }
     }
     else {
-/*      if(this._returnEmptyArrangedObjects){
-         debugger;
-         this._choices = [];
-         this._arrangedObjects = [];
-         this._returnEmptyArrangedObjects = false;
-         return [];
-      }
-      else */ 
+    //  if(this._returnEmptyArrangedObjects){
+    //     debugger;
+    //     this._choices = [];
+    //     this._arrangedObjects = [];
+    //     this._returnEmptyArrangedObjects = false;
+    //     return [];
+    //  }
+    //  else  
       SC.page.aeCandidateAdvice.aeCiAdviceAdviceSv.aeCiCbAdviceAdviceListview.set('content',[]);
       return (this._arrangedObjects) ? this._arrangedObjects: []; 
     }
     // let's do some strange things :)
-    /* if(key != 'arrangedObjects'){
-      debugger; 
-    } */   
-  }.property('arrangedObjects'),
-  
+    // if(key != 'arrangedObjects'){
+    //  debugger; 
+    //}    
+  }.property('arrangedObjects')
+ /* 
   // trying to fix the stupid selection bug... 
   
   allowsEmptySelection: YES,
-  allowsMultipleSelection: NO,
+  allowsMultipleSelection: NO
   
-  currentSelectionObserver: function(){
-    var sel = this.get('selection');
-    if((sel) && (sel.length == 1)){
-      var option = sel.first();
-      if(option.value){
-        option.set('value',false);  
-      }
-      else {
-        option.set('value',true);  
-      }
-      this.set('selection', []);
-    }
-  }.observes('selection')
-  
-}) ;
-
+//  currentSelectionObserver: function(){
+//    var sel = this.get('selection');
+//    if((sel) && (sel.length == 1)){
+//      var option = sel.first();
+//      if(option.value){
+//        option.set('value',false);  
+//      }
+//      else {
+//        option.set('value',true);  
+//      }
+//      this.set('selection', []);
+//    }
+//  }.observes('selection') 
+  */
 
 
 
