@@ -16,12 +16,16 @@ function main() {
   // Comment out the preload line and add something to refresh from the server
   // when you are ready to pull data from your server.
   //Login.server.preload(Login.FIXTURES) ;
-
   var authservers = OrionFw.AuthenticationServer.collection();
-  authservers.set('orderBy',['guid']);
+  authservers.callback = authservers.refresh;
   OrionFw.server.listFor(authservers);
   Login.authenticationServerCollectionController.set('content',authservers);
   authservers.refresh();
+  authservers.set('orderBy',['guid']);
+
+  //OrionFw.server.listFor({recordType: OrionFw.AuthenticationServer});
+
+
   
   // TODO: refresh() any collections you have created to get their records.
   // ex: Login.contacts.refresh() ;
@@ -48,6 +52,8 @@ function main() {
 
   // TODO: Set the content property on your primary controller
   // ex: Login.contactsController.set('content',Login.contacts);
+
+
 /*  var cookievalue = OrionFw.getLoginCookie();
   if(cookievalue != ""){
   	var selectedtype = SC.Store.findRecords({ 'guid' : cookievalue }, OrionFw.AuthenticationServer);
